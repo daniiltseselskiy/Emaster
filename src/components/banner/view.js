@@ -7,8 +7,8 @@ var view = function(){
 		<div className="banner background content-center">
       <div className="responsive content-center">
   			<div className="content">
-  				<p className="content-text extra-large-text brand-white titillium-thin">{this.props.bannerTopText}</p>
-  				<p className="content-text extra-super-large-text brand-yellow titillium-bold">{this.props.bannerMiddleText}</p>
+  				<h1 className="content-text extra-large-text brand-yellow titillium-bold">{this.props.bannerTopText}</h1>
+  				{/*<p className="content-text large-text brand-yellow titillium-bold">{this.props.bannerMiddleText}</p>*/}
   				<p className="small-text brand-white description titillium-thin">{this.props.bannerBottomText}</p>
   			</div>
       </div>

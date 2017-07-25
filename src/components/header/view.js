@@ -22,9 +22,7 @@ var view = function(){
 				<Navbar.Collapse>
 					<Nav pullRight>
 
-						{/*<NavItem eventKey={1} active = {this.isActive("/team")} className="text"><Link to="/team">{translate("header.team")}</Link></NavItem>*/}
-						{/*<NavItem eventKey={2} active = {this.isActive("/faq")} className="text"><Link to="/faq">{translate("header.faq")}</Link></NavItem>*/}
-                        <NavItem eventKey={1} active = {this.isActive("/team")} href="/team" className="text">{translate("header.team")}</NavItem>
+                        {/*<NavItem eventKey={1} active = {this.isActive("/team")} href="/team" className="text">{translate("header.team")}</NavItem>*/}
                         <NavItem eventKey={2} active = {this.isActive("/faq")} href="/faq" className="text">{translate("header.faq")}</NavItem>
 						<NavItem eventKey={3} href="#"><button onClick={()=>{this.props.openModal?this.props.openModal():null}} className="brand-button button"><span className="brand-button-text">{translate("header.signupBtn")}</span></button></NavItem>
 

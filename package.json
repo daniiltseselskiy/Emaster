@@ -11,6 +11,7 @@
     "react-collapsible": "^1.4.0",
     "react-dom": "^15.6.1",
     "react-inview": "^0.0.6",
+    "react-inview-js": "^1.2.7",
     "react-localize-redux": "^2.2.0",
     "react-material-ui-form-validator": "^0.5.0",
     "react-redux": "^5.0.5",

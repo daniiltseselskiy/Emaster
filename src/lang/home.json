@@ -1,0 +1,241 @@
+{
+  "header.team": [
+    "Our Team",
+    "Nossa Equipe"
+  ],
+  "header.faq" : [
+    "FAQ",
+    "FAQ"
+  ],
+  "header.signupBtn" : [
+    "Sign Up",
+    "Inscreva-se"
+  ],
+  "signupForm.success" : [
+    "Thank you!",
+    "Obrigado!"
+  ],
+  "signupForm.title" : [
+    "Make my application",
+    "Fazer minha inscrição"
+  ],
+  "signupForm.description" : [
+    "Fill in the fields below to enter the waiting list.",
+    "Preencha os campos abaixo para entrar na lista de espera."
+  ],
+  "signupForm.name" : [
+    "Name",
+    "Nome"
+  ],
+  "signupForm.email" : [
+    "E-mail",
+    "E-mail"
+  ],
+  "signupForm.emailPlaceholder" : [
+    "name@email.com",
+    "nome@email.com"
+  ],
+  "signupForm.namePlaceholder" : [
+    "James Jordan",
+    "José da Silva"
+  ],
+  "signupForm.saveBtn" : [
+    "Enter the waiting list",
+    "Entrar na lista de espera"
+  ],
+  "signupForm.successBtn" : [
+    "Thank you!",
+    "Obrigado!"
+  ],
+  "banner.topText" : [
+    "Your Departure",
+    "Sua Partida"
+  ],
+  "banner.middleText" : [
+    "Seriously Taken",
+    "Levada a Sério"
+  ],
+  "banner.bottomText" : [
+    "Imagine playing in an exclusive environment, being part of a community made up of real players and still having a chance to make money while challenging other competitors in your favorite game",
+    "Imagine jogar em um ambiente exclusivo, fazer parte de uma comunidade formada por jogadores de verdade e ainda ter a chance de ganhar dinheiro, enquanto desafia outros competidores em seu game favorito"
+  ],
+  "gridSection.title" : [
+    "Conquer",
+    "Conquiste"
+  ],
+  "gridSection.description" : [
+    "EMasters is an online competitive gaming platform developed to meet the needs of a much more demanding player interested in getting a great match and committed to winning!",
+    "eMasters é uma plataforma online de jogos competitivos desenvolvida para atender às necessidades de um jogador bem mais exigente, interessado em obter uma ótima inigualável e comprometido em alcançar a vitória!"
+  ],
+
+  "features.title" : [
+    "Advantages",
+    "Vantagens"
+  ],
+
+  "features.item1Title" : [
+    "Investment",
+    "Investimento"
+  ],
+  "features.item1Description" : [
+    "Financial return upon winning the match.",
+    "Retorno financeiro ao vencer a partida."
+  ],
+  "features.item2Title" : [
+    "Evolution",
+    "Evoluca"
+  ],
+  "features.item2Description" : [
+    "Reward system with custom badges and frames.",
+    "Sistema de recompensa, com insígnias e molduras personalizadas."
+  ],
+  "features.item3Title" : [
+    "Reward",
+    "Recompensa"
+  ],
+  "features.item3Description" : [
+    "EMasters Coins can be redeemed for prizes.",
+    "eMasters Coins podem ser trocadas por prêmios."
+  ],
+  "features.item4Title" : [
+    "Reward",
+    "Recompensa"
+  ],
+  "features.item4Description" : [
+    "All your favorite games will be integrated into eMasters in the future.",
+    "Todos os seus jogos favoritos serão integrados ao eMasters no futuro."
+  ],
+  "features.item5Title" : [
+    "Insurance",
+    "Sesguranca"
+  ],
+  "features.item5Description" : [
+    "With exclusive fraud prevention technology.",
+    "Com exclusiva tecnologia de prevenção contra fraude."
+  ],
+  "favorites.title" : [
+    "Favorite Games",
+    "Jogos Favoritos"
+  ],
+  "favorites.game1Title" : [
+    "League of Legends",
+    "League of Legends"
+  ],
+  "favorites.game1Description" : [
+    "Success, with more than 100 million active monthly users, League of Legends is the leading MOBA of today.",
+    "Sucesso, com mais de 100 milhõesde usuários ativos mensais, Leagueof Legends é o principal MOBAda atualidade."
+  ],
+  "favorites.game2Title" : [
+    "Dota 2",
+    "Dota 2"
+  ],
+  "favorites.game2Description" : [
+    "A classic within the eSport worldwide, Dota 2 popularized the genre and professionalized the competitive landscape.",
+    "Um clássico dentro do eSport mundial, Dota 2 popularizouo gênero e profissionalizouo cenário competitivo."
+  ],
+  "favorites.footerTitle" : [
+    "And this is just the beginning!",
+    "E este é apenas o começo!"
+  ],
+  "favorites.footerDescription" : [
+    "We are working to increase the number of eMasters platform games and soon you will find the most important eSport global competitive titles.",
+    "Estamos trabalhando para aumentar o número de jogos da plataforma eMasters e, em breve, você encontrará os mais importantes títulos competitivos do eSport mundial."
+  ],
+  "gridRightSection.title" : [
+    "ESport Market",
+    "Mercado eSport"
+  ],
+  "gridRightSection.description1Part1" : [
+    "According to a survey conducted by Newzoo, it is estimated that in 2017 eSport worldwide will generate ",
+    "Segundo pesquisa realizada pela empresa Newzoo, estima-se que, em 2017, o eSport mundial movimente "
+  ],
+  "gridRightSection.description1Part2" : [
+    "US $ 696 million ",
+    "US$ 696 milhões "
+  ],
+  "gridRightSection.description1Part3" : [
+    "thanks to the participation of new brands, acquisition of advertising space, purchase of transmission rights and sponsorships.",
+    "graças à participação de novas marcas, aquisição de espaços publicitários, compra dos direitos de transmissão e patrocínios."
+  ],
+  "gridRightSection.description2Part1" : [
+    "Be part of this growing market with the help of ",
+    "Faça parte deste mercado em plena ascensão com a ajuda "
+  ],
+  "gridRightSection.description2Part2" : [
+    "eMasters!",
+    "eMasters!"
+  ],
+  "testimonial.title" : [
+    "The end of complexity",
+    "O fim da complexidade"
+  ],
+  "testimonial.description" : [
+    "Our main proposal is to bring together a select group of players in Brazil and worldwide. We want you to play, train and evolve with the best. This is our goal, our mission! Therefore, your opinion is very important for the platform to progress and always meet your needs.",
+    "Nossa principal proposta é reunir um grupo seleto de jogadores no Brasil e no mundo. Queremos que você jogue, treine e evolua com os melhores. Este é nosso objetivo, nossa missão! Por isso, sua opinião é muito importante para a plataforma progredir e sempre atender suas necessidades."
+  ],
+  "testimonial.item1Description" : [
+    "”My parents beat me every time I played. Now that I'm an eSport mogul, they're proud of me. Obriagado eMasters ”.",
+    "“Meus pais me batiam toda a vez que eu jogava. Agora que sou um magnata do eSport, eles têm orgulho de mim. Obriagado eMasters”."
+  ],
+  "testimonial.item1Fullname" : [
+    "Anderson Russo",
+    "Anderson Russo"
+  ],
+  "testimonial.item1Username" : [
+    "@cage",
+    "@cage"
+  ],
+  "testimonial.item2Description" : [
+    "“EMaster is sensational. I play with nice guys and I even made money to go out on the weekend with friends. Thanks“.",
+    "“eMaster é sensacional. Eu jogo com um pessoal bacana e ainda ganhei dinheiro para sair no final de semana com os amigos. Valeu”."
+  ],
+  "testimonial.item2Fullname" : [
+    "Gabriel Ribeiro",
+    "Gabriel Ribeiro"
+  ],
+  "testimonial.item2Username" : [
+    "@alphageek",
+    "@alphageek"
+  ],
+  "testimonial.item3Description" : [
+    "“I am from the interior and my dream has always been to go to the big city. When I met eMasters and got enough playing, I was able to buy my ticket to São Paulo“.",
+    "“Eu sou do interior e meu sonho sempre foi ir para a cidade grande. Quando conheci o eMasters e ganhei o suficiente jogando, consegui comprar minha passagem para São Paulo”."
+  ],
+  "testimonial.item3Fullname" : [
+    "Fernando Giovanetti",
+    "Fernando Giovanetti"
+  ],
+  "testimonial.item3Username" : [
+    "@FernandoG",
+    "@FernandoG"
+  ],
+  "testimonial.signupBtn" : [
+    "Sign Up",
+    "Inscreva-se"
+  ],
+  "joinBeta.titlePart1" : [
+    "Join the Beta ",
+    "Participe do Beta e "
+  ],
+  "joinBeta.titlePart2" : [
+    "and get ready to conquer ",
+    "prepare-se para conquistar "
+  ],
+  "joinBeta.titlePart3" : [
+    "the world",
+    "o mundo"
+  ],
+  "joinBeta.signupBtn" : [
+    "Sign Up",
+    "Inscreva-se"
+  ],
+  "footer.copyright" : [
+    "@Copyright and any other legal.",
+    "@Copyright e qualquer outro legal."
+  ],
+
+  "footer.terms" : [
+    "Terms of Use",
+    "Termos de Uso"
+  ]
+}

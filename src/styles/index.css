@@ -1,0 +1,256 @@
+/*fonts*/
+@font-face {
+    font-family: 'Titillium-Light'; /*a name to be used later*/
+    src: url('../fonts/TITILLIUM-LIGHT.OTF'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Titillium-Thin'; /*a name to be used later*/
+    src: url('../fonts/TITILLIUM-THIN.OTF'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Titillium-Regular'; /*a name to be used later*/
+    src: url('../fonts/TITILLIUM-REGULAR.OTF'); /*URL to font*/
+}
+
+
+@font-face {
+    font-family: 'Titillium-Bold'; /*a name to be used later*/
+    src: url('../fonts/TITILLIUM-BOLD.OTF'); /*URL to font*/
+}
+/*/fonts*/
+
+/*general*/
+body {margin: 0;padding: 0;font-family: Titillium-Regular;background: #000;word-wrap: break-word;}
+.overflow-hide{overflow: hidden;}
+button:focus{outline: 0;}
+/*/general*/
+
+/*text Styling*/
+.extra-super-large-text{font-size: 70px;}
+.extra-large-text{font-size: 55px;}
+.large-text{font-size: 25px;}
+.medium-text{font-size: 16px;}
+.small-text{font-size: 15px;}
+.brand-yellow{color:#efc22e;}
+.brand-white{color:#fff;}
+.titillium-thin{font-family: Titillium-Thin;}
+.titillium-light{font-family: Titillium-Light;}
+.titillium-regular{font-family: Titillium-Regular;}
+.titillium-bold{font-family: Titillium-Bold;}
+.letter-spacing{letter-spacing:10px}
+.letter-spacing-2{letter-spacing:2px}
+.bold{font-weight: bold;}
+/*/text Styling*/
+
+/*button*/
+.brand-button{background: transparent;border:2px solid #efc22e;padding:10px;border-radius: 100px;margin:auto;width:250px;}
+.brand-button:hover{border:2px solid #efc22e;background: transparent;}
+.brand-button-text{line-height: 30px;font-size: 22px;letter-spacing: 4px;color:#efc22e;}
+.brand-button.white{border:2px solid #fff;}
+.brand-button.white .brand-button-text{color:#fff;}
+/*/button*/
+
+/*accordion*/
+.Collapsible{background: #2b2b2b;color:#fff;text-align:left;font-size: 15px;font-family: Titillium-Regular;letter-spacing: 2px;}
+.Collapsible__trigger{padding:20px 40px 18px 40px;display: block;border-bottom: 2px solid #efc22e;}
+.Collapsible__contentOuter{background: #fff;}
+.Collapsible__contentInner{line-height: 20px;color:#000;font-size: 12px;padding: 20px 40px;}
+.Collapsible__contentInner p{margin: 0px;}
+/*/accordion*/
+
+/*overriding bootstrap*/
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{outline:0}
+/*/overriding bootstrap*/
+
+/*animations*/
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+/*/animations*/
+
+/*responsiveness*/
+@media (min-width: 1600px){
+  .main-container .responsive{width:1500px;margin: auto;}
+  .header{width:1500px;left:inherit;}
+}
+
+@media (max-width: 1600px){
+  .main-container .responsive{width: 100%;}
+}
+@media (min-width: 1200px){
+  .container {width: 100%;}
+}
+@media (max-width: 1200px){
+  .container {width: 100%;}
+
+  /*home page features*/
+  .features{padding:80px 50px;}
+  .features .grid-title{font-size: 24px;}
+  /*/home page features*/
+
+  /*home page favorite*/
+  .favorites{padding:80px 50px;}
+  /*/home page favorite*/
+
+  /*home page grid section*/
+  .grid-section{padding:80px 50px;}
+  /*/home page grid section*/
+
+  /*home page testimonials*/
+  .testimonials{padding:80px 50px;}
+  /*/home page testimonials*/
+
+  /*home section join beta*/
+  .joinBeta {padding:80px 50px;}
+  /*home section join beta*/
+
+  /*team page*/
+  .team{padding:80px 50px;}
+  /*/team page*/
+
+  /*team page community*/
+  .community{padding:80px 50px;}
+  /*/team page community*/
+
+  /*faq catergories*/
+  .categories{padding:80px 50px;}
+  /*faq catergories*/
+
+  /*faq questions*/
+  .questions{padding:80px 50px;}
+  /*/faq questions*/
+}
+
+@media (max-width: 992px){
+
+  /*text styling overriding*/
+  .text-left{text-align: center;}
+  /*/text styling overriding*/
+
+  /*home page features*/
+  .features .column{margin-bottom: 40px;}
+  .features .row-one{margin-bottom: 0px;}
+  /*/home page features*/
+
+  /*home page favorite*/
+  .favorites .column{margin-bottom: 80px;}
+  .favorites .highlight{width: 100%;margin-top: 0px;}
+  /*home page favorite*/
+
+  /*home page grid section*/
+  .grid-section .grid-image{margin-top: 40px;}
+  .grid-section .grid-content{padding-top: 0px;}
+  /*/home page grid section*/
+
+  /*home section testimonials*/
+  .testimonials .subtitle{width: 100%;}
+  /*/home section testimonials*/
+
+  /*home section join beta*/
+  .joinBeta .title{width: 100%;}
+  /*home section join beta*/
+
+  /*website banners*/
+  .banner .content{width:80%;}
+  /*/website banners*/
+
+  /*team page*/
+  .team .member{margin-bottom: 40px;}
+  .policy .column{margin-bottom: 40px;}
+  /*/team page*/
+
+  /*team page community*/
+  .community .text-box{width:100%;}
+  /*/team page community*/
+
+  /*faq catergories*/
+  .categories .column{margin-bottom: 40px;}
+  /*/faq catergories*/
+
+  /*faq questions*/
+  .questions .accordion{width: 100%;}
+  /*/faq questions*/
+
+  /*contact*/
+  .contact .button{width: 60%;}
+  /*/contact*/
+
+  /*terms page*/
+  .terms{padding:50px 20px;text-align: left;}
+  /*/terms page*/
+}
+
+@media (max-width: 768px){
+
+  /*home page favorite*/
+  .favorites .column{padding:0px;}
+  /*home page favorite*/
+
+  /*home page grid section*/
+  .grid-section .grid-image{width:250px;margin-bottom: 40px;}
+  /*home page grid section*/
+
+  /*home page favorite*/
+  .favorites .grid-image{width: 250px;}
+  /*home page favorite*/
+
+  /*home page testimonials*/
+  .testimonials{padding:50px 10px;}
+  /*/home page testimonials*/
+
+  /*team page community*/
+  .community .social img{width:28px;}
+  /*/team page community*/
+
+  /*contact*/
+  .contact{padding: 50px 20px;;}
+  .contact .button{width: 80%;}
+  .contact .text-box{width: 100%;}
+  /*/contact*/
+
+  .make-application-modal .modal-content{padding:10px;padding-top: 60px;}
+  .make-application-modal button{width: inherit;}
+  .make-application-modal .close-modal{right:8px;}
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {border-color: #e7e7e7;background: #000;}
+}
+
+@media (min-width: 420px){
+}
+/*/responsiveness*/
+*{
+  outline:0 !important;
+}

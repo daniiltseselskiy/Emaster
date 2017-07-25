@@ -1,0 +1,10 @@
+.grid-section{background: #f2f2f2;padding:100px}
+.grid-section .grid-image{width:350px}
+.grid-section .grid-text{line-height: 24px;letter-spacing: 2px;}
+.grid-section .grid-content{padding-top:58px;}
+.visibleDiv {
+    opacity : 1 !important;
+}
+.hiddenDiv {
+    opacity: 0;
+}

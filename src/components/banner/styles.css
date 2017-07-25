@@ -1,0 +1,6 @@
+.banner {height:100vh;}
+.banner.background{background-image: url('./assets/banner.png');background-position: center;background-size: cover;background-repeat: no-repeat;}
+.content-center{justify-content: center;align-items: center;vertical-align: middle;text-align: center;display: flex;}
+.banner .content{width:60%}
+.banner .content .content-text{line-height:60px;letter-spacing: 10px;}
+.banner .content .description{width:70%;margin:30px auto;}

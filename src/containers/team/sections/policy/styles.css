@@ -1,0 +1,7 @@
+.policy {padding:100px;}
+.policy.background{background-image: url('./assets/yellow_bg.jpg');background-position: center;background-size: cover;background-repeat: no-repeat;}
+.policy .title{font-weight: bold;}
+.policy .content{margin-top: 80px;}
+.policy .grid-image{width:130px}
+.policy .row-one{margin-bottom: 60px;}
+.policy .policy-details{width:50%;margin: auto;letter-spacing: 2px;line-height: 30px;}

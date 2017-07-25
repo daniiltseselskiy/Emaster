@@ -1,0 +1,70 @@
+{
+  "termsPage.titlePart1": [
+    "Terms",
+    "Termos"
+  ],
+  "termsPage.titlePart2": [
+    "Of Use",
+    "de Uso"
+  ],
+  "termsPage.payment.title": [
+    "Payment",
+    "Forma de pagamento"
+  ],
+  "termsPage.payment.description": [
+    "Generally, we require payment only after the client has reviewed the files on our secured preview server and is fully satisfied with the results. After receiving the payment, we grant the client access to all source files by activating a “Download” button.",
+    "Geralmente, nós exigimos o pagamento somente depois que o cliente revisou os arquivos em nosso servidor de visualização seguro e está totalmente satisfeito com os resultados. Depois de receber o pagamento, nós concedemos o acesso do cliente a todos os arquivos de origem, ativando o botão ”Download”."
+  ],
+  "termsPage.methods.title": [
+    "Methods",
+    "Métodos"
+  ],
+  "termsPage.methods.description.part1": [
+    "htmlBoutique accepts various payment options listed as follows:",
+    "HtmlBoutique aceita várias opções de pagamento listadas da seguinte forma:"
+  ],
+  "termsPage.methods.description.part2": [
+    "Credit card. We accept VISA, MasterCard, American Express, Discover, JCB.",
+    "Cartão de crédito. Aceitamos VISA, MasterCard, American Express, Discover, JCB."
+  ],
+  "termsPage.methods.description.part3": [
+    "PayPal",
+    "PayPal"
+  ],
+  "termsPage.methods.description.part4": [
+    "Bank Wire Transfer",
+    "Transferencia bancária"
+  ],
+  "termsPage.methods.description.part5": [
+    "Upfront and partial payments",
+    "Pagamentos antecipados e parciais"
+  ],
+  "termsPage.methods.description.part6": [
+    "We do not require upfront payment. However, in certain cases, regarding projects coming from new clients and / or projects with an estimated price for a coding service higher than 400 USD, we may require payment corresponding to a certain volume of work done and approved by the client, and then proceed forward with the project.",
+    "Não exigimos pagamento antecipado. No entanto, em certos casos, no que diz respeito a projetos provenientes de novos clientes e / ou projetos com um preço estimado para um serviço de codificação superior a 400 USD, podemos exigir o pagamento correspondente a um determinado volume de trabalho realizado e aprovado pelo cliente e, em seguida, proceder Avançar com o projeto."
+  ],
+  "termsPage.refunds.title": [
+    "Refunds",
+    "Reembolsos"
+  ],
+  "termsPage.refunds.description": [
+    "If the client is not satisfied with the results and provides reasonable and legitimate grounds while the code is still being reviewed on our staging preview server, we will issue a refund.",
+    "Se o cliente não está satisfeito com os resultados e fornece motivos razoáveis ​​e legítimos enquanto o código ainda está sendo revisado em nosso servidor de pré-visualização de teste, nós emitiremos um reembolso."
+  ],
+  "termsPage.cancellation.title": [
+    "Cancellation of project",
+    "Cancelamento do projeto"
+  ],
+  "termsPage.cancellation.description.part1": [
+    "The client has the full right to cancel their order at any time. The following rules apply:",
+    "O cliente tem o direito total de cancelar seu pedido a qualquer momento. Aplicam-se as seguintes regras:"
+  ],
+  "termsPage.cancellation.description.part2": [
+    "The client is exempt from payment if they cancel their order before we start working on it",
+    "O cliente tem o direito total de cancelar seu pedido a qualquer momento. Aplicam-se as seguintes regras:"
+  ],
+  "termsPage.cancellation.description.part3": [
+    "In case the development has started, the client is obligated to make a payment corresponding to the volume of work • done prior to project cancellation.",
+    "Caso o desenvolvimento tenha começado, o cliente é obrigado a efetuar um pagamento correspondente ao volume de trabalho • feito antes do cancelamento do projeto."
+  ]
+}

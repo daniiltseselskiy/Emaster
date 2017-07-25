@@ -1,0 +1,15 @@
+.header {position: absolute;width:100%;left:0;border:0;border-radius:0;background: transparent;}
+.header .navbar-brand{height: inherit;}
+.header .logo{padding-top: 10px;display: inline-block;}
+.header .logo img{width: 220px;}
+.header .button{width:180px;border-width: 2.5px;padding: 3px;}
+.header .button:hover{border-width: 2.5px;}
+.header .button .brand-button-text{color: #fff;font-size: 16px;font-family: 'Titillium-Bold';font-weight: bold;}
+.header .social{width:18px;padding-top: 12px}
+.header .social.fb{width:8px}
+.header .social.youtube{width:20px;margin-top: 1px;}
+.header.navbar-default .navbar-nav>li>a{padding:12px;color:#fff;}
+.header.navbar-default .navbar-nav>li.text>a{padding-top: 25px}
+.header.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {color: #efc22e;background-color: transparent;}

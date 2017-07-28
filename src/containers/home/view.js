@@ -19,7 +19,7 @@ var view = function(){
 			<GridSection/>
 			<Features/>
 			<Favorites/>
-			<GridSectionRight/>
+			{/*<GridSectionRight/>*/}
 			<Testimonials openModal = {this.openModal.bind(this)}/>
 			<JoinBeta openModal = {this.openModal.bind(this)}/>
 			<Footer/>

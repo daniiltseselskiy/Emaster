@@ -12,7 +12,7 @@ var view = function(){
   				<p className="small-text titillium-regular letter-spacing-2 bold">{translate("faqPage.contact.description2")}</p>
   			</div>
   			<button className="brand-button button">
-  				<span className="brand-button-text">contato@emaster.com</span>
+  				<span className="brand-button-text">support@emasters.co</span>
   			</button>
       </div>
 		</div>

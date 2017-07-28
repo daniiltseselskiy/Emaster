@@ -16,7 +16,7 @@ var view = function(){
 							<p className="copyright">{translate("footer.copyright")}</p>
 						</Col>
 						<Col sm={12} md={4}>
-							<a className="brand-white" href="/terms">{translate("footer.terms")}</a>
+							{/*<a className="brand-white" href="/terms">{translate("footer.terms")}</a>*/}
 						</Col>
 					</Row>
 				</Grid>

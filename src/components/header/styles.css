@@ -1,4 +1,4 @@
-.header {position: absolute;width:100%;left:0;border:0;border-radius:0;background: transparent;}
+.header {position: absolute;width:100%;left:0;border:0;border-radius:0;background: transparent;padding-left: 80px;padding-right: 80px;}
 .header .navbar-brand{height: inherit;}
 .header .logo{padding-top: 10px;display: inline-block;}
 .header .logo img{width: 220px;}

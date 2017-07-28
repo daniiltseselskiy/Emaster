@@ -23,7 +23,7 @@ var view = function(){
 					<Nav pullRight>
 
                         {/*<NavItem eventKey={1} active = {this.isActive("/team")} href="/team" className="text">{translate("header.team")}</NavItem>*/}
-                        <NavItem eventKey={2} active = {this.isActive("/faq")} href="/faq" className="text">{translate("header.faq")}</NavItem>
+                        {/*<NavItem eventKey={2} active = {this.isActive("/faq")} href="/faq" className="text">{translate("header.faq")}</NavItem>*/}
 						<NavItem eventKey={3} href="#"><button onClick={()=>{this.props.openModal?this.props.openModal():null}} className="brand-button button"><span className="brand-button-text">{translate("header.signupBtn")}</span></button></NavItem>
 
 						<NavItem  target="_blank" href="https://www.facebook.com/emasters.co/"><img src={fb} alt="" className="social fb"/></NavItem>

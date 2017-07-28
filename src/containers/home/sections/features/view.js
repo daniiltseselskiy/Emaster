@@ -1,12 +1,13 @@
 import React from 'react';
 import {Grid,Row,Col} from 'react-bootstrap';
 import './styles.css';
-import investimento from './assets/investimento.png';
-import recompensa from './assets/recompensa.png';
-import sesguranca from './assets/sesguranca.png';
-import sistema from './assets/sistema.png';
+import invest from './assets/invest.png';
+import reward from './assets/reward.png';
+import security from './assets/security.png';
+import game from './assets/game.png';
 import evolucao from './assets/evolucao.png';
 import ScrollAnimation from 'react-animate-on-scroll';
+
 var className="";
 var view = function(){
     let {translate,elementIsInView} = this.props;
@@ -21,7 +22,7 @@ var view = function(){
   			<Grid className={"content hiddenDiv "+ className}>
   				<Row className="row-one">
   					<Col sm={12} md={4} className="column">
-  						<img src={investimento} alt="Investimento" className="grid-image"/>
+  						<img src={invest} alt="Invest" className="grid-image"/>
   						<p className="grid-title titillium-bold">{translate("features.item1Title")}</p>
   						<p className="grid-text titillium-regular">{translate("features.item1Description")}</p>
   					</Col>
@@ -31,19 +32,19 @@ var view = function(){
   						<p className="grid-text titillium-regular">{translate("features.item2Description")}</p>
   					</Col>
   					<Col sm={12} md={4} className="column">
-  						<img src={recompensa} alt="Recompensa" className="grid-image"/>
+  						<img src={reward} alt="Reward" className="grid-image"/>
   						<p className="grid-title titillium-bold">{translate("features.item3Title")}</p>
   						<p className="grid-text titillium-regular">{translate("features.item3Description")}</p>
   					</Col>
   				</Row>
   				<Row className="row">
   					<Col sm={12} md={4} className="column col-lg-offset-2 col-md-offset-2">
-  						<img src={recompensa} alt="Recompensa" className="grid-image"/>
+  						<img src={game} alt="Game" className="grid-image"/>
   						<p className="grid-title titillium-bold">{translate("features.item4Title")}</p>
   						<p className="grid-text titillium-regular">{translate("features.item4Description")}</p>
   					</Col>
   					<Col sm={12} md={4} className="column">
-  						<img src={sesguranca} alt="Sesguranca" className="grid-image"/>
+  						<img src={security} alt="Security" className="grid-image"/>
   						<p className="grid-title titillium-bold">{translate("features.item5Title")}</p>
   						<p className="grid-text titillium-regular">{translate("features.item5Description")}</p>
   					</Col>

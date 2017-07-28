@@ -14,10 +14,14 @@
     src: url('../fonts/TITILLIUM-REGULAR.OTF'); /*URL to font*/
 }
 
-
 @font-face {
     font-family: 'Titillium-Bold'; /*a name to be used later*/
     src: url('../fonts/TITILLIUM-BOLD.OTF'); /*URL to font*/
+}
+
+@font-face {
+  font-family: 'Helvetica-regular'; /*a name to be used later*/
+  src: url('../fonts/HELVETICANEUE-REGULAR.TTF'); /*URL to font*/
 }
 /*/fonts*/
 
@@ -30,6 +34,7 @@ button:focus{outline: 0;}
 /*text Styling*/
 .extra-super-large-text{font-size: 70px;}
 .extra-large-text{font-size: 55px;}
+.big-text{font-size: 34px;}
 .large-text{font-size: 25px;}
 .medium-text{font-size: 16px;}
 .small-text{font-size: 15px;}
@@ -39,6 +44,7 @@ button:focus{outline: 0;}
 .titillium-light{font-family: Titillium-Light;}
 .titillium-regular{font-family: Titillium-Regular;}
 .titillium-bold{font-family: Titillium-Bold;}
+.helvetica-regular{font-family: Helvetica-regular;}
 .letter-spacing{letter-spacing:10px}
 .letter-spacing-2{letter-spacing:2px}
 .bold{font-weight: bold;}

@@ -16,7 +16,7 @@
     "Obrigado!"
   ],
   "signupForm.title" : [
-    "Make my application",
+    "Sign me up",
     "Fazer minha inscrição"
   ],
   "signupForm.description" : [
@@ -48,16 +48,16 @@
     "Obrigado!"
   ],
   "banner.topText" : [
-    "Your Departure",
-    "A melhor comunidade de e-sports"
+    "Stop being stressed with Trolls and Cheaters",
+    "Pare de se estressar com Trolls e Cheaters"
   ],
   "banner.middleText" : [
-    "Seriously Taken",
-    "A melhor comunidade de e-sports"
+    "Play eSports Games for Prizes",
+    "Play eSports Games for Prizes"
   ],
   "banner.bottomText" : [
-    "Imagine playing in an exclusive environment, being part of a community made up of real players and still having a chance to make money while challenging other competitors in your favorite game",
-    "Jogue em um ambiente exclusivo e seguro, pare de se estressar com trolls e cheaters. Venha jogar com a gente."
+    "Play in a unique and secure environment, we control the game environment so you have a better experience. Come and play with us. Have fun.",
+    "Jogue em um ambiente exclusivo e seguro, controlamos o ambiente de jogo para que você tenha uma melhor experiência. Venha jogar com a gente. Divirta-se."
   ],
   "gridSection.title" : [
     "Conquer",
@@ -74,16 +74,16 @@
   ],
 
   "features.item1Title" : [
-    "Investment",
-    "Investimento"
+    "Professional",
+    "Profissional"
   ],
   "features.item1Description" : [
-    "Financial return upon winning the match.",
-    "Retorno financeiro ao vencer a partida."
+    "We will be your passport to professionalism.",
+    "Seremos o seu passaporte até o profissionalismo."
   ],
   "features.item2Title" : [
     "Evolution",
-    "Evoluca"
+    "Evolução"
   ],
   "features.item2Description" : [
     "Reward system with custom badges and frames.",
@@ -98,20 +98,20 @@
     "eMasters Coins podem ser trocadas por prêmios."
   ],
   "features.item4Title" : [
-    "Reward",
-    "Recompensa"
+    "Games",
+    "Jogos"
   ],
   "features.item4Description" : [
     "All your favorite games will be integrated into eMasters in the future.",
     "Todos os seus jogos favoritos serão integrados ao eMasters no futuro."
   ],
   "features.item5Title" : [
-    "Insurance",
-    "Sesguranca"
+    "Safety",
+    "Segurança"
   ],
   "features.item5Description" : [
-    "With exclusive fraud prevention technology.",
-    "Com exclusiva tecnologia de prevenção contra fraude."
+    "With exclusive technology to prevent fraud and misbehavior.",
+    "Com exclusiva tecnologia de prevenção contra fraude e mau comportamento."
   ],
   "favorites.title" : [
     "Favorite Games",
@@ -123,7 +123,7 @@
   ],
   "favorites.game1Description" : [
     "Success, with more than 100 million active monthly users, League of Legends is the leading MOBA of today.",
-    "Sucesso, com mais de 100 milhõesde usuários ativos mensais, Leagueof Legends é o principal MOBAda atualidade."
+    "Sucesso, com mais de 100 milhões de usuários ativos mensais, Leagueof Legends é o principal MOBA da atualidade."
   ],
   "favorites.game2Title" : [
     "Dota 2",
@@ -131,7 +131,7 @@
   ],
   "favorites.game2Description" : [
     "A classic within the eSport worldwide, Dota 2 popularized the genre and professionalized the competitive landscape.",
-    "Um clássico dentro do eSport mundial, Dota 2 popularizouo gênero e profissionalizouo cenário competitivo."
+    "Um clássico dentro do eSport mundial, Dota 2 popularizou o gênero e profissionalizou o cenário competitivo."
   ],
   "favorites.footerTitle" : [
     "And this is just the beginning!",
@@ -174,8 +174,8 @@
     "Nossa principal proposta é reunir um grupo seleto de jogadores no Brasil e no mundo. Queremos que você jogue, treine e evolua com os melhores. Este é nosso objetivo, nossa missão! Por isso, sua opinião é muito importante para a plataforma progredir e sempre atender suas necessidades."
   ],
   "testimonial.item1Description" : [
-    "”My parents beat me every time I played. Now that I'm an eSport mogul, they're proud of me. Obriagado eMasters ”.",
-    "“Meus pais me batiam toda a vez que eu jogava. Agora que sou um magnata do eSport, eles têm orgulho de mim. Obriagado eMasters”."
+    "”Finally I can play LoL without be stressed with disinterested people in winning the match. Thank you eMasters”.",
+    "“Finalmente consigo jogar LoL sem me estressar com pessoas desinteressadas em ganhar a partida. Obrigado eMasters”."
   ],
   "testimonial.item1Fullname" : [
     "Anderson Russo",
@@ -186,20 +186,20 @@
     "@cage"
   ],
   "testimonial.item2Description" : [
-    "“EMaster is sensational. I play with nice guys and I even made money to go out on the weekend with friends. Thanks“.",
-    "“eMaster é sensacional. Eu jogo com um pessoal bacana e ainda ganhei dinheiro para sair no final de semana com os amigos. Valeu”."
+    "“eMaster is awesome. I play with nice guys and I'm really expecting for new games to come. Thanks“.",
+    "“eMaster é sensacional. Eu jogo com um pessoal bacana e estou torcendo muito para que novos games sejam integrados. Valeu”."
   ],
   "testimonial.item2Fullname" : [
     "Gabriel Ribeiro",
     "Gabriel Ribeiro"
   ],
   "testimonial.item2Username" : [
-    "@alphageek",
-    "@alphageek"
+    "@gabrielgeek007",
+    "@gabrielgeek007"
   ],
   "testimonial.item3Description" : [
-    "“I am from the interior and my dream has always been to go to the big city. When I met eMasters and got enough playing, I was able to buy my ticket to São Paulo“.",
-    "“Eu sou do interior e meu sonho sempre foi ir para a cidade grande. Quando conheci o eMasters e ganhei o suficiente jogando, consegui comprar minha passagem para São Paulo”."
+    "“I want to become a professional and here I find a lot of beating playing, so much evolving my game“.",
+    "“Quero me tornar um profissional e aqui eu encontro muita fera jogando, to evoluindo muito meu jogo”."
   ],
   "testimonial.item3Fullname" : [
     "Fernando Giovanetti",
@@ -229,9 +229,13 @@
     "Sign Up",
     "Inscreva-se"
   ],
+  "twitter.seeMore" : [
+    "View More Testimonials",
+    "Veja Mais Depoimentos"
+  ],
   "footer.copyright" : [
-    "@Copyright and any other legal.",
-    "@Copyright e qualquer outro legal."
+    "@Copyright 2017.",
+    "@Copyright 2017."
   ],
 
   "footer.terms" : [

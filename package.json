@@ -17,6 +17,7 @@
     "react-redux": "5.0.5",
     "react-router-dom": "4.1.1",
     "react-router-redux": "next",
+    "react-router-sitemap": "^1.1.1",
     "react-scripts": "1.0.10",
     "redux": "3.7.1",
     "redux-promise": "0.5.3",

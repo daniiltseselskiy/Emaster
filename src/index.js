@@ -9,16 +9,16 @@ import './styles';
 // Development Related Configuration
 registerServiceWorker();
 //Target for rendering the app
-const target = document.querySelector('#root')
-
-//Render the app
-render(
-    <Provider store={store}>
-        <ConnectedRouter history={history}>
-            <div>
-                <App />
-            </div>
-        </ConnectedRouter>
-    </Provider>,
-    target
-)
+// const target = document.querySelector('#root')
+//
+// //Render the app
+// render(
+//     <Provider store={store}>
+//         <ConnectedRouter history={history}>
+//             <div>
+//                 <App />
+//             </div>
+//         </ConnectedRouter>
+//     </Provider>,
+//     target
+// )

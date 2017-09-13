@@ -12,7 +12,6 @@ var view = function(){
 		<div className="App animated fadeIn">
 			<main>
 				<Route exact path="/" component={Home} />
-
 				<Route exact path="/team" component={Team} />
 				<Route exact path="/faq" component={FAQ} />
 				<Route exact path="/terms" component={Terms} />

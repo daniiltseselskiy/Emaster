@@ -1,4 +1,5 @@
 .modal-backdrop{background-color: rgb(255,255,255)!important;opacity: 0.8 !important}
+.make-application-modal {margin-top:12.5rem;}
 .make-application-modal .modal-content{background: #f2f2f2;padding:40px;padding-top: 60px;}
 .make-application-modal .control-label{font-weight: bold;}
 .make-application-modal .title{font-size: 32px;margin-bottom: 20px;}
@@ -12,3 +13,4 @@
 .make-application-modal .has-success .form-control{border-color: #3c763d;}
 .make-application-modal .has-warning .form-control{border-color: #8a6d3b;}
 .make-application-modal .has-error .form-control{border-color: #a94442;}
+.fade.in{opacity: 1;}

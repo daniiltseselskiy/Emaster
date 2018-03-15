@@ -4,6 +4,7 @@
 .header .logo img{width: 220px;}
 .header .button{width:180px;border-width: 2.5px;padding: 3px;}
 .header .button:hover{border-width: 2.5px;}
+.navbar-nav{flex-direction:inherit;-ms-flex-direction:inherit;}
 .header .button .brand-button-text{color: #fff;font-size: 16px;font-family: 'Titillium-Bold';font-weight: bold;}
 .header .social{width:18px;padding-top: 12px}
 .header .social.fb{width:8px}

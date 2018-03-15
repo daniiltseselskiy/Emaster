@@ -23,7 +23,7 @@ var view = function(){
 
 						<Form horizontal onSubmit={this.save.bind(this)}>
 							<FormGroup controlId="formHorizontalEmail" validationState={this.getValidationState("name")}>
-								<Col componentClass={ControlLabel} sm={2}>
+								<Col componentClass={ControlLabel} sm={6}>
 									<span className="titillium-bold">{translate('signupForm.name')}</span>
 								</Col>
 								<Col sm={9}>
@@ -32,7 +32,7 @@ var view = function(){
 								</Col>
 							</FormGroup>
 							<FormGroup controlId="formHorizontalPassword" validationState={this.getValidationState("email")}>
-								<Col componentClass={ControlLabel} sm={2}>
+								<Col componentClass={ControlLabel} sm={6}>
 									<span className="titillium-bold">{translate('signupForm.email')}</span>
 								</Col>
 								<Col sm={9}>

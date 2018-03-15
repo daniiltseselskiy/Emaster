@@ -13,3 +13,4 @@
 .header.navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {color: #efc22e;background-color: transparent;}
+.headerButton {color: #fff;margin-left: 10px;margin-right: 10px;text-decoration: none!important; -webkit-box-shadow: none!important; box-shadow: none!important;}

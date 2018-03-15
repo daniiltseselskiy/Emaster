@@ -17,6 +17,7 @@ var view = function(){
 					<Navbar.Brand>
 						<a className="logo" href="/"><img src={logo} alt="logo"/></a>
 					</Navbar.Brand>
+					<a className="headerButton" href="/download">{translate("header.download")}</a>
 					<Navbar.Toggle />
 				</Navbar.Header>
 				<Navbar.Collapse>

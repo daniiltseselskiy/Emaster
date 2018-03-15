@@ -3,6 +3,22 @@
     "Our Team",
     "Nossa Equipe"
   ],
+  "header.download": [
+    "Download",
+    "Baixar"
+  ],
+  "download.button":[
+    "Get eMasters for",
+    "Get eMasters for"
+  ],
+  "download.notAvailable":[
+    "Sorry the download is only <br/> available for desktop devices",
+    "Sorry the download is only <br/> available for desktop devices"
+  ],
+  "download.downloadText":[
+    "Download",
+    "Download"
+  ],
   "header.faq" : [
     "FAQ",
     "FAQ"

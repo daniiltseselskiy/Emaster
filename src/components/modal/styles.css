@@ -14,3 +14,11 @@
 .make-application-modal .has-warning .form-control{border-color: #8a6d3b;}
 .make-application-modal .has-error .form-control{border-color: #a94442;}
 .fade.in{opacity: 1;}
+@media (min-width: 481px) and (max-width: 767px) {
+	.navRight{margin-top: 20px;margin-left:20px;text-align: center;}
+	.social{margin-left: 8px}
+}
+@media (min-width: 320px) and (max-width: 480px) {
+	.navRight{margin-top: 20px;margin-left:20px;text-align: center;}
+	.social{margin-left: 8px}
+}

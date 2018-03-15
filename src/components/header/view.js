@@ -19,7 +19,7 @@ var view = function(){
 					</Navbar.Brand>
 					<a className="headerButton" href="/download">{translate("header.download")}</a>
 				</Navbar.Header>
-				<Nav pullRight>
+				<Nav pullRight className="navRight">
                     <NavItem href="#"><button onClick={()=>{this.props.openModal?this.props.openModal():null}} className="brand-button button"><span className="brand-button-text">{translate("header.signupBtn")}</span></button></NavItem>
 					<NavItem target="_blank" href="https://www.facebook.com/emastersapp/"><img src={fb} alt="" className="social fb"/></NavItem>
 					<NavItem target="_blank" href="https://www.instagram.com/emastersapp/"><img src={tw} alt="" className="social"/></NavItem>

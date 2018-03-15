@@ -16,9 +16,9 @@
 .fade.in{opacity: 1;}
 @media (min-width: 481px) and (max-width: 767px) {
 	.navRight{margin-top: 20px;margin-left:20px;text-align: center;}
-	.social{margin-left: 8px}
+	.social{margin-left: 10px}
 }
 @media (min-width: 320px) and (max-width: 480px) {
 	.navRight{margin-top: 20px;margin-left:20px;text-align: center;}
-	.social{margin-left: 8px}
+	.social{margin-left: 10px}
 }

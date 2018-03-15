@@ -39,7 +39,7 @@ var view = function(){
           
           </div>
   				<div className="col-md-6">
-            <img src={downloadBanner} className="responsive animated bounce" />
+            <img src={downloadBanner} className="responsive animated bounce downloadImg" />
           </div>
   			</div>
       </div>

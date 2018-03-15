@@ -14,6 +14,7 @@
 .make-application-modal .has-warning .form-control{border-color: #8a6d3b;}
 .make-application-modal .has-error .form-control{border-color: #a94442;}
 .fade.in{opacity: 1;}
+.downloadImg{max-width: 550px}
 @media (min-width: 481px) and (max-width: 767px) {
 	.navRight{margin-top: 20px;margin-left:20px;text-align: center;}
 	.social{margin-left: 10px}

@@ -10,9 +10,9 @@ var view = function(){
   
   let href = ""
   if(device.toLowerCase().indexOf('mac')>-1){
-    href = "http://files.emasters.com.br/downloads/beta/eMasters.dmg"
+    href = "http://files.emasters.com.br/downloads/eMasters.dmg"
   }else if(device.toLowerCase().indexOf('windows')>-1){
-    href = "http://files.emasters.com.br/downloads/beta/eMasters.exe"
+    href = "http://files.emasters.com.br/downloads/eMasters.exe"
   }else{
     href = ""
   }

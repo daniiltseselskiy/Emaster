@@ -15,7 +15,7 @@ export function register(data){
       headers: {
           "Content-Type": "application/json",
           "Accept": "application/json",
-          "X-Api-Key": "kPxXeiN5ON7VPIzuY0tjE5dFzpLkq4rJ1ff7VIsF"
+          "X-Api-Key": "2n0xxJhh3J7TPf0nnaA79abj2PnyAKdi3ceYuguE"
       }
   }
 

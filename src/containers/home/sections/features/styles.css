@@ -1,9 +1,0 @@
-.features {padding:100px;}
-.features.background{background-image: url('./assets/yellow_bg.jpg');background-position: center;background-size: cover;background-repeat: no-repeat;}
-.features .title{font-weight: bold;}
-.features .content{margin-top: 80px;}
-.features .grid-image{width:130px}
-.features .grid-title{font-size: 34px;letter-spacing: 4px;margin-top: 20px;margin-bottom: 0px;}
-.features .grid-text{line-height: 24px;letter-spacing: 2px;font-size:15px;}
-.features .row-one{margin-bottom: 60px;}
-.features .column{padding: 0px 40px;}

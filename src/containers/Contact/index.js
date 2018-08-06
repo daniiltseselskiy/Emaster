@@ -3,10 +3,10 @@ import { connect } from 'react-redux'
 
 import { 
  
- } from '../../actions/homepage';
+ } from '../../actions/contact';
 
  
-class HomeContainer extends Component {
+class ContactContainer extends Component {
     constructor (props) {
         super(props)
 
@@ -40,4 +40,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(HomeContainer);
+)(ContactContainer);

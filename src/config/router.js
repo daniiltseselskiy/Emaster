@@ -6,6 +6,14 @@ import {
 import Headers from '../containers/Headers';
 import Footers from '../containers/Footers';
 import Homepage from '../containers/Homepage';
+import Features from '../containers/Features';
+import About from '../containers/About';
+import Partners from '../containers/Partners';
+import Help from '../containers/Help'
+import Forums from '../containers/Forums';
+import Contact from '../containers/Contact';
+import Careers from '../containers/Careers';
+import Download from '../containers/Download';
 
 class RouterComponent extends Component {
     render () {
@@ -14,8 +22,16 @@ class RouterComponent extends Component {
                 <Headers />
                 <Switch>
                     <Route path="/" component={Homepage} />
+                    <Route path="/features" component={Features} />
+                    <Route path="/about" component={About} />
+                    <Route path="/partners" component={Partners} />
+                    <Route path="/help" component={Help} />
+                    <Route path="/forums" component={Forums} />
+                    <Route path="/contact" component={Contact} />
+                    <Route path="/careers" component={Careers} />
+                    <Route path="/download" component={Download} />
                 </Switch>
-                {/* <Footers /> */}
+                <Footers />
             </div>
         )
     }

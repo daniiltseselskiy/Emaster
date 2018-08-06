@@ -8,6 +8,7 @@
     "lodash": "^4.17.10",
     "rc-progress": "^2.2.5",
     "react": "^16.4.1",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "^16.4.1",
     "react-dropdown": "^1.5.0",
     "react-hot-loader": "^4.3.3",

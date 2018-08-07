@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from '../../components/Footer'
 
 class FooterContainer extends Component {
     constructor (props) {
@@ -7,8 +8,8 @@ class FooterContainer extends Component {
 
     render () {
         return (
-            <div className="footer-container">
-                This is header container!
+            <div className="">
+                <Footer />
             </div>
         )
     }

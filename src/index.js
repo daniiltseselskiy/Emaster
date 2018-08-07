@@ -5,6 +5,7 @@ import store from './store';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import { AppContainer } from 'react-hot-loader';

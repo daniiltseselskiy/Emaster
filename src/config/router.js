@@ -15,10 +15,13 @@ import Contact from '../containers/Contact';
 import Careers from '../containers/Careers';
 import Download from '../containers/Download';
 
+const style = { 
+    height: '100vh', display: 'flex' , flexDirection: 'column'
+}
 class RouterComponent extends Component {
     render () {
         return (
-            <div style={{ height: '100vh', display: 'flex' }}>
+            <div style={style}>
                 <Headers />
                 <Switch>
                     <Route path="/" component={Homepage} />

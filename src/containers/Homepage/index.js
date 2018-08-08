@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import HomePage from '../../components/Homepage'
 
 import { 
  
  } from '../../actions/homepage';
 
- 
+
+
+
 class HomeContainer extends Component {
     constructor (props) {
         super(props)
@@ -18,7 +21,7 @@ class HomeContainer extends Component {
     render () {
         return (
             <div className="">
-                
+                <HomePage />
             </div>
         )
     }

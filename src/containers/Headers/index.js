@@ -8,7 +8,7 @@ class HeaderContainer extends Component {
 
     render () {
         return (
-            <div className="" style={{width: '100%'}}>
+            <div>
                 <Header />
             </div>
         )

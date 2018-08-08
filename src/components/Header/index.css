@@ -1,0 +1,11 @@
+.header-container {
+
+}
+
+.header-container nav {
+    margin-bottom: 0;
+}
+
+.header-container nav .collapse {
+    justify-content: center
+}

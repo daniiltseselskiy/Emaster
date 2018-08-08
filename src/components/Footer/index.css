@@ -1,0 +1,65 @@
+.footer-container {
+    display: flex;
+    height: 45vh;
+    background-color: #fff000;
+ 
+}
+/* Left Footer  */
+.footer-container .left-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    background-color: aqua;
+}
+
+.footer-container .left-footer .social-mark {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* Right Footer */
+.footer-container .right-footer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: bisque;
+}
+
+.footer-container .right-footer .top-right-footer {
+    height: 70%;
+    display: flex;
+    background-color: #000000;
+}
+
+.footer-container .right-footer .top-right-footer .link-area {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.footer-container .right-footer .top-right-footer .link-area .link-area-label {
+    width: 30%;
+}
+
+.footer-container .right-footer .top-right-footer .link-area .link-area-company {
+
+}
+
+.footer-container .right-footer .top-right-footer .mail-area {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.footer-container .right-footer .bottom-right-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30%;
+    background-color: #ffffff;
+}

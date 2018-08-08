@@ -2,6 +2,7 @@ import React , { Component } from 'react'
 import './index.css'
 //ReactStrap
 import {
+    Button,
     Collapse,
     Navbar,
     NavbarToggler,
@@ -36,7 +37,7 @@ class Header extends Component {
               <NavbarBrand href="/">reactstrap</NavbarBrand>
               <NavbarToggler onClick={this.toggle} />
               <Collapse isOpen={this.state.isOpen} navbar>
-                <Nav className="ml-auto" navbar>
+                <Nav className="" navbar>
                   <NavItem>
                     <NavLink href="/">Home</NavLink>
                   </NavItem>
@@ -55,7 +56,11 @@ class Header extends Component {
                   <NavItem>
                     <NavLink href="/forums">Forums</NavLink>
                   </NavItem>
-                  <UncontrolledDropdown nav inNavbar>
+                  
+                </Nav>
+              </Collapse>
+              <Button>Download</Button>
+              <UncontrolledDropdown>
                     <DropdownToggle nav caret>
                       Lan-EN
                     </DropdownToggle>
@@ -71,8 +76,6 @@ class Header extends Component {
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
-                </Nav>
-              </Collapse>
             </Navbar>
           </div>
         );

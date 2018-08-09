@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-
+import Partners from '../../screens/Partners'
 import { 
  
  } from '../../actions/partners';
@@ -18,7 +18,7 @@ class PartnersContainer extends Component {
     render () {
         return (
             <div className="">
-                
+                <Partners />
             </div>
         )
     }

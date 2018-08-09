@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-
+import Features from '../../screens/Features'
 import { 
  
  } from '../../actions/features';
@@ -18,7 +18,7 @@ class FeaturesContainer extends Component {
     render () {
         return (
             <div className="">
-                
+                <Features />
             </div>
         )
     }

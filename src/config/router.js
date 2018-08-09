@@ -24,7 +24,6 @@ class RouterComponent extends Component {
             <div style={style}>
                 <Headers />
                 <Switch>
-                    <Route path="/" component={Homepage} />
                     <Route path="/features" component={Features} />
                     <Route path="/about" component={About} />
                     <Route path="/partners" component={Partners} />
@@ -33,6 +32,7 @@ class RouterComponent extends Component {
                     <Route path="/contact" component={Contact} />
                     <Route path="/careers" component={Careers} />
                     <Route path="/download" component={Download} />
+                    <Route path="/" component={Homepage} />
                 </Switch>
                 <Footers />
             </div>

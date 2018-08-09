@@ -1,0 +1,23 @@
+.about-container {
+
+}
+
+.about-container .meet-team-container {
+    position: relative;
+}
+
+.about-container .meet-team-container .meet-team-content {
+    display: flex;
+}
+
+.about-container .meet-team-container .meet-team-content .left-team-content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.about-container .meet-team-container .meet-team-content .right-team-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}

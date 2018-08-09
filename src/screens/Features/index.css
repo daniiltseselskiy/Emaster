@@ -1,0 +1,21 @@
+.features-container {
+
+}
+
+/* Tournament Image and Text  */
+
+.features-container .tournaments-leagues-container {
+    display: flex;
+}
+
+.features-container .tournaments-leagues-container .image-content {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.features-container .tournaments-leagues-container .title-content {
+    display:  flex;
+    flex-direction: column;
+    width: 50%;
+}

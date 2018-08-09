@@ -41,50 +41,8 @@
     bottom: 10%;
     color: wheat;
 }
-/* Game Support */
-.home-container .game-support-container {
-    display: flex;
-    position: relative;
-    height: 50vh;
-}
 
-.home-container .game-support-container .support-textarea, .why-us-container .support-textarea {
-    display: flex;
-    width: 40%;
-    flex-direction: column;
-    background-color: blueviolet;
-}
 
-.home-container .game-support-container .game-support-addgame {
-    width: 60%;
-    height: 100%;
-    background-color: yellow;
-}
-.home-container .game-support-container .game-panel {
-    position: absolute;
-    width: 70%;
-    height: 70%;
-    right: 0;
-    margin: 5% 0 auto auto;
-    background-color: blue;
-}
-/* Why Us  */
-.home-container .why-us-container {
-    display: flex;
-}
-.home-container .why-us-container .support-componentarea, .support-component-container .support-componentarea {
-    display: flex;
-    width: 60%;
-}
-/* Support Component */
-.home-container .support-component-container {
-    display: flex;
-}
-.home-container .support-component-container .left-componentarea {
-    display: flex;
-    justify-content: flex-end;
-    width: 40%;
-}
 /* Working Us */
 .home-container .working-us-container {
     display: flex;
@@ -98,12 +56,3 @@
     background-color: blueviolet;
 }
 
-/* Join Compotition */
-.home-container .join-competition-container {
-    display: flex;
-}
-
-.home-container .join-competition-container .competition-textarea {
-    display: flex;
-    flex-direction: column;
-}

@@ -1,5 +1,8 @@
 import React , { Component } from 'react'
-import FeatureComponent from '../../components/FeatureComponent'
+import Benefits from '../../components/Benefits'
+import GameSupport from '../../components/GameSupport'
+import JoinCompetition from '../../components/JoinCompetition'
+
 import './index.css'
 import {
     Label,
@@ -49,36 +52,8 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="game-support-container">
-                    <div className="support-textarea">
-                        <Label>- More coming soon</Label>
-                        <Label>Games We support</Label>
-                    </div>
-                    <div className="game-support-addgame">
-                        
-                    </div>
-                    <div className="game-panel">
-                    </div>
-                </div>
-                <div className="why-us-container">
-                    <div className="support-textarea">
-                        <Label>- Why Us</Label>
-                        <Label>Our Benefits & Advantage</Label>
-                    </div>
-                    <div className="support-componentarea">
-                        <FeatureComponent Label="SafeSecure" Content="LoremIpsume" />
-                        <FeatureComponent Label="SafeSecure" Content="LoremIpsume" />
-                    </div>
-                </div>
-                <div className="support-component-container">
-                    <div className="left-componentarea">
-                        <FeatureComponent Label="SafeSecure" Content="LoremIpsume" />
-                    </div>
-                    <div className="support-componentarea">
-                        <FeatureComponent Label="SafeSecure" Content="LoremIpsume" />
-                        <FeatureComponent Label="SafeSecure" Content="LoremIpsume" />
-                    </div>
-                </div>
+                <GameSupport />
+                <Benefits />
                 <div className="working-us-container">
                     <div className="support-textarea">
                         <Label>- Working With Us</Label>
@@ -86,13 +61,7 @@ class Home extends Component {
                         <Label>See All</Label>
                     </div>
                 </div>
-                <div className="join-competition-container">
-                    <div className="competition-textarea">
-                        <Label>Join the Competition</Label>
-                        <Label>LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume</Label>
-                    </div>
-                    <img alt="Download Button" />
-                </div>
+                <JoinCompetition />
             </div>
         )
     }

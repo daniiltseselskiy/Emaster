@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-
+import About from '../../screens/About'
 import { 
  
  } from '../../actions/about';
+import { isMoment } from '../../../node_modules/moment';
 
  
 class AboutContainer extends Component {
@@ -18,7 +19,7 @@ class AboutContainer extends Component {
     render () {
         return (
             <div className="">
-                
+                <About />
             </div>
         )
     }

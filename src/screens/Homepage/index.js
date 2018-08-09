@@ -1,5 +1,5 @@
 import React , { Component } from 'react'
-import FeatureComponent from './FeatureComponent'
+import FeatureComponent from '../../components/FeatureComponent'
 import './index.css'
 import {
     Label,

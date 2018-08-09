@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../../components/Header';
+import Header from '../../screens/Header';
 
 class HeaderContainer extends Component {
     constructor (props) {

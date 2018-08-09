@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import HomePage from '../../components/Homepage'
+import HomePage from '../../screens/Homepage'
 
 import { 
  

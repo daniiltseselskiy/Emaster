@@ -1,0 +1,14 @@
+.team-card-container {
+    display: flex;
+    
+}
+
+.team-card-container .image-content {
+    width: 40%;
+}
+
+.team-card-container .resume-content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}

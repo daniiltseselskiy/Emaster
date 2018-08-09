@@ -1,0 +1,23 @@
+/* Benefits  */
+.benefits-container .start-component-container {
+    display: flex;
+}
+.benefits-container .start-component-container .support-componentarea, .support-component-container .support-componentarea {
+    display: flex;
+    width: 60%;
+}
+.benefits-container .start-component-container .support-textarea {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    background-color: blueviolet;
+}
+/* Support Component */
+.benefits-container .support-component-container {
+    display: flex;
+}
+.benefits-container .support-component-container .left-componentarea {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}

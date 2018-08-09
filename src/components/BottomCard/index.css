@@ -1,0 +1,11 @@
+.bottom-card-container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 20vw;
+    height: 20vh;
+    background-color: yellow;
+    /* Position  */
+    bottom: -10vh;
+    right: 10vw;
+}

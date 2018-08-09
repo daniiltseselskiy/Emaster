@@ -1,0 +1,9 @@
+/* Join Compotition */
+.join-competition-container {
+    display: flex;
+}
+
+.join-competition-container .competition-textarea {
+    display: flex;
+    flex-direction: column;
+}

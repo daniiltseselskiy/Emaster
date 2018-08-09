@@ -1,0 +1,27 @@
+/* Game Support */
+.game-support-container {
+    display: flex;
+    position: relative;
+    height: 50vh;
+}
+
+.game-support-container .support-textarea {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    background-color: blueviolet;
+}
+
+.game-support-container .game-support-addgame {
+    width: 60%;
+    height: 100%;
+    background-color: yellow;
+}
+.game-support-container .game-panel {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    right: 0;
+    margin: 5% 0 auto auto;
+    background-color: blue;
+}

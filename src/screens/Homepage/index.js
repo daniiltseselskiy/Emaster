@@ -2,10 +2,11 @@ import React , { Component } from 'react'
 import Benefits from '../../components/Benefits'
 import GameSupport from '../../components/GameSupport'
 import JoinCompetition from '../../components/JoinCompetition'
-
+import CButton from '../../components/CButton'
 import './index.css'
 import {
     Label,
+    Button
 } from 'reactstrap'
 import ReactPlayer from 'react-player'
 import { Player } from 'video-react';
@@ -23,7 +24,8 @@ class Home extends Component {
                         <Label>Play. Improve. Win!</Label>
                         <div className="join-button-area">
                             <img alt="Features"/>
-                            <img alt="Download"/>
+                            {/* <img alt="Download"/> */}
+                            <CButton Title="Download"/>
                         </div>
                     </div>
                     <div className="join-social">

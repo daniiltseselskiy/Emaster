@@ -1,0 +1,19 @@
+.cbutton-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16vh;
+    height: 4vh;
+    border: 1px solid white;
+    border-radius: 3vh;
+    background-color: transparent;
+}
+
+.cbutton-container:hover {
+    border-color: yellow;
+    cursor: pointer;
+}
+
+.cbutton-container label {
+    color: white
+}

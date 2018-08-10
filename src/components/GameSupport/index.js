@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Gallery from '../../components/Gallery'
 import './index.css'
 import {
     Label
@@ -16,6 +17,7 @@ class GameSupport extends Component {
                     
                 </div>
                 <div className="game-panel">
+                    <Gallery />
                 </div>
             </div>
         )

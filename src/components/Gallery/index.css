@@ -1,0 +1,11 @@
+.alice-carousel {
+    padding: 0;
+    height: 100%;
+}
+
+.alice-carousel > div {
+    height: 100%;
+}
+.alice-carousel .alice-carousel__wrapper {
+    height: 100%;
+}

@@ -1,0 +1,23 @@
+.download-container {
+
+}
+
+.download-container .machine-version {
+   
+
+}
+
+.download-container .feature-help {
+    display: flex;
+    justify-content: center;
+}
+
+.download-container .feature-help .feature-content {
+    display: flex;
+    align-items: center;
+}
+
+.download-container .feature-help .feature-content .text-content-f {
+    display: flex;
+    flex-direction: column;
+}

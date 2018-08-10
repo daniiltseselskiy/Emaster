@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
 import './index.css'
+import {
+    Label
+} from 'reactstrap'
 
 class FeatureComponent extends Component {
     render () {
-        const { Image, Label, Content} = this.props
+        const { Image, Title, Content} = this.props
         return (
             <div className="feature-component">
                 <img src={Image} alt="Image"/>
-                <Label>{Label}</Label>
+                <Label>{Title}</Label>
                 <Label>{Content}</Label>
             </div>
         )

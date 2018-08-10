@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-
+import Download from '../../screens/Download'
 import { 
  
  } from '../../actions/download';
@@ -18,7 +18,7 @@ class DownloadContainer extends Component {
     render () {
         return (
             <div className="">
-                
+                <Download />
             </div>
         )
     }

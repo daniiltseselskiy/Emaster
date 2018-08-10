@@ -15,17 +15,17 @@ class Benefits extends Component {
                         <Label>Our Benefits & Advantage</Label>
                     </div>
                     <div className="support-componentarea">
-                        <FeatureComponent Label="SafeSecure" Content="LoremIpsume" />
-                        <FeatureComponent Label="SafeSecure" Content="LoremIpsume" />
+                        <FeatureComponent Title="SafeSecure" Content="LoremIpsume" />
+                        <FeatureComponent Title="SafeSecure" Content="LoremIpsume" />
                     </div>
                 </div>
                 <div className="support-component-container">
                     <div className="left-componentarea">
-                        <FeatureComponent Label="SafeSecure" Content="LoremIpsume" />
+                        <FeatureComponent Title="SafeSecure" Content="LoremIpsume" />
                     </div>
                     <div className="support-componentarea">
-                        <FeatureComponent Label="SafeSecure" Content="LoremIpsume" />
-                        <FeatureComponent Label="SafeSecure" Content="LoremIpsume" />
+                        <FeatureComponent Title="SafeSecure" Content="LoremIpsume" />
+                        <FeatureComponent Title="SafeSecure" Content="LoremIpsume" />
                     </div>
                 </div>
             </div>

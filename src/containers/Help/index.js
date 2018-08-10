@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-
+import Help from '../../screens/Help'
 import { 
  
  } from '../../actions/help';
@@ -18,7 +18,7 @@ class HelpContainer extends Component {
     render () {
         return (
             <div className="">
-                
+                <Help />
             </div>
         )
     }

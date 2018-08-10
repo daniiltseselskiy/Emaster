@@ -11,6 +11,7 @@ import FacebookIcon from '../../assets/images/footer/facebook-icon.png'
 
 class Footer extends Component {
     render () {
+        console.log("*************************", navigator.platform)
         return (
             <div className="footer-container">
                 <div className="left-footer">
@@ -34,7 +35,7 @@ class Footer extends Component {
                             <div className="link-area-label">
                                 <Link to="/help"><p>Help</p></Link>
                                 <Link to="/forums"><p>Forums</p></Link>
-                                <Link to="/careers"><p>Careers</p></Link>
+                                <a href="https://angel.co/emasters/jobs" target="blank"><p>Careers</p></a>
                             </div>
                             <div className="link-area-company">
                                 <h1>eMasters</h1>

@@ -16,6 +16,10 @@
     width: 60%;
 }
 
+.about-container .meet-team-container .meet-team-content .left-team-content .team-member-card {
+    height: 60vh;
+}
+
 .about-container .meet-team-container .meet-team-content .right-team-content {
     display: flex;
     flex-direction: column;

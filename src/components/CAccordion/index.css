@@ -1,0 +1,8 @@
+.accordion .accordion__item .accordion__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion .accordion__item .accordion__title:focus {
+    outline: none; 
+}

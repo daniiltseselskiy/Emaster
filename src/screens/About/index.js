@@ -3,6 +3,7 @@ import TeamCard from '../../components/TeamCard'
 import BottomCard from '../../components/BottomCard'
 import JoinCompetition from '../../components/JoinCompetition'
 import Support3Text from '../../components/Support3Text'
+import Gallery from '../../components/Gallery'
 import './index.css'
 import {
     Label,
@@ -21,7 +22,7 @@ class About extends Component {
                                 <TeamCard />
                             </div>
                             <div className="team-arrow">
-
+            
                             </div>
                         </div>
                         <div className="right-team-content">

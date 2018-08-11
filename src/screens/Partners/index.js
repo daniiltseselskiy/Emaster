@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Support3Text from '../../components/Support3Text'
 import BottomCard from '../../components/BottomCard'
 import Benefits from '../../components/Benefits'
+import CAccordion from '../../components/CAccordion'
+import CSimpleAccordion from '../../components/CSimpleAccordion'
 import './index.css'
 
 import {
@@ -28,6 +30,10 @@ class Partners extends Component {
                     </div>
                 </div>
                 <Benefits />
+                <div className="faq-container">
+                    <CAccordion />
+                    <CSimpleAccordion />
+                </div>
             </div>
         )
     }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Gallery from '../../components/Gallery'
+import Gallery from '../Gallery'
 import './index.css'
 import {
     Label

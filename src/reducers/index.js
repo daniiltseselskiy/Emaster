@@ -8,7 +8,7 @@ import forums from './forums'
 import contact from './contact'
 import careers from './careers'
 import download from './download'
-
+import main from './main'
 const RootReducer = combineReducers({
     homepage,
     features,
@@ -19,6 +19,7 @@ const RootReducer = combineReducers({
     contact,
     careers,
     download,
+    main,
 });
 
 export default RootReducer;

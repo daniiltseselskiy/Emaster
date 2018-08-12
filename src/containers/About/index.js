@@ -4,7 +4,7 @@ import About from '../../screens/About'
 import { 
  
  } from '../../actions/about';
-import { isMoment } from '../../../node_modules/moment';
+import { isMoment } from 'moment';
 
  
 class AboutContainer extends Component {

@@ -1,6 +1,6 @@
-import configureStore from '../store/ConfigureStore';
+import configureStore from './ConfigureStore';
 
-import initialStore from '../store/InitialStore';
+import initialStore from './InitialStore';
 
 const store = configureStore(initialStore);
 

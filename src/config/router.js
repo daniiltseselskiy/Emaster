@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
     Route,
     Switch
-} from 'react-router';
+} from 'react-router'
 import Headers from '../containers/Headers';
 import Footers from '../containers/Footers';
 import Homepage from '../containers/Homepage';

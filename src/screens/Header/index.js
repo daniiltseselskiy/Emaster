@@ -15,6 +15,8 @@ import {
     DropdownMenu,
     DropdownItem } from 'reactstrap';
 //Import 
+import CButton from '../../components/CButton'
+import LogoImage from '../../assets/images/emasters_white.png'
 
 class Header extends Component {
     constructor(props) {
@@ -33,36 +35,41 @@ class Header extends Component {
       render() {
         return (
           <div className="header-container">
-            <Navbar color="light" light expand="md">
-              <NavbarBrand href="/">reactstrap</NavbarBrand>
+            <Navbar light expand="md">
+              <NavbarBrand href="/">
+                  <img src={LogoImage} alt="Logo Image" />
+              </NavbarBrand>
               <NavbarToggler onClick={this.toggle} />
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="" navbar>
                   <NavItem>
-                    <NavLink href="/">Home</NavLink>
+                    <NavLink href="/">HOME</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/features">Features</NavLink>
+                    <NavLink href="/features">FEATURES</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/about">About</NavLink>
+                    <NavLink href="/about">ABOUT</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/partners">Partners</NavLink>
+                    <NavLink href="/partners">PARTNERS</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/help">Help</NavLink>
+                    <NavLink href="/help">HELP</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/forums">Forums</NavLink>
+                    <NavLink href="/contact">CONTACT</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/forums">FORUMS</NavLink>
                   </NavItem>
                   
                 </Nav>
               </Collapse>
-              <Button>Download</Button>
+              <CButton Title="DOWNLOAD" />
               <UncontrolledDropdown>
                     <DropdownToggle nav caret>
-                      Lan-EN
+                      Lang-EN
                     </DropdownToggle>
                     <DropdownMenu right>
                       <DropdownItem>

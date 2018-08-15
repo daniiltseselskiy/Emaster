@@ -6,7 +6,9 @@ import {
 } from 'reactstrap'
 
 class CInput extends Component {
+    
     render () {
+        const { label } = this.props
         return (
             <div className="cinput-container">
                 <Input />

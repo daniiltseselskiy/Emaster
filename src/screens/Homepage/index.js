@@ -45,7 +45,7 @@ class Home extends Component {
                     </div>
                     <div className="howitworks-video">
                         <div>
-                            <ReactPlayer url='https://www.youtube.com/watch?v=MhkGQAoc7bc' playing />
+                            {/* <ReactPlayer url='https://www.youtube.com/watch?v=MhkGQAoc7bc' playing /> */}
                         </div>
                         <div className="video-textarea">
                             <Label>See How It Works</Label>

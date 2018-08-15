@@ -30,7 +30,7 @@ class About extends Component {
                             <Label>The People Behind eMasters</Label>
                         </div>
                     </div>
-                    <BottomCard />
+                    {/* <BottomCard /> */}
                 </div>
                 <div className="online-gaming-container">
                     <div className="support-textarea">
@@ -46,7 +46,7 @@ class About extends Component {
                     <Label>- Who`s Helping Us?</Label>
                     <Label>Our Customers And Partners</Label>
                     <div className="help-company-content">
-                        <BottomCard />
+                        {/* <BottomCard /> */}
                     </div>
                 </div>
                 <JoinCompetition />

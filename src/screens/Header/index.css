@@ -1,11 +1,40 @@
 .header-container {
-
+    height: 139px;
+    background-color: #1D1D1D;
 }
 
 .header-container nav {
+    height: 100%;
     margin-bottom: 0;
 }
-
+.header-container nav a {
+    height: 25%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.header-container nav a > img {
+    height: 100%;
+    width: auto;
+}
 .header-container nav .collapse {
     justify-content: center
+}
+.header-container nav .collapse ul {
+    width: 50%;
+    justify-content: space-around;
+}
+
+.header-container nav .collapse ul li > a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF !important;
+}
+.header-container nav .dropdown {
+    padding: 0 1% 0 2%;
+}
+
+.header-container nav .dropdown > a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFFFFF;
 }

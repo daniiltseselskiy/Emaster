@@ -1,4 +1,5 @@
 import React, {Component } from 'react'
+import NInput from '../../components/NInput'
 import './index.css'
 import {
     Button,
@@ -8,6 +9,7 @@ import {
 import { Link } from 'react-router-dom'
 import InstagramIcon from '../../assets/images/footer/instagram-icon.png'
 import FacebookIcon from '../../assets/images/footer/facebook-icon.png'
+import LogoImage from '../../assets/images/footer/logo.png'
 
 class Footer extends Component {
     render () {
@@ -15,7 +17,7 @@ class Footer extends Component {
         return (
             <div className="footer-container">
                 <div className="left-footer">
-                    <img alt="Footer Logo" />
+                    <img src={LogoImage} alt="Footer Logo" />
                     <div className="social-mark">
                         <a href="https://www.instagram.com" target="blank"><img src={InstagramIcon} alt="Instagram" /></a>
                         <a href="https://www.facebook.com" target="blank"><img src={FacebookIcon} alt="Facebook" /></a>
@@ -44,13 +46,14 @@ class Footer extends Component {
                             </div>
                         </div>
                         <div className="mail-area">
-                            <Input type="email" placeholder="Join our mailing list"/>
+                            <NInput placeholder="Join our mailing list"/>
+                            
                             <img alt="Next Icon" />
                         </div>
                     </div>
                     <div className="bottom-right-footer">
-                        <Link to="#"><p>Privacy Policy</p></Link>
-                        <Link to="#"><p>Terms & Conditions</p></Link>
+                        <Link to="#">Privacy Policy</Link>
+                        <Link to="#">Terms & Conditions</Link>
                         <Label>Copyright 2018 eMasters</Label>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import JoinCompetition from '../../components/JoinCompetition'
 import './index.css'
+import '../index.css'
 import {
     Label,
 
@@ -10,7 +11,9 @@ class Help extends Component {
     render () {
         return (
             <div className="help-container">
-                <Label> Basic Page</Label>
+                <div className="text-content-t">
+                    <Label className="text-t"> Basic Page</Label>
+                </div>
                 <div className="text-content-h">
                     <Label>.................................................</Label>
                 </div>

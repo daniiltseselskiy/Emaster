@@ -1,6 +1,15 @@
 .help-container {
-
+    background-color: #1D1D1D;
 }
+
+.help-container .text-content-t {
+    display: flex;
+    align-items: center;
+    height: 40vh;
+    width: 70%;
+    margin: 0 auto;
+}
+
 .help-container .text-content-m {
     display: flex
 }

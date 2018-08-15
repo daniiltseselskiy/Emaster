@@ -1,9 +1,22 @@
 /* Join Compotition */
 .join-competition-container {
     display: flex;
+    background-color: #0E0E0E;
+    padding: 5% 10%;
+    margin-top: 10%;
 }
-
+.join-competition-container .text-title {
+    font-size: 50px;
+}
 .join-competition-container .competition-textarea {
     display: flex;
     flex-direction: column;
+    width: 50%;
+}
+
+.join-competition-container .competition-buttonarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }

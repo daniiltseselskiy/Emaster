@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import CButton from '../CButton'
 import './index.css'
+import '../../screens/index.css'
 import {
     Label
 } from 'reactstrap'
@@ -9,10 +11,12 @@ class JoinCompetition extends Component {
         return (
             <div className="join-competition-container">
                 <div className="competition-textarea">
-                    <Label>Join the Competition</Label>
-                    <Label>LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume</Label>
+                    <Label className="text-title">Join the Competition</Label>
+                    <p className="text-paragraph">LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume LoremIpsume</p>
                 </div>
-                <img alt="Download Button" />
+                <div className="competition-buttonarea">
+                    <CButton Title="DOWNLOAD" />
+                </div>
             </div>
         )
     }

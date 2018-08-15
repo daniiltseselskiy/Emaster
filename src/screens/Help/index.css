@@ -10,7 +10,34 @@
     margin: 0 auto;
 }
 
-.help-container .text-content-m {
-    display: flex
+.help-container .text-content-h {
+  
+    width: 50%;
+    margin: 0 auto;
 }
 
+.help-container .text-content-m {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    margin: 0 auto;
+
+}
+
+.help-container .text-content-m p {
+    margin: 5%;
+}
+
+.help-container .image-content-h {
+    width: 70%;
+    margin: 5% auto;
+}
+.help-container .image-content-h img {
+    width: 100%;
+    height: auto;
+}
+.help-container .text-content-e {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}

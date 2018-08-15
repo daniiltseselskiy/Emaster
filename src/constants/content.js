@@ -54,5 +54,8 @@ const basicPage = {
         Id pro fastidii dignissim percipitur. 
     `
 }
-
-export { basicPage } 
+const joinContents = { 
+    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.` ,
+    label: `Join the Competition`
+}
+export { basicPage, joinContents } 

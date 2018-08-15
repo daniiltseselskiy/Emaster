@@ -10,22 +10,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 30%;
-    padding-top: 10%;
-    padding-bottom: 5%;
+    width: 25%;
+    padding-top: 6%;
+    padding-bottom: 3%;
 }
 
 .footer-container .left-footer .social-mark {
     display: flex;
     justify-content: space-around;
-    width: 60%;
+    width: 50%;
+    height: 8%;
 }
-
+.footer-container .left-footer .social-mark img {
+    height: 100%;
+}
 /* Right Footer */
 .footer-container .right-footer {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 75%;
 }
 
 .footer-container .right-footer .top-right-footer {
@@ -35,7 +38,7 @@
 
 .footer-container .right-footer .top-right-footer .link-area {
     display: flex;
-    padding: 10% 0 0 0;
+    padding: 8% 0 0 0;
     width: 60%;
 }
 .footer-container .right-footer .top-right-footer .link-area a {
@@ -44,7 +47,7 @@
 }
 
 .footer-container .right-footer .top-right-footer .link-area .link-area-label {
-    width: 30%;
+    width: 25%;
 }
 
 .footer-container .right-footer .top-right-footer .link-area .link-area-company {
@@ -62,7 +65,20 @@
     align-items: center;
     width: 40%;
 }
-
+.footer-container .right-footer .top-right-footer .mail-area .ninput-container {
+    width: 70%;
+}
+.footer-container .right-footer .top-right-footer .mail-area input {
+    height: 50px;
+    border-color: #707070;
+}
+.footer-container .right-footer .top-right-footer .mail-area input::placeholder {
+    color: #BEBEBE;
+    font-size: 18px;
+}
+.footer-container .right-footer .top-right-footer .mail-area img {
+    margin-left: 15px;
+}
 .footer-container .right-footer .bottom-right-footer {
     display: flex;
     justify-content: flex-end;

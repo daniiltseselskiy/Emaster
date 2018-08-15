@@ -9,7 +9,9 @@ import {
 import { Link } from 'react-router-dom'
 import InstagramIcon from '../../assets/images/footer/instagram-icon.png'
 import FacebookIcon from '../../assets/images/footer/facebook-icon.png'
+import DiscordIcon from '../../assets/images/footer/discord-icon.png'
 import LogoImage from '../../assets/images/footer/logo.png'
+import NextIcon from '../../assets/images/footer/next-icon.png'
 
 class Footer extends Component {
     render () {
@@ -19,9 +21,9 @@ class Footer extends Component {
                 <div className="left-footer">
                     <img src={LogoImage} alt="Footer Logo" />
                     <div className="social-mark">
-                        <a href="https://www.instagram.com" target="blank"><img src={InstagramIcon} alt="Instagram" /></a>
-                        <a href="https://www.facebook.com" target="blank"><img src={FacebookIcon} alt="Facebook" /></a>
-                        <a href="https://www.instagram.com" target="blank"><img src={InstagramIcon} alt="Instagram" /></a>
+                        <a href="https://www.instagram.com" target="blank"><img src={DiscordIcon} alt="Instagram" /></a>
+                        <a href="https://www.facebook.com" target="blank"><img src={InstagramIcon} alt="Facebook" /></a>
+                        <a href="https://www.instagram.com" target="blank"><img src={FacebookIcon} alt="Instagram" /></a>
                         <a href="https://www.facebook.com" target="blank"><img src={FacebookIcon} alt="Facebook" /></a>
                     </div>
                 </div>
@@ -47,8 +49,7 @@ class Footer extends Component {
                         </div>
                         <div className="mail-area">
                             <NInput placeholder="Join our mailing list"/>
-                            
-                            <img alt="Next Icon" />
+                            <img src={NextIcon} alt="Next Icon" />
                         </div>
                     </div>
                     <div className="bottom-right-footer">

@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Header from '../../screens/Header';
-
+const style = { 
+    position: 'fixed',
+    width: '100%',
+}
 class HeaderContainer extends Component {
     constructor (props) {
         super(props)
@@ -8,7 +11,7 @@ class HeaderContainer extends Component {
 
     render () {
         return (
-            <div>
+            <div style={style}>
                 <Header />
             </div>
         )

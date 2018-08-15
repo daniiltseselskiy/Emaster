@@ -5,14 +5,14 @@
 .help-container .text-content-t {
     display: flex;
     align-items: center;
+    margin-top: 130px;
     height: 40vh;
     width: 70%;
     margin: 0 auto;
 }
 
 .help-container .text-content-h {
-  
-    width: 50%;
+    width: 54%;
     margin: 0 auto;
 }
 

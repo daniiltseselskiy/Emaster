@@ -1,14 +1,15 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
-import InstagramIcon from '../../assets/images/footer/instagram-icon.png'
-import FacebookIcon from '../../assets/images/footer/facebook-icon.png'
+import LOLImage from '../../assets/images/homepage/lol.png'
+import DotaImage from '../../assets/images/homepage/dota.png'
+import PlusGameImage from '../../assets/images/homepage/plus-game.png'
 import "react-alice-carousel/lib/alice-carousel.css";
 import './index.css'
 class Gallery extends React.Component {  
   responsive = {
     0: { items: 1 },
     600: { items: 2 },
-    1024: { items: 2 },
+    1800: { items: 3 },
   };
   
   onSlideChange(e) {
@@ -23,9 +24,9 @@ class Gallery extends React.Component {
   
   galleryItems() {
     return (
-      [InstagramIcon,InstagramIcon,InstagramIcon,InstagramIcon,InstagramIcon].map((item, i) => (
+      [LOLImage, DotaImage ,PlusGameImage].map((item, i) => (
         <div key={`key-${i}`} className="yours-custom-class">
-            <img src={item} />
+            <img draggable={false} src={item} />
         </div>
       ))
     )
@@ -42,7 +43,7 @@ class Gallery extends React.Component {
         duration={400}
         autoPlay={false}
         startIndex = {1}
-        fadeOutAnimation={true}
+        fadeOutAnimation={false}
         mouseDragEnabled={true}
         playButtonEnabled={false}
         autoPlayInterval={2000}

@@ -21,7 +21,7 @@
     justify-content: center
 }
 .header-container nav .collapse ul {
-    width: 50%;
+    width: 60%;
     justify-content: space-around;
 }
 
@@ -31,7 +31,7 @@
     color: #FFFFFF !important;
 }
 .header-container nav .dropdown {
-    padding: 0 10px 0 25px;
+    padding: 0 10px 0 35px;
 }
 
 .header-container nav .dropdown > a {

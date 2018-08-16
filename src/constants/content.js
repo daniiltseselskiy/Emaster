@@ -58,4 +58,54 @@ const joinContents = {
     content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.` ,
     label: `Join the Competition`
 }
-export { basicPage, joinContents } 
+const aboutPlatform = {
+    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. `,
+    label: 'ABOUT OUR PLATFORM',
+}
+const whatisEmasters = {
+    label: `Non arcu risus quis varius. Viverra aliquet eget sit amet tellus. Adipiscing at in tellus integer.`,
+    content1: `Mauris sit amet massa vitae tortor condimentum lacinia. `,
+    content2: `Lorem sed risus ultricies tristique nulla aliquet enim tortor. Porttitor leo a diam sollicitudin. 
+        Massa tempor nec feugiat nisl pretium fusce id velit. `,
+}
+const tournamentLeague = {
+    label: `TOURNAMENTS OF LEAGUES`,
+    content1: `Habitant morbi tristique senectus et netus et malesuada fames ac. Vel pharetra vel turpis nunc eget lorem dolor sed. In est ante in nibh mauris cursus mattis. Tortor pretium viverra suspendisse potenti nullam ac.`,
+    content2: `Nulla pharetra diam sit amet nisl suscipit adipiscing. Sit amet venenatis urna cursus eget nunc scelerisque viverra. Lorem mollis aliquam ut porttitor leo a. Eget mauris pharetra et ultrices neque.`
+
+}
+const realMoney = {
+    label: `PLAY FOR REAL MONEY`,
+    content1: `Ut diam quam nulla porttitor massa id. Faucibus pulvinar elementum integer enim neque. Vitae congue mauris rhoncus aenean vel elit scelerisque. Nascetur ridiculus mus mauris vitae ultricies leo integer.`,
+    content2: `Sit amet nisl suscipit adipiscing bibendum est. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Pellentesque dignissim enim sit amet venenatis urna cursus eget. Egestas egestas fringilla phasellus faucibus scelerisque. At volutpat diam ut venenatis. Morbi tincidunt ornare massa eget egestas purus.`
+
+}
+const safeSecure = {
+    label: `SAFE & SECURE`,
+    content1: `Amet commodo nulla facilisi nullam vehicula. Dui sapien eget mi proin sed libero enim sed faucibus. Ipsum dolor sit amet consectetur adipiscing. Pulvinar etiam non quam lacus suspendisse. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis. Sollicitudin nibh sit amet commodo nulla facilisi. Lorem donec massa sapien faucibus et molestie ac feugiat. Fames ac turpis egestas integer eget. Vitae purus faucibus ornare suspendisse.`
+
+}
+const benefit = {
+    safeSecure: {
+        label: `SAFE & SECURE`,
+        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+    },
+    desktopApp: {
+        label: `DESKTOP APP`,
+        content: `Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.`
+    },
+    trackProgress: {
+        label: `TRACK YOUR PROGRESS`,
+        content: `Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet.`
+    },
+    favouriteGames: {
+        label: `YOUR FAVOURITE GAMES`,
+        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+    },
+    greatSupport: {
+        label: `GREAT SUPPORT`,
+        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+    }
+}
+export { basicPage, joinContents, aboutPlatform, whatisEmasters, tournamentLeague, realMoney, safeSecure, benefit } 

@@ -7,6 +7,7 @@ import {
 
 } from 'reactstrap'
 import GymImage from '../../assets/images/help/gym.png'
+import Ellipse from '../../assets/images/help/ellipse.png'
 import { labels } from '../../constants/labels'
 import { basicPage } from '../../constants/content'
 
@@ -16,7 +17,7 @@ class Help extends Component {
             (item, index) => {
                 return (
                     <div key={index} className="text-content-e">
-                        <img alt="Check Box"/>
+                        <img src={Ellipse} alt="Check Box"/>
                         <p className="text-paragraph">{item}</p>
                     </div>
                 )
@@ -28,7 +29,7 @@ class Help extends Component {
         return (
             <div className="help-container">
                 <div className="text-content-t">
-                    <Label className="text-title">{labels.basic1}</Label>
+                    <Label className="text-title">{labels.basicTitle}</Label>
                 </div>
                 <div className="text-content-h">
                     <h3 className="text-mid-paragraph">{basicPage.content1}</h3>
@@ -40,7 +41,7 @@ class Help extends Component {
                 </div>
                 <div className="text-content-m">
                     <div>
-                        <Label className="text-mid-title">{labels.basic2}</Label>
+                        <Label className="text-mid-title">{labels.basicTitle2}</Label>
                     </div>
                     <div>
                         <p className="text-paragraph">{basicPage.mcontent1}</p>

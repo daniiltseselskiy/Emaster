@@ -1,5 +1,10 @@
 .feature-component {
     display: flex;
     flex-direction: column;
-  
+    width: 25vw;
+    padding-right: 3vw;
+}
+
+.feature-component > div {
+    height: 15vh;
 }

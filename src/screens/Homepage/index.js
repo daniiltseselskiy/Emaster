@@ -3,6 +3,7 @@ import Benefits from '../../components/Benefits'
 import GameSupport from '../../components/GameSupport'
 import JoinCompetition from '../../components/JoinCompetition'
 import CButton from '../../components/CButton'
+import TitleCompnent from '../../components/TitleComponent'
 import './index.css'
 import {
     Label,
@@ -12,7 +13,9 @@ import ReactPlayer from 'react-player'
 import { Player } from 'video-react';
 import InstagramIcon from '../../assets/images/footer/instagram-icon.png'
 import FacebookIcon from '../../assets/images/footer/facebook-icon.png'
-
+import NextIcon from '../../assets/images/footer/next-icon.png'
+import { labels } from '../../constants/labels'
+import { aboutPlatform } from '../../constants/content'
 class Home extends Component {
 
     render () {
@@ -20,12 +23,10 @@ class Home extends Component {
             <div className="home-container">
                 <div className="join-challenge-container">
                     <div className="join-challenge">
-                        <Label>- Join the challenge</Label>
-                        <Label>Play. Improve. Win!</Label>
+                        <TitleCompnent index={labels.joinIndex} title={labels.joinTitle} />
                         <div className="join-button-area">
-                            <img alt="Features"/>
-                            {/* <img alt="Download"/> */}
-                            <CButton Title="Download"/>
+                            <CButton Title="FEATURE"/>
+                            <CButton Title="DOWNLOAD"/>
                         </div>
                     </div>
                     <div className="join-social">
@@ -37,20 +38,20 @@ class Home extends Component {
                 </div>
                 <div className="about-platform-container">
                     <div className="about-platform">
-                        <img alt="Next Icon"/>
+                        <img src={NextIcon} alt="Next Icon"/>
                         <div className="about-platform-textarea">
-                            <Label>ABOUT OUR PLATFORM</Label>
-                            <Label>Lorem ipsum dolor sit amet, consectuetur adipising slet, sed do eiusmdo tpor indiciudnt ut labore et dolore </Label>
+                            <Label className="text-mid-paragraph">{aboutPlatform.label}</Label>
+                            <p className="text-paragraph">{aboutPlatform.content}</p>
                         </div>
                     </div>
                     <div className="howitworks-video">
-                        <div>
-                            {/* <ReactPlayer url='https://www.youtube.com/watch?v=MhkGQAoc7bc' playing /> */}
-                        </div>
-                        <div className="video-textarea">
-                            <Label>See How It Works</Label>
-                            <Label>Ut eniem ad minim veniam , quis nostrud exercitation</Label>
-                            <Label>ullamco laboris nisi ut aliquip exea</Label>
+                        <div className="video-container">
+                            <ReactPlayer url='https://www.youtube.com/watch?v=uilkmUoXoLU' playing />
+                            <div className="video-textarea">
+                                <Label>See How It Works</Label>
+                                <Label>Ut eniem ad minim veniam , quis nostrud exercitation</Label>
+                                <Label>ullamco laboris nisi ut aliquip exea</Label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -58,9 +59,8 @@ class Home extends Component {
                 <Benefits />
                 <div className="working-us-container">
                     <div className="support-textarea">
-                        <Label>- Working With Us</Label>
-                        <Label>Our Customers</Label>
-                        <Label>See All</Label>
+                        <TitleCompnent index={labels.workingIndex} title={labels.workingTitle} />
+                        {/* <Label>See All</Label> */}
                     </div>
                 </div>
                 <JoinCompetition />

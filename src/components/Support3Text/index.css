@@ -1,6 +1,8 @@
 /* Support Container  */
 .support-3-container {
     display: flex;
+    padding: 0 9%;
+    margin-bottom: 10%;
 }
 
 .support-3-container .support-textarea-s {
@@ -9,14 +11,17 @@
     width: 40%;
 }
 
-.support-3-container .download-support-m {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-}
-
 .support-3-container .support-textarea-l {
     display: flex;
+    margin-top: 4%;
     flex-direction: column;
     width: 30%;
+    padding-left: 3%;
+}
+.support-3-container .support-textarea-l .text-mid-paragraph {
+    margin-bottom: 10%;
+}
+.support-3-container .support-textarea-l .text-paragraph {
+    margin-top: 0;
+    margin-bottom: 10%;
 }

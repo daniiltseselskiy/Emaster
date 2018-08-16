@@ -1,0 +1,19 @@
+.image-title-container {
+    display: flex;
+}
+
+.image-title-container .image-content {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.image-title-container .title-content {
+    display:  flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+}
+.image-title-container.reverse {
+    justify-content: flex-end;
+}

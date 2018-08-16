@@ -5,7 +5,9 @@ import {
  
  } from '../../actions/features';
 
- 
+const style = { 
+    marginTop: '139px',
+}
 class FeaturesContainer extends Component {
     constructor (props) {
         super(props)
@@ -17,7 +19,7 @@ class FeaturesContainer extends Component {
 
     render () {
         return (
-            <div className="">
+            <div style={style}>
                 <Features />
             </div>
         )

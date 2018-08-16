@@ -8,4 +8,9 @@
 }
 .alice-carousel .alice-carousel__wrapper {
     height: 100%;
+    border: none;
+}
+
+.alice-carousel .alice-carousel__wrapper li {
+    
 }

@@ -9,8 +9,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import { AppContainer } from 'react-hot-loader';
-
-
+import 'typeface-roboto'
+import './index.css'
 injectTapEventPlugin();
 
 ReactDOM.render(

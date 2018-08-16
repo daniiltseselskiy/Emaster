@@ -1,23 +1,24 @@
 /* Benefits  */
-.benefits-container .start-component-container {
-    display: flex;
+.benefits-container {
+    padding: 0 9%;
 }
-.benefits-container .start-component-container .support-componentarea, .support-component-container .support-componentarea {
+.benefits-container .support-component-container {
     display: flex;
-    width: 60%;
+    margin: 8% 0;
 }
-.benefits-container .start-component-container .support-textarea {
+.benefits-container .support-component-container .support-textarea {
     display: flex;
     width: 40%;
     flex-direction: column;
-    background-color: blueviolet;
 }
-/* Support Component */
-.benefits-container .support-component-container {
-    display: flex;
-}
+
 .benefits-container .support-component-container .left-componentarea {
     display: flex;
     justify-content: flex-end;
     width: 40%;
+}
+
+.benefits-container .support-component-container .support-componentarea {
+    display: flex;
+    width: 60%;
 }

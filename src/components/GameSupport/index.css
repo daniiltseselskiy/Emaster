@@ -3,25 +3,25 @@
     display: flex;
     position: relative;
     height: 50vh;
+    padding-left: 9%;
 }
 
 .game-support-container .support-textarea {
     display: flex;
     width: 40%;
     flex-direction: column;
-    background-color: blueviolet;
+    padding-right: 20%;
 }
 
 .game-support-container .game-support-addgame {
     width: 60%;
     height: 100%;
-    background-color: yellow;
+    background-color: #FFC400;
 }
 .game-support-container .game-panel {
     position: absolute;
     width: 70%;
-    height: 70%;
+    height: 58%;
     right: 0;
     margin: 5% 0 auto auto;
-    background-color: white;
 }

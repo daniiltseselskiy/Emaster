@@ -1,23 +1,27 @@
 import React, { Component } from 'react'
+import TitleCompnent from '../TitleComponent'
+import CButton from '../CButton'
 import './index.css'
+import '../../screens/index.css'
 import {
     Label
 } from 'reactstrap'
-
+import { labels } from '../../constants/labels'
+import { whatisEmasters } from '../../constants/content'
 class Support3Text extends Component {
     render () {
         return (
             <div className="support-3-container">
                 <div className="support-textarea-s">
-                    <Label>- More coming soon</Label>
-                    <Label>Games We support</Label>
-                </div>
-                <div className="support-textarea-m">
-                    <Label>Non arcu risus quis varius , Viverra aliquet eget sit amte telus. Adiposcing at in tellus inteer</Label>
-                    <Label>Mauris site amet massa vitae tortor condimentu lacina</Label>
+                    <TitleCompnent index={labels.whatFeaturesIndex} title={labels.whatFeaturesTitle} />
                 </div>
                 <div className="support-textarea-l">
-                    <Label>Non arcu risus quis varius , Viverra aliquet eget sit amte telus. Adiposcing at in tellus inteer</Label>
+                    <h3 className="text-mid-paragraph">{whatisEmasters.label}</h3>
+                    <p className="text-paragraph">{whatisEmasters.content1}</p>
+                    <CButton Title="DOWNLOAD" />
+                </div>
+                <div className="support-textarea-l">
+                    <p className="text-paragraph">{whatisEmasters.content2}</p>
                 </div>
             </div>
         )

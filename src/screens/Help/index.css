@@ -5,14 +5,14 @@
 .help-container .text-content-t {
     display: flex;
     align-items: center;
-    margin-top: 130px;
-    height: 40vh;
-    width: 70%;
+    height: 38vh;
+    width: 81.5%;
+    letter-spacing: 2px;
     margin: 0 auto;
 }
 
 .help-container .text-content-h {
-    width: 54%;
+    width: 48.5%;
     margin: 0 auto;
 }
 
@@ -38,6 +38,14 @@
 }
 .help-container .text-content-e {
     display: flex;
-    width: 50%;
+    align-items: center;
+    width: 48.5%;
     margin: 0 auto;
+}
+.help-container .text-content-e .text-paragraph {
+    margin: 2% 0 2% 3%;
+}
+
+.help-container .text-content-e img {
+    height: 100%;
 }

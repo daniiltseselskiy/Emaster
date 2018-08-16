@@ -6,9 +6,9 @@ import {
  
  } from '../../actions/homepage';
 
-
-
-
+ const style = { 
+    marginTop: '139px',
+}
 class HomeContainer extends Component {
     constructor (props) {
         super(props)
@@ -20,7 +20,7 @@ class HomeContainer extends Component {
 
     render () {
         return (
-            <div className="">
+            <div style={style}>
                 <HomePage />
             </div>
         )

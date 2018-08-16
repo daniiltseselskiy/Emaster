@@ -1,39 +1,65 @@
 .home-container {
-    
+    background-color: #1D1D1D;
 }
 /* Join Challenge */
 .home-container .join-challenge-container {
     display: flex;
-    
-    background-color: aqua;
+    height: 57vh;
+    padding: 0 3% 0 9%;
 }
 
 .home-container .join-challenge-container .join-challenge {
     width: 100%;
+    align-self: flex-end;
 }
-
+.home-container .join-challenge-container .join-button-area {
+    display: flex;
+    margin-top: 2%;
+}
 .home-container .join-challenge-container .join-social {
-    width: 50px;
+    width: 30px;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10% 0;
+}
+.home-container .join-challenge-container .join-social img {
+    height: 30px;
 }
 /* About Platform  */
 .home-container .about-platform-container {
     display: flex;
-    background-color: beige;
+    margin: 78px 0;
 }
 
 .home-container .about-platform-container .about-platform {
     display: flex;
     width: 50%;
+    padding: 10% 0 0 16%;
 }
-
+.home-container .about-platform-container .about-platform img {
+    margin: 0 5%;
+    align-self: center;
+}
+.home-container .about-platform-container .about-platform .text-paragraph {
+    margin-top: 0%;
+}
 .home-container .about-platform-container .howitworks-video {
+    display: flex;
+    justify-content: center;
     width: 50%;
+}
+.home-container .about-platform-container .howitworks-video .video-container {
+    width: 640px;
+    height: 360px;
     position: relative;
 }
-.home-container .about-platform-container .howitworks-video .video-textarea {
+.home-container .about-platform-container .howitworks-video .video-container div:nth-child(1) {
+    height: 100% !important;
+    width: 100% !important;
+}
+.home-container .about-platform-container .howitworks-video .video-container .video-textarea {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -47,12 +73,12 @@
 .home-container .working-us-container {
     display: flex;
     height: 30%;
+    padding-left: 9%;
 }
 
 .home-container .working-us-container .support-textarea {
     display: flex;
     width: 30%;
     flex-direction: column;
-    background-color: blueviolet;
 }
 

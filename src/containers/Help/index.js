@@ -5,7 +5,9 @@ import {
  
  } from '../../actions/help';
 
- 
+const style = { 
+    marginTop: '139px',
+}
 class HelpContainer extends Component {
     constructor (props) {
         super(props)
@@ -17,7 +19,7 @@ class HelpContainer extends Component {
 
     render () {
         return (
-            <div className="">
+            <div style={style}>
                 <Help />
             </div>
         )

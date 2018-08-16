@@ -1,0 +1,15 @@
+.title-container {
+    display: flex;
+    flex-direction: column
+}
+
+.title-container p {
+    font-size: 20px;
+    color: #FFC400;
+}
+
+.title-container h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFFFFF;
+}

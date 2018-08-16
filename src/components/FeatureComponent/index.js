@@ -6,12 +6,14 @@ import {
 
 class FeatureComponent extends Component {
     render () {
-        const { Image, Title, Content} = this.props
+        const { image, label, content} = this.props
         return (
             <div className="feature-component">
-                <img src={Image} alt="Image"/>
-                <Label>{Title}</Label>
-                <Label>{Content}</Label>
+                <div>
+                    <img src={image} alt="Image"/>
+                </div>
+               <h3 className="text-mid-paragraph">{label}</h3>
+                <p className="text-paragraph">{content}</p>
             </div>
         )
     }

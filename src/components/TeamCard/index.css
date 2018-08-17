@@ -1,14 +1,17 @@
 .team-card-container {
     display: flex;
-    
 }
 
 .team-card-container .image-content {
     width: 40%;
 }
-
+.team-card-container .image-content img {
+    width: 100%;
+}
 .team-card-container .resume-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 60%;
+    padding: 0 7%;
 }

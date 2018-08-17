@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import TeamCard from '../../components/TeamCard'
+import Gallery from '../../components/Gallery'
 import BottomCard from '../../components/BottomCard'
 import JoinCompetition from '../../components/JoinCompetition'
 import Support3Text from '../../components/Support3Text'
@@ -28,15 +28,14 @@ class About extends Component {
                     <div className="meet-team-content">
                         <div className="left-team-content">
                             <div className="team-member-card">
-                                <TeamCard />
+                                <Gallery uid="1" />
                             </div>
                             <div className="team-arrow">
-            
+                                
                             </div>
                         </div>
                         <div className="right-team-content">
-                            <Label>- Meet The Team </Label>
-                            <Label>The People Behind eMasters</Label>
+                            <TitleComponent  index={labels.meetIndex} title={labels.meetTitle}/>
                         </div>
                     </div>
                     {/* <BottomCard /> */}

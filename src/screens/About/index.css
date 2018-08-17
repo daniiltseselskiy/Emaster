@@ -3,6 +3,7 @@
 }
 .about-container .meet-team-container {
     position: relative;
+    padding: 7% 0;
 }
 
 .about-container .meet-team-container .meet-team-content {
@@ -12,17 +13,21 @@
 .about-container .meet-team-container .meet-team-content .left-team-content {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 65%;
 }
 
 .about-container .meet-team-container .meet-team-content .left-team-content .team-member-card {
-    height: 60vh;
+    margin-left: 10%;
+
 }
 
 .about-container .meet-team-container .meet-team-content .right-team-content {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    justify-content: center;
+    width: 35%;
+    padding-left: 3%;
+    
 }
 .about-container .mission-container {
     display: flex;

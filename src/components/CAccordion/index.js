@@ -24,7 +24,7 @@ class CAccordion extends Component {
     render () {
         const { items } = this.props
         return (
-            <Accordion>
+            <Accordion accordion={false}>
                 {this.renderAccordionItems(items)}
             </Accordion>
         )

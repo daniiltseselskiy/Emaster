@@ -17,7 +17,7 @@ class GameSupport extends Component {
                     
                 </div>
                 <div className="game-panel">
-                    <Gallery />
+                    <Gallery uid="0"/>
                 </div>
             </div>
         )

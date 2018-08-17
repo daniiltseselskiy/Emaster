@@ -8,6 +8,7 @@
 }
 .alice-carousel .alice-carousel__wrapper {
     height: 100%;
+    /* width: 110%; */
     border: none;
 }
 

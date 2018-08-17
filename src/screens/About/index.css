@@ -4,6 +4,10 @@
 .about-container .meet-team-container {
     position: relative;
     padding: 7% 0;
+    background-image: url('../../assets/images/about/background.png');
+    background-size: 85% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 .about-container .meet-team-container .meet-team-content {
@@ -15,10 +19,15 @@
     flex-direction: column;
     width: 65%;
 }
-
+.about-container .meet-team-container .meet-team-content .left-team-content .team-arrow {
+    display: flex;
+    justify-content: flex-end;
+}
+.about-container .meet-team-container .meet-team-content .left-team-content .team-arrow img {
+    margin-left: 1px;
+}
 .about-container .meet-team-container .meet-team-content .left-team-content .team-member-card {
     margin-left: 10%;
-
 }
 
 .about-container .meet-team-container .meet-team-content .right-team-content {

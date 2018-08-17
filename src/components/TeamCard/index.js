@@ -11,7 +11,7 @@ class TeamCard extends Component {
         return (
             <div className="team-card-container">
                 <div className="image-content">
-                    <img src={MemberAvatar}  alt="Avatar" />
+                    <img draggable={false} src={MemberAvatar}  alt="Avatar" />
                 </div>
                 <div className="resume-content">
                     <TitleComponent index="- Lead Developer" title="Francis Lang" />

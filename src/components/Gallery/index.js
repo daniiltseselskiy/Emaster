@@ -31,8 +31,8 @@ class Gallery extends React.Component {
   galleryItems() {
     return (
       [LOLImage, DotaImage ,PlusGameImage].map((item, i) => (
-        <div key={`key-${i}`} className="">
-            <img draggable={false} src={item} />
+        <div key={`key-${i}`} className="" >
+            <img draggable={false} src={item}/>
         </div>
       ))
     )
@@ -66,7 +66,7 @@ class Gallery extends React.Component {
         items={items}
         duration={400}
         autoPlay={false}
-        startIndex = {1}
+        startIndex = {0}
         fadeOutAnimation={false}
         mouseDragEnabled={true}
         playButtonEnabled={false}

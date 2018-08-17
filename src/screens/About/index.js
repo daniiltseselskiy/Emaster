@@ -3,18 +3,27 @@ import TeamCard from '../../components/TeamCard'
 import BottomCard from '../../components/BottomCard'
 import JoinCompetition from '../../components/JoinCompetition'
 import Support3Text from '../../components/Support3Text'
-import Gallery from '../../components/Gallery'
+import ImageTitleComponent from '../../components/ImageTitleComponent'
+import TitleComponent from '../../components/TitleComponent';
 import './index.css'
+import '../index.css'
 import {
     Label,
 } from 'reactstrap'
+import HeadQuarterImage from '../../assets/images/about/headquarter.png'
+import HelpCompanyImage from '../../assets/images/about/help-company.png'
+import { labels } from '../../constants/labels'
+import { gamingRefined, ourMission } from '../../constants/content'
 
 class About extends Component {
     render () {
         return (
             <div className="about-container">
-                <Label>About eMasters </Label>
-                <Support3Text />
+                <div className="text-content-t">
+                    <Label className="text-title">{labels.aboutTitle}</Label>
+                </div>
+                <Support3Text index={labels.refinedIndex} title={labels.refinedTitle} description={gamingRefined} download={false}/>
+                <ImageTitleComponent  label={gamingRefined.content4} image={HeadQuarterImage} reverse={false}/>
                 <div className="meet-team-container">
                     <div className="meet-team-content">
                         <div className="left-team-content">
@@ -32,21 +41,16 @@ class About extends Component {
                     </div>
                     {/* <BottomCard /> */}
                 </div>
-                <div className="online-gaming-container">
-                    <div className="support-textarea">
-                        <Label>- Our Mission</Label>
-                        <Label>Removing Tournament Complexity</Label>
-                    </div>
-                    <div className="support-textarea-m">
-                        <Label>Non arcu risus quis varius , Viverra aliquet eget sit amte telus. Adiposcing at in tellus inteer</Label>
-                        <Label>Mauris site amet massa vitae tortor condimentu lacina</Label>
-                    </div>
+                <div className="mission-container">
+                    <Support3Text index={labels.missionIndex} title={labels.missionTitle} description={ourMission} />
                 </div>
                 <div className="help-company-container">
-                    <Label>- Who`s Helping Us?</Label>
-                    <Label>Our Customers And Partners</Label>
                     <div className="help-company-content">
-                        {/* <BottomCard /> */}
+                        <TitleComponent  index={labels.helpusIndex} title={labels.helpusTitle}/>
+                        <div className="image-card-container" >
+                            <img src={HelpCompanyImage} />
+                            <BottomCard index={labels.investorIndex} link={labels.investorLink} investor={true}/>
+                        </div>
                     </div>
                 </div>
                 <JoinCompetition />

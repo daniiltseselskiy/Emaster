@@ -2,15 +2,6 @@
     background-color: #1D1D1D;
 }
 
-.help-container .text-content-t {
-    display: flex;
-    align-items: center;
-    height: 38vh;
-    width: 81.5%;
-    letter-spacing: 2px;
-    margin: 0 auto;
-}
-
 .help-container .text-content-h {
     width: 48.5%;
     margin: 0 auto;

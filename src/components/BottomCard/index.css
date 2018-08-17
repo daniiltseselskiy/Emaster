@@ -2,10 +2,19 @@
     display: flex;
     position: absolute;
     flex-direction: column;
-    width: 20vw;
-    height: 20vh;
-    background-color: yellow;
+    justify-content: center;
+    padding-left: 2vw;
+    width: 22vw;
+    height: 22vh;
     /* Position  */
-    bottom: -10vh;
+    bottom: -11vh;
     right: 10vw;
+}
+.bottom-card-container .text-mid-title {
+    font-weight: 500;
+}
+.bottom-card-container .line {
+    width: 45%;
+    height: 7px;
+    background-color: #FFC400;
 }

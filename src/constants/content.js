@@ -108,4 +108,20 @@ const benefit = {
         content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
     }
 }
-export { basicPage, joinContents, aboutPlatform, whatisEmasters, tournamentLeague, realMoney, safeSecure, benefit } 
+const gamingRefined = {
+    label: `Our mission is to increase the number of people who live as an eSports player.`,
+    content1: `Pellentesque massa placerat duis ultricies lacus sed. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec. In nisl nisi scelerisque eu ultrices vitae auctor eu.`,
+    content2: `Lorem sed risus ultricies tristique nulla aliquet enim tortor. Porttitor leo a diam sollicitudin. 
+            Massa tempor nec feugiat nisl pretium fusce id velit. Cursus euismod quis viverra nibh cras. Cum sociis natoque penatibus et magnis dis parturient montes. Et molestie ac feugiat sed. Morbi tristique senectus et netus et malesuada. Imperdiet massa tincidunt nunc pulvinar sapien et ligula.`,
+    content4: `eMasters is headquartered in San Francisco, with offices in São Paulo, Korea and more.`,
+}
+const ourMission = {
+    label: `We work with game publishers, financial institutions, payment gateways, banks and blockchain network so people who run on eMasters don’t have to.`
+}
+const coFriends = {
+    label: `Non arcu risus quis varius. Viverra aliquet eget sit amet tellus. Adipiscing at in tellus integer.`,
+    content1: `Mauris sit amet massa vitae tortor condimentum lacinia. Feugiat sed lectus vestibulum mattis. Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam.`,
+    content2: `Lorem sed risus ultricies tristique nulla aliquet enim tortor. Porttitor leo a diam sollicitudin. Massa tempor nec feugiat nisl pretium fusce id velit.`,
+    content3: `Cursus euismod quis viverra nibh cras. Cum sociis natoque penatibus et magnis dis parturient montes. Et molestie ac feugiat sed. `,
+}
+export { basicPage, joinContents, aboutPlatform, whatisEmasters, tournamentLeague, realMoney, safeSecure, benefit, gamingRefined, ourMission, coFriends} 

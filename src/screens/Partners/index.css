@@ -1,19 +1,28 @@
 .partners-container {
-
+    background-color: #1D1D1D;
 }
 
 .partners-container .extend-family-container {
-
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    margin: 0 9%;
 }
-
-.partners-container .extend-family-container .extend-family-start {
-
+.partners-container .extend-family-container .first-card-container {
+    padding-right: 20%;
 }
-
-.partners-container .extend-family-container .extend-family-content {
-    
-}
-
 .partners-container .faq-container {
-    
+    padding-top: 5%;
+    padding-bottom: 10%;
+    width: 70%;
+    margin: 0 auto;
+}
+.partners-container .faq-container h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    margin: 0 0 5% 0;
+    color: #FFFFFF;
+}
+.partners-container .join-competition-container {
+    margin-top: 0;
 }

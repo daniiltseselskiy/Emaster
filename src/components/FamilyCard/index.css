@@ -1,0 +1,20 @@
+.family-card-container {
+    display: flex;
+    margin: 10% 0 0 30%;
+}
+.family-card-container .card-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.family-card-container .card-text-container h3 {
+    color: #FFC400;
+    font-size: 20px;
+}
+
+.family-card-container .card-text-container p {
+    color: #FFFFFF;
+    font-size: 24px;
+}

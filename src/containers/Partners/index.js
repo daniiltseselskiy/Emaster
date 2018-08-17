@@ -4,7 +4,9 @@ import Partners from '../../screens/Partners'
 import { 
  
  } from '../../actions/partners';
-
+const style = { 
+    marginTop: '139px',
+}
  
 class PartnersContainer extends Component {
     constructor (props) {
@@ -17,7 +19,7 @@ class PartnersContainer extends Component {
 
     render () {
         return (
-            <div className="">
+            <div className="" style={style}>
                 <Partners />
             </div>
         )

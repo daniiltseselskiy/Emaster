@@ -6,7 +6,9 @@ import {
  } from '../../actions/about';
 import { isMoment } from 'moment';
 
- 
+const style = { 
+    marginTop: '139px',
+}
 class AboutContainer extends Component {
     constructor (props) {
         super(props)
@@ -18,12 +20,11 @@ class AboutContainer extends Component {
 
     render () {
         return (
-            <div className="">
+            <div style={style}>
                 <About />
             </div>
         )
     }
-
 }
 
 const mapStateToProps = (state, ownProps) => {

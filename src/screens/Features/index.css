@@ -1,14 +1,6 @@
 .features-container {
     background-color: #1D1D1D;
 }
-.features-container .text-content-t {
-    display: flex;
-    align-items: center;
-    height: 38vh;
-    width: 81.5%;
-    letter-spacing: 2px;
-    margin: 0 auto;
-}
 
 /* Tournament Image and Text  */
 

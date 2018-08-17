@@ -6,22 +6,23 @@ import '../../screens/index.css'
 import {
     Label
 } from 'reactstrap'
-import { labels } from '../../constants/labels'
-import { whatisEmasters } from '../../constants/content'
+
 class Support3Text extends Component {
     render () {
+        const { index, title, description, download} = this.props
         return (
             <div className="support-3-container">
                 <div className="support-textarea-s">
-                    <TitleCompnent index={labels.whatFeaturesIndex} title={labels.whatFeaturesTitle} />
+                    <TitleCompnent index={index} title={title} />
                 </div>
                 <div className="support-textarea-l">
-                    <h3 className="text-mid-paragraph">{whatisEmasters.label}</h3>
-                    <p className="text-paragraph">{whatisEmasters.content1}</p>
-                    <CButton Title="DOWNLOAD" />
+                    <h3 className="text-mid-paragraph">{description.label}</h3>
+                    <p className="text-paragraph">{description.content1}</p>
+                    {download && <CButton Title="DOWNLOAD" />}
                 </div>
                 <div className="support-textarea-l">
-                    <p className="text-paragraph">{whatisEmasters.content2}</p>
+                    <p className="text-paragraph">{description.content2}</p>
+                    <p className="text-paragraph">{description.content3}</p>
                 </div>
             </div>
         )

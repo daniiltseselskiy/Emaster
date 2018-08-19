@@ -39,9 +39,9 @@ class About extends Component {
                         </div>
                         <div className="right-team-content">
                             <TitleComponent  index={labels.meetIndex} title={labels.meetTitle}/>
+                            <BottomCard index={labels.joinTeamIndex} link={labels.joinTeamLink} investor={false}/>
                         </div>
                     </div>
-                    {/* <BottomCard /> */}
                 </div>
                 <div className="mission-container">
                     <Support3Text index={labels.missionIndex} title={labels.missionTitle} description={ourMission} />

@@ -1,7 +1,27 @@
 .partners-container {
     background-color: #1D1D1D;
 }
-
+.partners-container .meet-partners-container {
+    position: relative;
+    padding: 5% 0;
+    margin-bottom: 15%;
+    background-image: url('../../assets/images/partners/background.png');
+    background-size: 85% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.partners-container .meet-partners-container .partners-content {
+    width: 100%;
+}
+.partners-container .meet-partners-container .partners-content .partners-arrow {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2px;
+    width: 58%;
+}
+.partners-container .meet-partners-container .partners-content .partners-arrow img {
+    margin-left: 2px;
+}
 .partners-container .extend-family-container {
     display: grid;
     grid-template-columns: 33% 33% 34%;
@@ -26,3 +46,7 @@
 .partners-container .join-competition-container {
     margin-top: 0;
 }
+
+
+
+

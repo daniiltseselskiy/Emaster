@@ -5,7 +5,9 @@ import {
  
  } from '../../actions/contact';
 
- 
+const style = { 
+    marginTop: '139px',
+}
 class ContactContainer extends Component {
     constructor (props) {
         super(props)
@@ -17,7 +19,7 @@ class ContactContainer extends Component {
 
     render () {
         return (
-            <div className="">
+            <div style={style}>
                 <Contact />
             </div>
         )

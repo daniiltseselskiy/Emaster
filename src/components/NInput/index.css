@@ -12,4 +12,5 @@
 .ninput-container input:focus {
     background-color: transparent;
     outline: 0;
+    box-shadow: none;
 }

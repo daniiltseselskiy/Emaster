@@ -4,6 +4,8 @@ import TitleComponent from '../../components/TitleComponent'
 import Benefits from '../../components/Benefits'
 import CAccordion from '../../components/CAccordion'
 import FamilyCard from '../../components/FamilyCard'
+import Gallery2 from '../../components/Gallery2'
+import BottomCard from '../../components/BottomCard'
 import './index.css'
 import '../index.css'
 import {
@@ -13,7 +15,8 @@ import Avatar from '../../assets/images/partners/avatar.png'
 import { labels } from '../../constants/labels'
 import { coFriends } from '../../constants/content'
 import JoinCompetition from '../../components/JoinCompetition';
-
+import NextArrow from '../../assets/images/partners/arrow-next.png'
+import PreviousArrow from '../../assets/images/partners/arrow-previous.png'
 const faqs = [
     {
         title: `In scelerisque sem at dolor?`,
@@ -53,10 +56,13 @@ class Partners extends Component {
                 <Support3Text index={labels.coFriendsIndex} title={labels.coFriendsTitle} description={coFriends}/>
                 <div className="meet-partners-container">
                     <div className="partners-content">
+                        <Gallery2/>
                         <div className="partners-arrow">
+                            <img src={PreviousArrow} /> 
+                            <img src={NextArrow} />
                         </div>
                     </div>
-                    {/* <BottomCard /> */}
+                    <BottomCard index={labels.joinTeamIndex} link={labels.joinTeamLink} investor={true}/>
                 </div>
                 <div className="extend-family-container">
                     <div className="first-card-container">

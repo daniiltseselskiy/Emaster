@@ -3,7 +3,7 @@
 }
 
 .team-card-container .image-content {
-    width: 40%;
+    width: 50%;
 }
 .team-card-container .image-content img {
     width: 100%;
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: 50%;
     padding: 0 7%;
     background-color: #0E0E0E;
 }

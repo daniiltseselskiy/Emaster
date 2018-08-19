@@ -12,6 +12,7 @@
 
 .about-container .meet-team-container .meet-team-content {
     display: flex;
+
 }
 
 .about-container .meet-team-container .meet-team-content .left-team-content {
@@ -31,6 +32,7 @@
 }
 
 .about-container .meet-team-container .meet-team-content .right-team-content {
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,6 +44,7 @@
     display: flex;
     align-items: center;
     height: 80vh;
+    margin-top: 10%;
     background-image: url('../../assets/images/about/our-mission.png');
     background-repeat: no-repeat;
     background-position: right;

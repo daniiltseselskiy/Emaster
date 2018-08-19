@@ -12,5 +12,11 @@
 }
 
 .alice-carousel .alice-carousel__wrapper li:nth-child(1) {
-   
+    
+}
+.margin .alice-carousel .alice-carousel__wrapper li:nth-child(1) {
+    margin-left: 8% ;
+}
+.margin .alice-carousel .alice-carousel__wrapper li > div {
+    padding-left: 3%;
 }

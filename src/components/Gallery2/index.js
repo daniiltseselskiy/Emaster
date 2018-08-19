@@ -7,22 +7,16 @@ import PlusGameImage from '../../assets/images/homepage/plus-game.png'
 import "react-alice-carousel/lib/alice-carousel.css";
 import './index.css'
 import { Button } from '../../../node_modules/antd';
-class Gallery extends React.Component {  
+
+class Gallery2 extends React.Component {  
   constructor () {
     super ()
     this.state = {
       position: 0,
     }
   }
+  
   responsive = {
-    0: { items: 1 },
-    600: { items: 2 },
-    1800: { items: 3 },
-  };
-  responsive1 = {
-    1800: { items: 1 },
-  };
-  responsive2 = {
     1800: { items: 2 },
   };
   onSlideChange(e) {
@@ -35,15 +29,7 @@ class Gallery extends React.Component {
     console.log('Slide`s position after changes: ', e.slide);
   };
   
-  galleryItems() {
-    return (
-      [LOLImage, DotaImage ,PlusGameImage].map((item, i) => (
-        <div key={`key-${i}`} className="" >
-            <img draggable={false} src={item}/>
-        </div>
-      ))
-    )
-  };
+  
   galleryTeams() {
     return (
       [1, 2 ,3].map((item, i) => (
@@ -68,20 +54,12 @@ class Gallery extends React.Component {
     })
   }
   render() {
-    const { uid } = this.props
-    var items = [], responsive = {}
-    if (uid == 0) {
-      items = this.galleryItems()
+      var items = [], responsive = {}
+      items = this.galleryTeams()
       responsive = this.responsive
-    } else if (uid == 1) {
-      items = this.galleryTeams()
-      responsive = this.responsive1
-    } else {
-      items = this.galleryTeams()
-      responsive = this.responsive2
-    }
+    
     return (
-      <div >
+      <div className="margin">
           <AliceCarousel
             dotsDisabled={true}
             buttonsDisabled={true}
@@ -106,4 +84,4 @@ class Gallery extends React.Component {
   }
 }
 
-export default Gallery
+export default Gallery2

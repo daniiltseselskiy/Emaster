@@ -31,5 +31,9 @@ export const labels = {
     familyIndex: `- The Extended Family`,
     familyTitle: `People Playing With eMasters`,
     faqTitle: `FAQ`,
+    contactIndex: `- Connect with us`,
+    contactTitle: `Contact Us`,
+    contactTitle1: `eMasters`,
+    contactTitle2: `1014 Capp St, San Francisco CA 94110`,
 }
 

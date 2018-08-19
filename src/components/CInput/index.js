@@ -8,11 +8,11 @@ import {
 class CInput extends Component {
     
     render () {
-        const { label } = this.props
+        const { label, placeholder } = this.props
         return (
             <div className="cinput-container">
-                <Input />
-                <Label>Name</Label>                
+                <Input placeholder={placeholder} />
+                <Label>{label}</Label>                
             </div>
         )
     }

@@ -20,7 +20,7 @@ class ContactContainer extends Component {
     render () {
         return (
             <div style={style}>
-                <Contact />
+                <Contact {...this.props}/>
             </div>
         )
     }
@@ -29,7 +29,8 @@ class ContactContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        
+        labels: state.main.labels,
+        content: state.main.content,
     };
 };
 

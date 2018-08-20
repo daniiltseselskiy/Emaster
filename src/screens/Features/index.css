@@ -1,5 +1,6 @@
 .features-container {
     background-color: #1D1D1D;
+    overflow-x: hidden;
 }
 
 /* Tournament Image and Text  */

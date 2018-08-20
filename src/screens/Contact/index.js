@@ -11,10 +11,10 @@ import {
 import InstagramIcon from '../../assets/images/footer/instagram-icon.png'
 import FacebookIcon from '../../assets/images/footer/facebook-icon.png'
 import DiscordIcon from '../../assets/images/footer/discord-icon.png'
-import { labels } from '../../constants/labels'
 import CButton from '../../components/CButton';
 class Contact extends Component {
     render () {
+        const { labels, content } = this.props
         return (
             <div className="contact-container">
                 <div className="text-content-t">
@@ -40,7 +40,7 @@ class Contact extends Component {
                         <CButton Title={labels.contactTitle}/>
                     </div>
                 </div>    
-                <JoinCompetition />            
+                <JoinCompetition joinContents={content.joinContents}/>    
             </div>
         )
     }

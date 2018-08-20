@@ -1,4 +1,5 @@
 import React , { Component } from 'react'
+import { Redirect } from 'react-router-dom'
 import './index.css'
 //ReactStrap
 import {
@@ -17,24 +18,50 @@ import {
 //Import 
 import CButton from '../../components/CButton'
 import LogoImage from '../../assets/images/emasters_white.png'
-
+import USFlag from '../../assets/images/header/US.png'
+import BRFlag from '../../assets/images/header/BR.png'
+import CNFlag from '../../assets/images/header/CN.png'
+const style = {
+  backgroundColor: 'transparent'
+}
+const style1 = {
+  
+}
 class Header extends Component {
     constructor(props) {
         super(props);
     
         this.toggle = this.toggle.bind(this);
         this.state = {
-          isOpen: false
+          isOpen: false,
+          redirectDownload: false,
         };
+      }
+      setRedirectDownload = () => {
+          this.setState ({
+              redirectDownload: true
+          })
       }
       toggle() {
         this.setState({
           isOpen: !this.state.isOpen
         });
       }
+      changeLanguage = (locale) => {
+        const {changeLanguage} = this.props
+        changeLanguage(locale)
+      }
+      onClickDownload = () => {
+          const { base } = this.props
+          if (this.state.redirectDownload) {
+          return <Redirect to={`${base}/download`} />
+        }
+      }
       render() {
+        const { base, isHome } = this.props
         return (
-          <div className="header-container">
+          <div className="header-container" style={isHome? style : style1}>
+            {this.onClickDownload()}
             <Navbar light expand="md">
               <NavbarBrand href="/">
                   <img src={LogoImage} alt="Logo Image" />
@@ -43,43 +70,46 @@ class Header extends Component {
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="" navbar>
                   <NavItem>
-                    <NavLink href="/">HOME</NavLink>
+                    <NavLink href={`${base}/`}>HOME</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/features">FEATURES</NavLink>
+                    <NavLink href={`${base}/features`}>FEATURES</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/about">ABOUT</NavLink>
+                    <NavLink href={`${base}/about`}>ABOUT</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/partners">PARTNERS</NavLink>
+                    <NavLink href={`${base}/partners`}>PARTNERS</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/help">HELP</NavLink>
+                    <NavLink href={`${base}/help`}>HELP</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/contact">CONTACT</NavLink>
+                    <NavLink href={`${base}/contact`}>CONTACT</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/forums">FORUMS</NavLink>
+                    <NavLink href={`${base}/forums`}>FORUMS</NavLink>
                   </NavItem>
                   
                 </Nav>
               </Collapse>
-              <CButton Title="DOWNLOAD" />
+              <CButton Title="DOWNLOAD" onClick={this.setRedirectDownload}/>
               <UncontrolledDropdown>
                     <DropdownToggle nav caret>
                       Lang-EN
                     </DropdownToggle>
                     <DropdownMenu right>
-                      <DropdownItem>
-                        English
+                      <DropdownItem >
+                        <p onClick={() => this.changeLanguage('/en')}>English</p>
+                        <img src={USFlag}/>
                       </DropdownItem>
-                      <DropdownItem>
-                        Portueguese
+                      <DropdownItem >
+                        <p onClick={() => this.changeLanguage('/pt')}>Portueguese</p>
+                        <img src={BRFlag}/>
                       </DropdownItem>
-                      <DropdownItem>
-                        Chinese
+                      <DropdownItem >
+                        <p onClick={() => this.changeLanguage('/cn')}>Chinese</p>
+                        <img src={CNFlag}/>
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>

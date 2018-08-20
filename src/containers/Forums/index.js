@@ -27,7 +27,8 @@ class ForumsContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        
+        labels: state.main.labels,
+        content: state.main.content,
     };
 };
 

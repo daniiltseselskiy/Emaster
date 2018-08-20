@@ -1,4 +1,5 @@
 import React , { Component } from 'react'
+import { withRouter } from 'react-router-dom';
 import Benefits from '../../components/Benefits'
 import GameSupport from '../../components/GameSupport'
 import JoinCompetition from '../../components/JoinCompetition'
@@ -14,13 +15,19 @@ import { Player } from 'video-react';
 import InstagramIcon from '../../assets/images/footer/instagram-icon.png'
 import FacebookIcon from '../../assets/images/footer/facebook-icon.png'
 import NextIcon from '../../assets/images/footer/next-icon.png'
-import { labels } from '../../constants/labels'
-import { aboutPlatform } from '../../constants/content'
+
 class Home extends Component {
 
     render () {
+        const {labels, content } = this.props
+        const classname = this.props.location.pathname.split("/");
+        var isHome = false
+        if ( classname[2] == "") {
+            isHome = true
+        }
+        console.log("Home page is ", classname, isHome)
         return (
-            <div className="home-container">
+            <div className={isHome? "home-container home" : "home-container"}>
                 <div className="join-challenge-container">
                     <div className="join-challenge">
                         <TitleCompnent index={labels.joinIndex} title={labels.joinTitle} />
@@ -40,8 +47,8 @@ class Home extends Component {
                     <div className="about-platform">
                         <img src={NextIcon} alt="Next Icon"/>
                         <div className="about-platform-textarea">
-                            <Label className="text-mid-paragraph">{aboutPlatform.label}</Label>
-                            <p className="text-paragraph">{aboutPlatform.content}</p>
+                            <Label className="text-mid-paragraph">{content.aboutPlatform.label}</Label>
+                            <p className="text-paragraph">{content.aboutPlatform.content}</p>
                         </div>
                     </div>
                     <div className="howitworks-video">
@@ -55,18 +62,17 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <GameSupport />
-                <Benefits />
+                <GameSupport labels={labels}/>
+                <Benefits labels={labels} benefits={content.benefits}/>
                 <div className="working-us-container">
                     <div className="support-textarea">
                         <TitleCompnent index={labels.workingIndex} title={labels.workingTitle} />
                         {/* <Label>See All</Label> */}
                     </div>
                 </div>
-                <JoinCompetition />
+                <JoinCompetition joinContents={content.joinContents}/>
             </div>
         )
     }
 }
-
-export default Home
+export default withRouter(Home);

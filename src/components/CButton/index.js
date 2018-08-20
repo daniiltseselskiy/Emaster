@@ -6,7 +6,8 @@ import {
 
 class CButton extends Component {
     onClick = () => {
-
+        const { onClick } = this.props
+        onClick()
     }
     render () {
         const { Title } = this.props

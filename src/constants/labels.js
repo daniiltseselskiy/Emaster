@@ -1,4 +1,4 @@
-export const labels = {
+const labels = {
     basicTitle: `Basic Page`,
     basicTitle2: `Detracto tincidunt constituto qui id, ex sit soleat habemus conceptam, et tation tollit nec.`,
     joinIndex: `- Join the challenge`,
@@ -12,7 +12,6 @@ export const labels = {
     whyUsTitle: `Our Benefits & Advantages`,
     workingIndex: `- Working with us`,
     workingTitle: `Our Customers`,
-    // About
     aboutTitle: `About eMasters`,
     refinedIndex: `Online Gaming Refined`,
     refinedTitle: `The Idea And Execution`,
@@ -35,5 +34,10 @@ export const labels = {
     contactTitle: `Contact Us`,
     contactTitle1: `eMasters`,
     contactTitle2: `1014 Capp St, San Francisco CA 94110`,
+    downloadIndex: `- Download Our App`,
+    downloadTitle: `Download the eMasters App`,
+    needHelpIndex: `Need Help?`,
+    needHelpLink: `Support Page`,
 }
 
+export default labels

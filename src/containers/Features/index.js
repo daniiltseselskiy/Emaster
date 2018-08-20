@@ -20,7 +20,7 @@ class FeaturesContainer extends Component {
     render () {
         return (
             <div style={style}>
-                <Features />
+                <Features {...this.props}/>
             </div>
         )
     }
@@ -29,7 +29,8 @@ class FeaturesContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        
+        labels: state.main.labels,
+        content: state.main.content,
     };
 };
 

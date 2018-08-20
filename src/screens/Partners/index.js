@@ -12,8 +12,7 @@ import {
     Label,
 } from 'reactstrap'
 import Avatar from '../../assets/images/partners/avatar.png'
-import { labels } from '../../constants/labels'
-import { coFriends } from '../../constants/content'
+
 import JoinCompetition from '../../components/JoinCompetition';
 import NextArrow from '../../assets/images/partners/arrow-next.png'
 import PreviousArrow from '../../assets/images/partners/arrow-previous.png'
@@ -48,12 +47,13 @@ class Partners extends Component {
         )
     }
     render () {
+        const { labels, content } = this.props
         return (
             <div className="partners-container">
                 <div className="text-content-t">
                     <Label className="text-title">{labels.aboutTitle}</Label>
                 </div>
-                <Support3Text index={labels.coFriendsIndex} title={labels.coFriendsTitle} description={coFriends}/>
+                <Support3Text index={labels.coFriendsIndex} title={labels.coFriendsTitle} description={content.coFriends}/>
                 <div className="meet-partners-container">
                     <div className="partners-content">
                         <Gallery2/>
@@ -71,13 +71,12 @@ class Partners extends Component {
                     { this.renderFamilyCard() }
                     
                 </div>
-                <Benefits />
-                
+                <Benefits labels={labels} benefits={content.benefits}/>
                 <div className="faq-container">
                     <h1>{labels.faqTitle}</h1>
                     <CAccordion items={faqs}/>
                 </div>
-                <JoinCompetition />
+                <JoinCompetition joinContents={content.joinContents}/>
             </div>
         )
     }

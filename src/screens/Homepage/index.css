@@ -1,5 +1,12 @@
 .home-container {
     background-color: #1D1D1D;
+    overflow-x: hidden;
+}
+.home-container.home {
+    margin-top: -139px;
+    background-image: url('../../assets/images/homepage/background.png');
+    background-repeat: no-repeat;
+    
 }
 /* Join Challenge */
 .home-container .join-challenge-container {

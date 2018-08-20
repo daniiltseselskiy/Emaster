@@ -39,3 +39,10 @@
     font-weight: 700;
     color: #FFFFFF;
 }
+.header-container nav .dropdown button {
+    display: flex;
+    justify-content: space-between;
+}
+.header-container nav .dropdown button img {
+    height: 20px;
+}

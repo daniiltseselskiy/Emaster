@@ -14,18 +14,17 @@ import HeadQuarterImage from '../../assets/images/about/headquarter.png'
 import HelpCompanyImage from '../../assets/images/about/help-company.png'
 import NextArrow from '../../assets/images/about/arrow-next.png'
 import PreviousArrow from '../../assets/images/about/arrow-previous.png'
-import { labels } from '../../constants/labels'
-import { gamingRefined, ourMission } from '../../constants/content'
 
 class About extends Component {
     render () {
+        const {labels, content} = this.props
         return (
             <div className="about-container">
                 <div className="text-content-t">
                     <Label className="text-title">{labels.aboutTitle}</Label>
                 </div>
-                <Support3Text index={labels.refinedIndex} title={labels.refinedTitle} description={gamingRefined} download={false}/>
-                <ImageTitleComponent  label={gamingRefined.content4} image={HeadQuarterImage} reverse={false}/>
+                <Support3Text index={labels.refinedIndex} title={labels.refinedTitle} description={content.gamingRefined} download={false}/>
+                <ImageTitleComponent  label={content.gamingRefined.content4} image={HeadQuarterImage} reverse={false}/>
                 <div className="meet-team-container">
                     <div className="meet-team-content">
                         <div className="left-team-content">
@@ -44,7 +43,7 @@ class About extends Component {
                     </div>
                 </div>
                 <div className="mission-container">
-                    <Support3Text index={labels.missionIndex} title={labels.missionTitle} description={ourMission} />
+                    <Support3Text index={labels.missionIndex} title={labels.missionTitle} description={content.ourMission} />
                 </div>
                 <div className="help-company-container">
                     <div className="help-company-content">
@@ -55,7 +54,7 @@ class About extends Component {
                         </div>
                     </div>
                 </div>
-                <JoinCompetition />
+                <JoinCompetition joinContents={content.joinContents}/>
             </div>
         )
     }

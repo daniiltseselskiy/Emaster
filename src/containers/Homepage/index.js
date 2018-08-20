@@ -6,9 +6,7 @@ import {
  
  } from '../../actions/homepage';
 
- const style = { 
-    marginTop: '139px',
-}
+
 class HomeContainer extends Component {
     constructor (props) {
         super(props)
@@ -20,8 +18,8 @@ class HomeContainer extends Component {
 
     render () {
         return (
-            <div style={style}>
-                <HomePage />
+            <div>
+                <HomePage {...this.props}/>
             </div>
         )
     }
@@ -30,7 +28,8 @@ class HomeContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        
+        labels: state.main.labels,
+        content: state.main.content,
     };
 };
 

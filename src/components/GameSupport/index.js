@@ -5,9 +5,10 @@ import './index.css'
 import {
     Label
 } from 'reactstrap'
-import { labels } from '../../constants/labels'
+
 class GameSupport extends Component {
     render () {
+        const { labels } = this.props
         return (
             <div className="game-support-container">
                 <div className="support-textarea">

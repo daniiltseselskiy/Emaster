@@ -1,10 +1,15 @@
 import _ from 'lodash'
 import {
-    
+    CHANGE_LANGUAGE,
 } from '../../constants/actionTypes';
 
+import labels from '../../constants/labels'
+import content from '../../constants/content'
+localStorage.setItem('base', '/en')
 const initialState = {
-   
+   labels: labels,
+   content: content,
+   base: localStorage.getItem('base'),
 };
 
 const reducer = (state = initialState, action) => {
@@ -12,7 +17,10 @@ const reducer = (state = initialState, action) => {
     
     switch(action.type) {
         
-
+        case CHANGE_LANGUAGE:
+            newState.base = action.locale
+            localStorage.setItem('base', newState.base)
+            return newState
         default:
             return state;
     }

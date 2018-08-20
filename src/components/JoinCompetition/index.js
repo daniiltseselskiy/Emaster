@@ -5,9 +5,10 @@ import '../../screens/index.css'
 import {
     Label
 } from 'reactstrap'
-import { joinContents } from '../../constants/content'
+
 class JoinCompetition extends Component {
     render () {
+        const { joinContents } = this.props
         return (
             <div className="join-competition-container">
                 <div className="competition-textarea">

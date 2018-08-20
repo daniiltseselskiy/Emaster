@@ -20,7 +20,7 @@ class HelpContainer extends Component {
     render () {
         return (
             <div style={style}>
-                <Help />
+                <Help {...this.props}/>
             </div>
         )
     }
@@ -29,7 +29,8 @@ class HelpContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        
+        labels: state.main.labels,
+        content: state.main.content,
     };
 };
 

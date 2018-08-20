@@ -1,23 +1,42 @@
 .download-container {
-
+    padding: 9%;
+    background-color: #1D1D1D;
+    background-image: url('../../assets/images/download/background.png');
+    background-repeat: no-repeat;
+    background-position: right 100px top 20px;;
+    
 }
-
+.download-container .download-conent-h {
+    width: 40%;
+}
+.download-container .download-conent-h .dbutton-container {
+    margin-top: 10%; 
+}
 .download-container .machine-version {
-   
-
+   display: flex;
+   justify-content: space-between;
+   margin-top: 16%;
 }
 
 .download-container .feature-help {
     display: flex;
     justify-content: center;
+    margin-top: 6%;
 }
 
 .download-container .feature-help .feature-content {
     display: flex;
+    position: relative;
+    width: 48%;
+    padding: 5% 3%;
     align-items: center;
+    justify-content: center;
+    background-color: #171717;
 }
 
 .download-container .feature-help .feature-content .text-content-f {
     display: flex;
     flex-direction: column;
+    margin-left: 5%;
+    margin-right: 10%;
 }

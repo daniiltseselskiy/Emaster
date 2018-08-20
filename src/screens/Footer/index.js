@@ -16,6 +16,7 @@ import NextIcon from '../../assets/images/footer/next-icon.png'
 class Footer extends Component {
     render () {
         console.log("*************************", navigator.platform)
+        const {base} = this.props
         return (
             <div className="footer-container">
                 <div className="left-footer">
@@ -31,14 +32,14 @@ class Footer extends Component {
                     <div className="top-right-footer">
                         <div className="link-area">
                             <div className="link-area-label">
-                                <Link to="/features"><p>Features</p></Link>
-                                <Link to="/about"><p>About</p></Link>
-                                <Link to="/partners"><p>Partners</p></Link>
-                                <Link to="/contact"><p>Contact</p></Link>
+                                <Link to={`${base}/features`}><p>Features</p></Link>
+                                <Link to={`${base}/about`}><p>About</p></Link>
+                                <Link to={`${base}/partners`}><p>Partners</p></Link>
+                                <Link to={`${base}/contact`}><p>Contact</p></Link>
                             </div>
                             <div className="link-area-label">
-                                <Link to="/help"><p>Help</p></Link>
-                                <Link to="/forums"><p>Forums</p></Link>
+                                <Link to={`${base}/help`}><p>Help</p></Link>
+                                <Link to={`${base}/forums`}><p>Forums</p></Link>
                                 <a href="https://angel.co/emasters/jobs" target="blank"><p>Careers</p></a>
                             </div>
                             <div className="link-area-company">

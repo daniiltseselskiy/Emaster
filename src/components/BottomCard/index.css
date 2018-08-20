@@ -10,6 +10,10 @@
     bottom: -11vh;
     right: 10vw;
 }
+.bottom-card-container.explore {
+    bottom: 2vh;
+    right: -16vw;
+}
 .bottom-card-container .text-mid-title {
     font-weight: 500;
 }

@@ -5,7 +5,9 @@ import {
  
  } from '../../actions/download';
 
- 
+const style = { 
+    marginTop: '139px',
+}
 class DownloadContainer extends Component {
     constructor (props) {
         super(props)
@@ -17,8 +19,8 @@ class DownloadContainer extends Component {
 
     render () {
         return (
-            <div className="">
-                <Download />
+            <div className="" style={style}>
+                <Download {...this.props}/>
             </div>
         )
     }
@@ -27,7 +29,8 @@ class DownloadContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        
+        labels: state.main.labels,
+        content: state.main.content,
     };
 };
 

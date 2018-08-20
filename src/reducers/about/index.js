@@ -4,7 +4,7 @@ import {
 } from '../../constants/actionTypes';
 
 const initialState = {
-   
+  
 };
 
 const reducer = (state = initialState, action) => {

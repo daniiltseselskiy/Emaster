@@ -21,7 +21,7 @@ class AboutContainer extends Component {
     render () {
         return (
             <div style={style}>
-                <About />
+                <About {...this.props}/>
             </div>
         )
     }
@@ -29,7 +29,8 @@ class AboutContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        
+        labels: state.main.labels,
+        content: state.main.content,
     };
 };
 

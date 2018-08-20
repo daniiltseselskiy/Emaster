@@ -12,22 +12,21 @@ import {
 import TournamentImage from '../../assets/images/features/tournament.png'
 import RealMoneyImage from '../../assets/images/features/real-money.png'
 import ProtectionImage from '../../assets/images/features/protection.png'
-import { labels } from '../../constants/labels'
-import { tournamentLeague, realMoney, safeSecure, whatisEmasters } from '../../constants/content'
+
 class Features extends Component {
     render () {
-        
+        const { labels, content } = this.props
         return (
             <div className="features-container">
                 <div className="text-content-t">
                     <Label className="text-title">{labels.featuresTitle}</Label>
                 </div>
-                <Support3Text index={labels.whatFeaturesIndex} title={labels.whatFeaturesTitle} description={whatisEmasters} download={true}/>
-                <GameSupport />
-                <ImageTitleComponent label={tournamentLeague.label} content1={tournamentLeague.content1} content2={tournamentLeague.content2} image={TournamentImage}  />
-                <ImageTitleComponent label={realMoney.label} content1={realMoney.content1} content2={realMoney.content2} image={RealMoneyImage} reverse={true} />
-                <ImageTitleComponent label={safeSecure.label} content1={safeSecure.content1} content2={safeSecure.content2} image={ProtectionImage}  />
-                <JoinCompetition />
+                <Support3Text index={labels.whatFeaturesIndex} title={labels.whatFeaturesTitle} description={content.whatisEmasters} download={true}/>
+                <GameSupport labels={labels}/>
+                <ImageTitleComponent label={content.tournamentLeague.label} content1={content.tournamentLeague.content1} content2={content.tournamentLeague.content2} image={TournamentImage}  />
+                <ImageTitleComponent label={content.realMoney.label} content1={content.realMoney.content1} content2={content.realMoney.content2} image={RealMoneyImage} reverse={true} />
+                <ImageTitleComponent label={content.safeSecure.label} content1={content.safeSecure.content1} content2={content.safeSecure.content2} image={ProtectionImage}  />
+                <JoinCompetition joinContents={content.joinContents}/>
             </div>
         )
     }

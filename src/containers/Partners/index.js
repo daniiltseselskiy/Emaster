@@ -20,7 +20,7 @@ class PartnersContainer extends Component {
     render () {
         return (
             <div className="" style={style}>
-                <Partners />
+                <Partners {...this.props}/>
             </div>
         )
     }
@@ -29,7 +29,8 @@ class PartnersContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        
+        labels: state.main.labels,
+        content: state.main.content,
     };
 };
 

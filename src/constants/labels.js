@@ -38,6 +38,9 @@ const labels = {
     downloadTitle: `Download the eMasters App`,
     needHelpIndex: `Need Help?`,
     needHelpLink: `Support Page`,
+    windowsVersion: `Windows Version`,
+    macVersion: `Mac Version`,
+    linuxVersion: `Linux Version`,
 }
 
 export default labels

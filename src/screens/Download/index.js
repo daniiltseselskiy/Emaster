@@ -18,16 +18,50 @@ import LinuxLogo from '../../assets/images/download/linux-logo.png'
 import labels from '../../constants/labels'
 import content from '../../constants/content'
 class Download extends Component {
+    renderActiveDownload = (arrVersion) => {
+        return arrVersion.map(
+            (item, index) => {
+                if (item.index === navigator.platform) {
+                    return <div key={index}><DButton title="DOWNLOAD NOW" image={item.image} active={true}/></div>
+                }
+            }
+        )
+    }
+    renderNonActiveDownload = (arrVersion) => {
+        return arrVersion.map(
+            (item, index) => {
+                if (item.index !== navigator.platform) {
+                    return <DownloadVersion key={index} title={item.index} image={item.image}/>
+                }
+            }
+        )
+    }
     render () {
+        var arrVersion = [
+            {
+                index: 'Win32',
+                title: labels.windowsVersion,
+                image: WindowsLogo,
+            },
+            {
+                index: 'MacIntel',
+                title: labels.macVersion,
+                image: MacLogo,
+            },
+            {
+                index: 'Linux',
+                title: labels.linuxVersion,
+                image: LinuxLogo,
+            }
+        ]
         return (
             <div className="download-container">
                 <div className="download-conent-h">
                     <TitleComponent index={labels.downloadIndex} title={labels.downloadTitle} /> 
-                    <DButton title="DOWNLOAD NOW" image={WindowsLogo} active={true}/>
+                    {this.renderActiveDownload(arrVersion)}
                 </div>
                 <div className="machine-version">
-                    <DownloadVersion image={MacLogo}/>
-                    <DownloadVersion image={LinuxLogo}/>
+                    {this.renderNonActiveDownload(arrVersion)}
                 </div>
                 <div className="feature-help">
                     <div className="feature-content">

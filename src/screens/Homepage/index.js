@@ -16,7 +16,7 @@ import { Player } from 'video-react';
 import InstagramIcon from '../../assets/images/footer/instagram-icon.png'
 import FacebookIcon from '../../assets/images/footer/facebook-icon.png'
 import NextIcon from '../../assets/images/footer/next-icon.png'
-
+import DiscordIcon from '../../assets/images/footer/discord-icon.png'
 class Home extends Component {
 
     render () {
@@ -38,9 +38,9 @@ class Home extends Component {
                         </div>
                     </div>
                     <div className="join-social">
-                        <a href="https://www.instagram.com" target="blank"><img src={InstagramIcon} alt="Instagram" /></a>
-                        <a href="https://www.facebook.com" target="blank"><img src={FacebookIcon} alt="Facebook" /></a>
-                        <a href="https://www.instagram.com" target="blank"><img src={InstagramIcon} alt="Instagram" /></a>
+                        <a href="https://www.instagram.com" target="blank"><img src={DiscordIcon} alt="Instagram" /></a>
+                        <a href="https://www.facebook.com" target="blank"><img src={InstagramIcon} alt="Facebook" /></a>
+                        <a href="https://www.instagram.com" target="blank"><img src={FacebookIcon} alt="Instagram" /></a>
                         <a href="https://www.facebook.com" target="blank"><img src={FacebookIcon} alt="Facebook" /></a>
                     </div>
                 </div>

@@ -6,6 +6,7 @@ import JoinCompetition from '../../components/JoinCompetition'
 import CButton from '../../components/CButton'
 import TitleCompnent from '../../components/TitleComponent'
 import './index.css'
+import '../index.css'
 import {
     Label,
     Button
@@ -55,9 +56,9 @@ class Home extends Component {
                         <div className="video-container">
                             <ReactPlayer url='https://www.youtube.com/watch?v=uilkmUoXoLU' playing />
                             <div className="video-textarea">
-                                <Label>See How It Works</Label>
-                                <Label>Ut eniem ad minim veniam , quis nostrud exercitation</Label>
-                                <Label>ullamco laboris nisi ut aliquip exea</Label>
+                                <h3 className="text-mid-paragraph">See How It Works</h3>
+                                <p className="text-paragraph">Ut eniem ad minim veniam , quis nostrud exercitation</p>
+                                <p className="text-paragraph">ullamco laboris nisi ut aliquip exea</p>
                             </div>
                         </div>
                     </div>

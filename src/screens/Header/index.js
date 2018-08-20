@@ -1,5 +1,5 @@
 import React , { Component } from 'react'
-import { Redirect } from 'react-router-dom'
+import { Redirect, withRouter } from 'react-router-dom'
 import './index.css'
 //ReactStrap
 import {
@@ -57,11 +57,18 @@ class Header extends Component {
           return <Redirect to={`${base}/download`} />
         }
       }
+      onChangeLanguage = () => {
+        const { base } = this.props
+        const classname = this.props.location.pathname.split("/");
+        return <Redirect to={`${base}/${classname[2]}`} />
+      }
       render() {
         const { base, isHome } = this.props
+        console.log("**********************************", base)
         return (
           <div className="header-container" style={isHome? style : style1}>
             {this.onClickDownload()}
+            {this.onChangeLanguage()}
             <Navbar light expand="md">
               <NavbarBrand href="/">
                   <img src={LogoImage} alt="Logo Image" />
@@ -119,4 +126,4 @@ class Header extends Component {
       }
 }
 
-export default Header
+export default  withRouter(Header)

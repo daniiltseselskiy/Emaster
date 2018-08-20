@@ -6,7 +6,7 @@
     margin-top: -139px;
     background-image: url('../../assets/images/homepage/background.png');
     background-repeat: no-repeat;
-    
+    padding-top: 139px;
 }
 /* Join Challenge */
 .home-container .join-challenge-container {
@@ -22,6 +22,9 @@
 .home-container .join-challenge-container .join-button-area {
     display: flex;
     margin-top: 2%;
+}
+.home-container .join-challenge-container .join-button-area .cbutton-container {
+    margin-right: 3%;
 }
 .home-container .join-challenge-container .join-social {
     width: 30px;
@@ -74,13 +77,19 @@
     bottom: 10%;
     color: wheat;
 }
-
+.home-container .about-platform-container .howitworks-video .video-container .video-textarea .text-paragraph {
+    margin-top: 0;
+}
 
 /* Working Us */
 .home-container .working-us-container {
     display: flex;
-    height: 30%;
+    height: 30vh;
     padding-left: 9%;
+    background-image: url('../../assets/images/customer.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    
 }
 
 .home-container .working-us-container .support-textarea {

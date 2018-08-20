@@ -5,11 +5,11 @@ import {
 
 import labels from '../../constants/labels'
 import content from '../../constants/content'
-localStorage.setItem('base', '/en')
+
 const initialState = {
    labels: labels,
    content: content,
-   base: localStorage.getItem('base'),
+   base: localStorage.getItem('base') || "/en",
 };
 
 const reducer = (state = initialState, action) => {

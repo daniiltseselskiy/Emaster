@@ -10,7 +10,7 @@
 }
 
 .cbutton-container:hover {
-    border-color: yellow;
+    border-color: #FFC400;
     cursor: pointer;
 }
 

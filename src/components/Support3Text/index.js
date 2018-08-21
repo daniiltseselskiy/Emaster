@@ -24,6 +24,7 @@ class Support3Text extends Component {
                     <div className="support-textarea-l">
                         <p className="text-paragraph">{description.content2}</p>
                         <p className="text-paragraph">{description.content3}</p>
+                        {download && <CButton Title="DOWNLOAD" />}
                     </div>
                 </div>
             </div>

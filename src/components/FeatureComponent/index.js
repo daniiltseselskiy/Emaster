@@ -9,11 +9,13 @@ class FeatureComponent extends Component {
         const { image, label, content} = this.props
         return (
             <div className="feature-component">
-                <div>
+                <div className="feature-imagearea">
                     <img src={image} alt="Image"/>
                 </div>
-               <h3 className="text-mid-paragraph">{label}</h3>
-                <p className="text-paragraph">{content}</p>
+                <div className="feature-textarea">
+                    <h3 className="text-mid-paragraph">{label}</h3>
+                    <p className="text-paragraph">{content}</p>
+                </div>
             </div>
         )
     }

@@ -4,6 +4,10 @@
     background-color: #0E0E0E;
     padding: 5% 10%;
     margin-top: 10%;
+    background-image: url('../../assets/images/competition-background-desktop.png');
+    background-size: 150% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 .join-competition-container .text-title {
     font-size: 50px;

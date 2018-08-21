@@ -100,26 +100,26 @@ class Header extends Component {
                   
                 </Nav>
               </Collapse>
-              {/* <CButton Title="DOWNLOAD" onClick={this.setRedirectDownload}/> */}
-              {/* <UncontrolledDropdown>
+              <CButton Title="DOWNLOAD" onClick={this.setRedirectDownload}/>
+              <UncontrolledDropdown>
                     <DropdownToggle nav caret>
                       Lang-EN
                     </DropdownToggle>
                     <DropdownMenu right>
                       <DropdownItem >
-                        <p onClick={() => this.changeLanguage('/en')}>English</p>
                         <img src={USFlag}/>
+                        <p onClick={() => this.changeLanguage('/en')}>English, USA</p>
                       </DropdownItem>
                       <DropdownItem >
-                        <p onClick={() => this.changeLanguage('/pt')}>Portueguese</p>
                         <img src={BRFlag}/>
+                        <p onClick={() => this.changeLanguage('/pt')}>Português do Brasil</p>
                       </DropdownItem>
                       <DropdownItem >
-                        <p onClick={() => this.changeLanguage('/cn')}>Chinese</p>
                         <img src={CNFlag}/>
+                        <p onClick={() => this.changeLanguage('/cn')}>中文</p>
                       </DropdownItem>
                     </DropdownMenu>
-                  </UncontrolledDropdown> */}
+                  </UncontrolledDropdown>
             </Navbar>
           </div>
         );

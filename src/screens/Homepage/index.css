@@ -66,8 +66,8 @@
     position: relative;
 }
 .home-container .about-platform-container .howitworks-video .video-container div:nth-child(1) {
-    height: 100% !important;
-    width: 100% !important;
+    height: inherit;
+    width: inherit;
 }
 .home-container .about-platform-container .howitworks-video .video-container .video-textarea {
     position: absolute;
@@ -145,5 +145,24 @@
         background-image: url('../../assets/images/customer.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .home-container .join-challenge-container .join-challenge .title-container {
+        margin: 0;
+    }
+    .home-container .join-challenge-container .join-social {
+        width: 40%;
+    }
+    .home-container .about-platform-container .about-platform {
+        padding: 0 7%;
+    }
+    .home-container .about-platform-container .about-platform img {
+        display: none;
+    }
+    .home-container .about-platform-container .howitworks-video .video-container {
+        width: 375px;
+        height: 211px;
     }
 }

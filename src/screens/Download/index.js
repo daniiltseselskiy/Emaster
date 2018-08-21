@@ -12,9 +12,12 @@ import {
     Row,
 } from 'reactstrap'
 import NextIcon from '../../assets/images/download/next-icon.png'
-import MacLogo from '../../assets/images/download/apple-logo.png'
-import WindowsLogo from '../../assets/images/download/windows-logo.png'
-import LinuxLogo from '../../assets/images/download/linux-logo.png'
+import MacLogoBlack from '../../assets/images/download/mac-logo-black.png'
+import MacLogoWhite from '../../assets/images/download/mac-logo-white.png'
+import WindowsLogoBlack from '../../assets/images/download/windows-logo-black.png'
+import WindowsLogoWhite from '../../assets/images/download/windows-logo-white.png'
+import LinuxLogoBlack from '../../assets/images/download/linux-logo-black.png'
+import LinuxLogoWhite from '../../assets/images/download/linux-logo-white.png'
 import labels from '../../constants/labels'
 import content from '../../constants/content'
 class Download extends Component {
@@ -22,7 +25,7 @@ class Download extends Component {
         return arrVersion.map(
             (item, index) => {
                 if (item.index === navigator.platform) {
-                    return <div key={index}><DButton title="DOWNLOAD NOW" image={item.image} active={true}/></div>
+                    return <div key={index}><DButton title="DOWNLOAD NOW" image={item.imageA} active={true}/></div>
                 }
             }
         )
@@ -41,17 +44,20 @@ class Download extends Component {
             {
                 index: 'Win32',
                 title: labels.windowsVersion,
-                image: WindowsLogo,
+                image: WindowsLogoWhite,
+                imageA: WindowsLogoBlack,
             },
             {
                 index: 'MacIntel',
                 title: labels.macVersion,
-                image: MacLogo,
+                image: MacLogoWhite,
+                imageA: MacLogoBlack,
             },
             {
                 index: 'Linux',
                 title: labels.linuxVersion,
-                image: LinuxLogo,
+                image: LinuxLogoWhite,
+                imageA: LinuxLogoBlack,
             }
         ]
         return (

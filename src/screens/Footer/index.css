@@ -128,3 +128,47 @@
         margin-left: 0;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .footer-container {
+        height: inherit;
+    }
+    .footer-container .top-footer .top-left-footer {
+
+    }
+    .footer-container .top-footer .top-left-footer .footer-image-content {
+        display: none;
+    }
+    .footer-container .top-footer .top-left-footer .link-area {
+        width: 100%;
+        padding: 7%;
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .footer-container .top-footer .top-left-footer .link-area .link-area-company {
+        grid-column: 1 / span 2;
+        margin-top: 5%;
+    }
+    .footer-container .top-footer .mail-area {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer-container .bottom-footer {
+        flex-direction: column;
+    }
+    .footer-container .bottom-footer .social-mark {
+        margin: 10% auto;
+        width: 50%;
+    }
+    .footer-container .bottom-footer .bottom-right-footer {
+        padding: 10% 0;
+        width: 100%;
+        align-items: center;
+    }
+    .footer-container .bottom-footer .bottom-right-footer .bottom-link {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}

@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import {
     Route,
     Switch,
-    Router
+    Router,
+    Redirect
 } from 'react-router'
+import { withRouter } from 'react-router-dom'
 import Headers from '../containers/Headers';
 import Footers from '../containers/Footers';
 import Homepage from '../containers/Homepage';
@@ -20,14 +22,19 @@ const style = {
     height: '100vh', display: 'flex' , flexDirection: 'column'
 }
 class RouterComponent extends Component {
+    renderRoute = (classname, base) => {
+        if (classname[1] === '') {
+            return <Redirect to={`${base}/`} />
+        }
+    }
     render () {
         const base = localStorage.getItem('base')
-       
-      
+        const classname = this.props.location.pathname.split("/");
         return (
             <div style={style}>
                 <Headers />
                 <Switch>
+                    {this.renderRoute(classname, base)}
                     <Route path={`${base}/features`} component={Features} />
                     <Route path={`${base}/about`} component={About} />
                     <Route path={`${base}/partners`} component={Partners} />
@@ -37,6 +44,7 @@ class RouterComponent extends Component {
                     <Route path={`${base}/careers` }component={Careers} />
                     <Route path={`${base}/download`} component={Download} />
                     <Route path={`${base}/`} component={Homepage} />
+                    <Route path={`/`} component={Homepage} />
                     <Route component={NotFound}/>
                 </Switch>
                 <Footers />
@@ -44,5 +52,5 @@ class RouterComponent extends Component {
         )
     }
 }
-export default RouterComponent;
+export default withRouter(RouterComponent);
 

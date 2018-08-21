@@ -13,3 +13,12 @@
     font-weight: 700;
     color: #FFFFFF;
 }
+
+@media screen and (max-width: 375px) {
+    .title-container p {
+
+    }
+    .title-container h1 {
+        font-size: 32px;
+    }
+}

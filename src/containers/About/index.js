@@ -7,7 +7,7 @@ import {
 import { isMoment } from 'moment';
 
 const style = { 
-    marginTop: '139px',
+    marginTop: '138px',
 }
 class AboutContainer extends Component {
     constructor (props) {

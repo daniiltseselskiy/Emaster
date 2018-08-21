@@ -15,14 +15,16 @@ class Support3Text extends Component {
                 <div className="support-textarea-s">
                     <TitleCompnent index={index} title={title} />
                 </div>
-                <div className="support-textarea-l">
-                    <h3 className="text-mid-paragraph">{description.label}</h3>
-                    <p className="text-paragraph">{description.content1}</p>
-                    {download && <CButton Title="DOWNLOAD" />}
-                </div>
-                <div className="support-textarea-l">
-                    <p className="text-paragraph">{description.content2}</p>
-                    <p className="text-paragraph">{description.content3}</p>
+                <div className="support-2-textarea">
+                    <div className="support-textarea-l">
+                        <h3 className="text-mid-paragraph">{description.label}</h3>
+                        <p className="text-paragraph">{description.content1}</p>
+                        {download && <CButton Title="DOWNLOAD" />}
+                    </div>
+                    <div className="support-textarea-l">
+                        <p className="text-paragraph">{description.content2}</p>
+                        <p className="text-paragraph">{description.content3}</p>
+                    </div>
                 </div>
             </div>
         )

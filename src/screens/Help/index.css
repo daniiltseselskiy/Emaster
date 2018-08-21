@@ -40,3 +40,18 @@
 .help-container .text-content-e img {
     height: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .help-container .text-content-h {
+        width: 90%;
+    }
+    .help-container .text-content-m {
+        width: 90%;
+    }
+    .help-container .image-content-h {
+        width: 100%;
+    }
+    .help-container .text-content-e {
+        width: 90%;
+    }
+}

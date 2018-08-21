@@ -20,3 +20,9 @@
 .margin .alice-carousel .alice-carousel__wrapper li > div {
     padding-left: 3%;
 }
+
+@media screen and (max-width: 768px) {
+    .margin .alice-carousel .alice-carousel__wrapper li:nth-child(1) {
+        margin: 0;
+    }
+}

@@ -19,17 +19,11 @@ class Footer extends Component {
         const {base} = this.props
         return (
             <div className="footer-container">
-                <div className="left-footer">
-                    <img src={LogoImage} alt="Footer Logo" />
-                    <div className="social-mark">
-                        <a href="https://www.instagram.com" target="blank"><img src={DiscordIcon} alt="Instagram" /></a>
-                        <a href="https://www.facebook.com" target="blank"><img src={InstagramIcon} alt="Facebook" /></a>
-                        <a href="https://www.instagram.com" target="blank"><img src={FacebookIcon} alt="Instagram" /></a>
-                        <a href="https://www.facebook.com" target="blank"><img src={FacebookIcon} alt="Facebook" /></a>
-                    </div>
-                </div>
-                <div className="right-footer">
-                    <div className="top-right-footer">
+                <div className="top-footer">
+                    <div className="top-left-footer">
+                        <div className="footer-image-content">
+                            <img src={LogoImage} alt="Footer Logo" />
+                        </div>
                         <div className="link-area">
                             <div className="link-area-label">
                                 <Link to={`${base}/features`}><p>Features</p></Link>
@@ -48,14 +42,24 @@ class Footer extends Component {
                                 <p>CA 94110</p>
                             </div>
                         </div>
-                        <div className="mail-area">
-                            <NInput placeholder="Join our mailing list"/>
-                            <img src={NextIcon} alt="Next Icon" />
-                        </div>
+                    </div>
+                    <div className="mail-area">
+                        <NInput placeholder="Join our mailing list"/>
+                        <img src={NextIcon} alt="Next Icon" />
+                    </div>
+                </div>
+                <div className="bottom-footer">
+                    <div className="social-mark">
+                        <a href="https://www.instagram.com" target="blank"><img src={DiscordIcon} alt="Instagram" /></a>
+                        <a href="https://www.facebook.com" target="blank"><img src={InstagramIcon} alt="Facebook" /></a>
+                        <a href="https://www.instagram.com" target="blank"><img src={FacebookIcon} alt="Instagram" /></a>
+                        <a href="https://www.facebook.com" target="blank"><img src={FacebookIcon} alt="Facebook" /></a>
                     </div>
                     <div className="bottom-right-footer">
-                        <Link to="#">Privacy Policy</Link>
-                        <Link to="#">Terms & Conditions</Link>
+                        <div className="bottom-link">
+                            <Link to="#">Privacy Policy</Link>
+                            <Link to="#">Terms & Conditions</Link>
+                        </div>
                         <Label>Copyright 2018 eMasters</Label>
                     </div>
                 </div>

@@ -47,6 +47,24 @@
     margin-top: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .partners-container .meet-partners-container {
+        padding: 5% 0 20% 0;
+    }
+    .partners-container .meet-partners-container .bottom-card-container {
+        right: 13%;
+        width: 50vw;
+    }
+    .partners-container .extend-family-container {
+        grid-template-columns: 50% 50%;
 
+    }
+    .partners-container .extend-family-container .first-card-container {
+        grid-column: 1 / span 2;
+    }
+    .partners-container .faq-container {
+        width: 90%;
+    }
+}
 
 

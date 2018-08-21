@@ -100,8 +100,8 @@ class Header extends Component {
                   
                 </Nav>
               </Collapse>
-              <CButton Title="DOWNLOAD" onClick={this.setRedirectDownload}/>
-              <UncontrolledDropdown>
+              {/* <CButton Title="DOWNLOAD" onClick={this.setRedirectDownload}/> */}
+              {/* <UncontrolledDropdown>
                     <DropdownToggle nav caret>
                       Lang-EN
                     </DropdownToggle>
@@ -119,7 +119,7 @@ class Header extends Component {
                         <img src={CNFlag}/>
                       </DropdownItem>
                     </DropdownMenu>
-                  </UncontrolledDropdown>
+                  </UncontrolledDropdown> */}
             </Navbar>
           </div>
         );

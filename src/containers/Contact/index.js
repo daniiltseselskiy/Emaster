@@ -6,7 +6,7 @@ import {
  } from '../../actions/contact';
 
 const style = { 
-    marginTop: '139px',
+    marginTop: '138px',
 }
 class ContactContainer extends Component {
     constructor (props) {

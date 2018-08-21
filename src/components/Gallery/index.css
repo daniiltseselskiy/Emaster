@@ -14,3 +14,17 @@
 .alice-carousel .alice-carousel__wrapper li:nth-child(1) {
    
 }
+.alice-carousel .alice-carousel__wrapper li div {
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .alice-carousel .alice-carousel__wrapper li div{
+        height: 100%;
+    }
+    .alice-carousel .alice-carousel__wrapper li div img {
+        width: 90%;
+        height: 17vh;
+    }
+}

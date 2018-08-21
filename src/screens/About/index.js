@@ -24,7 +24,7 @@ class About extends Component {
                     <Label className="text-title">{labels.aboutTitle}</Label>
                 </div>
                 <Support3Text index={labels.refinedIndex} title={labels.refinedTitle} description={content.gamingRefined} download={false}/>
-                <ImageTitleComponent  label={content.gamingRefined.content4} image={HeadQuarterImage} reverse={false}/>
+                {/* <ImageTitleComponent  label={content.gamingRefined.content4} image={HeadQuarterImage} reverse={false}/> */}
                 <div className="meet-team-container">
                     <div className="meet-team-content">
                         <div className="left-team-content">

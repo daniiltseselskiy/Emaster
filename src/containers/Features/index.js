@@ -6,7 +6,7 @@ import {
  } from '../../actions/features';
 
 const style = { 
-    marginTop: '139px',
+    marginTop: '138px',
 }
 class FeaturesContainer extends Component {
     constructor (props) {

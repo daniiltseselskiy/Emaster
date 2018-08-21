@@ -6,7 +6,7 @@ import {
  } from '../../actions/help';
 
 const style = { 
-    marginTop: '139px',
+    marginTop: '138px',
 }
 class HelpContainer extends Component {
     constructor (props) {

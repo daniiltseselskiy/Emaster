@@ -70,6 +70,7 @@ class Home extends Component {
                         <TitleCompnent index={labels.workingIndex} title={labels.workingTitle} />
                         {/* <Label>See All</Label> */}
                     </div>
+                    <div className="tablet-image" />
                 </div>
                 <JoinCompetition joinContents={content.joinContents}/>
             </div>

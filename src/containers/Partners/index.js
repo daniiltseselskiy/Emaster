@@ -5,7 +5,7 @@ import {
  
  } from '../../actions/partners';
 const style = { 
-    marginTop: '139px',
+    marginTop: '138px',
 }
  
 class PartnersContainer extends Component {

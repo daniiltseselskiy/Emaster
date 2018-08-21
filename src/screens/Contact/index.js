@@ -23,13 +23,15 @@ class Contact extends Component {
                 <div className="contact-content">
                     <div className="left-contact">
                         <TitleComponent index={labels.contactIndex} title={labels.contactTitle1} />
-                        <p className="text-mid-paragraph">{labels.contactTitle2}</p>
-                        <div className="social-mark-c">
-                            <a href="https://www.instagram.com" target="blank"><img src={DiscordIcon} alt="Instagram" /></a>
-                            <a href="https://www.facebook.com" target="blank"><img src={InstagramIcon} alt="Facebook" /></a>
-                            <a href="https://www.instagram.com" target="blank"><img src={FacebookIcon} alt="Instagram" /></a>
-                            <a href="https://www.facebook.com" target="blank"><img src={FacebookIcon} alt="Facebook" /></a>
-                        </div>
+                        <div className="text-social-container" >
+                            <p className="text-mid-paragraph">{labels.contactTitle2}</p>
+                            <div className="social-mark-c">
+                                <a href="https://www.instagram.com" target="blank"><img src={DiscordIcon} alt="Instagram" /></a>
+                                <a href="https://www.facebook.com" target="blank"><img src={InstagramIcon} alt="Facebook" /></a>
+                                <a href="https://www.instagram.com" target="blank"><img src={FacebookIcon} alt="Instagram" /></a>
+                                <a href="https://www.facebook.com" target="blank"><img src={FacebookIcon} alt="Facebook" /></a>
+                            </div>
+                        </div> 
                     </div>
                     <div className="right-contact">
                         <CInput placeholder="Name" label="Name*"/>

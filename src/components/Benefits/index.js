@@ -16,24 +16,12 @@ class Benefits extends Component {
         const { labels, benefits } = this.props
         return (
             <div className="benefits-container">
-                <div className="support-component-container">
-                    <div className="support-textarea">
-                        <TitleComponent  index={labels.whyUsIndex} title={labels.whyUsTitle}/>
-                    </div>
-                    <div className="support-componentarea">
-                        <FeatureComponent label={benefits.safeSecure.label} content={benefits.safeSecure.content} image={SafeSecureImage}/>
-                        <FeatureComponent label={benefits.desktopApp.label} content={benefits.desktopApp.content} image={DesktopAppImage}/>
-                    </div>
-                </div>
-                <div className="support-component-container">
-                    <div className="left-componentarea">
-                        <FeatureComponent label={benefits.trackProgress.label} content={benefits.trackProgress.content} image={TrackProgressImage}/>
-                    </div>
-                    <div className="support-componentarea">
-                        <FeatureComponent label={benefits.favouriteGames.label} content={benefits.favouriteGames.content} image={FavouriteGamesImage}/>
-                        <FeatureComponent label={benefits.greatSupport.label} content={benefits.greatSupport.content} image={GreatSupportImage}/>
-                    </div>
-                </div>
+                <TitleComponent  index={labels.whyUsIndex} title={labels.whyUsTitle}/>
+                <FeatureComponent label={benefits.safeSecure.label} content={benefits.safeSecure.content} image={SafeSecureImage}/>
+                <FeatureComponent label={benefits.desktopApp.label} content={benefits.desktopApp.content} image={DesktopAppImage}/>
+                <FeatureComponent label={benefits.trackProgress.label} content={benefits.trackProgress.content} image={TrackProgressImage}/>
+                <FeatureComponent label={benefits.favouriteGames.label} content={benefits.favouriteGames.content} image={FavouriteGamesImage}/>
+                <FeatureComponent label={benefits.greatSupport.label} content={benefits.greatSupport.content} image={GreatSupportImage}/>
             </div>
         )
     }

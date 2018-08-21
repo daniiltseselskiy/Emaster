@@ -3,10 +3,10 @@
     overflow-x: hidden;
 }
 .home-container.home {
-    margin-top: -139px;
+    margin-top: -138px;
     background-image: url('../../assets/images/homepage/background.png');
     background-repeat: no-repeat;
-    padding-top: 139px;
+    padding-top: 138px;
 }
 /* Join Challenge */
 .home-container .join-challenge-container {
@@ -98,3 +98,52 @@
     flex-direction: column;
 }
 
+/* IPad Responsive */
+@media screen and (max-width: 768px) {
+    .home-container .join-challenge-container {
+        flex-direction: column;
+        height: 30vh;
+        margin-top: 30%;
+    }
+    .home-container .join-challenge-container .join-challenge .title-container {
+        margin: 0 10%;
+    }
+    .home-container .join-challenge-container .join-challenge .join-button-area {
+        justify-content: space-around;
+        padding: 0 15%;
+    }
+    .home-container .join-challenge-container .join-social {
+        flex-direction: row;
+        width: 28%;
+        margin: 0 auto;
+        padding: 6% 0;
+    }
+    /* About  */
+    .home-container .about-platform-container  {
+        flex-direction: column;
+    }
+    .home-container .about-platform-container .about-platform {
+        width: 100%;
+        padding: 4% 3%;
+    }
+    .home-container .about-platform-container .howitworks-video {
+        width: 100%;
+    }
+    /* Working with us */
+    .home-container .working-us-container {
+        padding: 0; 
+        height: inherit;
+        background-image: none;
+        flex-direction: column;
+    }
+    .home-container .working-us-container .support-textarea {
+        width: 100%;
+        padding: 0 9%;
+    }
+    .home-container .working-us-container .tablet-image {
+        height: 30vh;
+        background-image: url('../../assets/images/customer.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}

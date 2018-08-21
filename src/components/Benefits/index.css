@@ -1,24 +1,25 @@
 /* Benefits  */
 .benefits-container {
-    padding: 0 9%;
-}
-.benefits-container .support-component-container {
-    display: flex;
-    margin: 8% 0;
-}
-.benefits-container .support-component-container .support-textarea {
-    display: flex;
-    width: 40%;
-    flex-direction: column;
+    padding: 9%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
 }
 
-.benefits-container .support-component-container .left-componentarea {
-    display: flex;
-    justify-content: flex-end;
-    width: 40%;
+.benefits-container .feature-component {
+    margin-left: 17%;
+    margin-bottom: 20%;
 }
 
-.benefits-container .support-component-container .support-componentarea {
-    display: flex;
-    width: 60%;
+@media screen and (max-width: 768px) {
+    .benefits-container {
+        grid-template-columns: 50% 50%;
+        padding: 8%;
+    }
+    .benefits-container .title-container {
+        grid-column: 1 / span 2;
+    }
+    .benefits-container .feature-component {
+        margin: 10% 0;
+        width: 100%; 
+    }
 }

@@ -25,3 +25,25 @@
     right: -10%;
     margin: 5% 0 auto auto;
 }
+
+@media screen and (max-width: 768px) {
+    .game-support-container {
+        flex-direction: column;
+        height: inherit;
+        padding: 0;
+    }
+    .game-support-container .support-textarea {
+        width: 100%;
+        padding: 0 9%;
+    }
+    .game-support-container .game-panel {
+        position: inherit;
+        width: 100%;
+        padding: 5% 9% 5% 12%;
+        right: 0;
+        background-image: url('../../assets/images/partners/background.png');
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+        background-position: bottom;
+    }
+}

@@ -1,6 +1,7 @@
 const labels = {
     basicTitle: `Basic Page`,
     basicTitle2: `Detracto tincidunt constituto qui id, ex sit soleat habemus conceptam, et tation tollit nec.`,
+    partnersTitle: `Partners`,
     joinIndex: `- Join the challenge`,
     joinTitle: `Play. Improve. Win!`,
     gameIndex: `- More coming soon`,

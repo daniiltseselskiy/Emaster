@@ -6,7 +6,7 @@ import {
  } from '../../actions/download';
 
 const style = { 
-    marginTop: '139px',
+    marginTop: '138px',
 }
 class DownloadContainer extends Component {
     constructor (props) {

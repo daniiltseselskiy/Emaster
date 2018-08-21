@@ -84,3 +84,50 @@
 .about-container .join-competition-container {
     margin-top: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .about-container .image-title-container .image-content {
+        margin: -30% 0;
+    }
+    .about-container .meet-team-container {
+        padding: 7% 0 20% 0;
+        background-size: 85% 80%;
+        background-position: bottom right;
+    }
+    .about-container .meet-team-container .meet-team-content {
+        flex-direction: column-reverse;
+    }
+    .about-container .meet-team-container .meet-team-content .right-team-content {
+        width: 100%;
+    }
+    .about-container .meet-team-container .meet-team-content .right-team-content .bottom-card-container {
+        right: 8.5%;
+        width: 50vw;
+    }
+    .about-container .meet-team-container .meet-team-content .left-team-content {
+        width: 100%;
+    }
+    .about-container .meet-team-container .meet-team-content .right-team-content .title-container {
+        margin-bottom: 10%;
+    }
+    .about-container .meet-team-container .meet-team-content .left-team-content .team-arrow {
+        width: 62.5%;
+    }
+    .about-container .mission-container {
+        align-items: flex-start;
+        margin-top: 30%;
+        background-size: 150% 100%;
+    }
+    .about-container .mission-container .support-3-container .support-2-textarea .support-textarea-l:nth-child(1) {
+        width: 1000%;
+    }
+    .about-container .help-company-container .help-company-content {
+        width: 82%;
+        left: 9%;
+        top: -53vh;
+    }
+    .about-container .help-company-container .help-company-content .image-card-container .bottom-card-container {
+        width: 50vw;
+        right: 0;
+    }
+}

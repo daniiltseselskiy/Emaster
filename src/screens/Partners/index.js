@@ -51,7 +51,7 @@ class Partners extends Component {
         return (
             <div className="partners-container">
                 <div className="text-content-t">
-                    <Label className="text-title">{labels.aboutTitle}</Label>
+                    <Label className="text-title">{labels.partnersTitle}</Label>
                 </div>
                 <Support3Text index={labels.coFriendsIndex} title={labels.coFriendsTitle} description={content.coFriends}/>
                 <div className="meet-partners-container">

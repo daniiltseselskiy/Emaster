@@ -11,9 +11,31 @@
 .image-title-container .title-content {
     display:  flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
+    margin-right: 10%;
     justify-content: center;
 }
 .image-title-container.reverse {
     justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    .image-title-container {
+        flex-direction: column;
+    }
+    .image-title-container.reverse {
+        flex-direction: column-reverse;
+    }
+    .image-title-container .image-content {
+        width: 100%;
+        padding: 10%;
+        display: inherit;
+    }
+    .image-title-container .image-content img { 
+        height: 100%;
+    }
+    .image-title-container .title-content {
+        width: 80%;
+        margin: 0 auto;
+    }
 }

@@ -18,7 +18,7 @@ import WindowsLogoBlack from '../../assets/images/download/windows-logo-black.pn
 import WindowsLogoWhite from '../../assets/images/download/windows-logo-white.png'
 import LinuxLogoBlack from '../../assets/images/download/linux-logo-black.png'
 import LinuxLogoWhite from '../../assets/images/download/linux-logo-white.png'
-import labels from '../../constants/labels'
+// import labels from '../../constants/labels'
 import content from '../../constants/content'
 class Download extends Component {
     renderActiveDownload = (arrVersion) => {
@@ -40,6 +40,7 @@ class Download extends Component {
         )
     }
     render () {
+        const {labels} = this.props
         var arrVersion = [
             {
                 index: 'Win32',

@@ -3,11 +3,11 @@ import {
     CHANGE_LANGUAGE,
 } from '../../constants/actionTypes';
 
-import labels from '../../constants/labels'
+import { labels_en, labels_cn, labels_pt} from '../../constants/labels'
 import content from '../../constants/content'
 
 const initialState = {
-   labels: labels,
+   labels: labels_en,
    content: content,
    base: localStorage.getItem('base') || "/en",
 };
@@ -20,6 +20,15 @@ const reducer = (state = initialState, action) => {
         case CHANGE_LANGUAGE:
             newState.base = action.locale
             localStorage.setItem('base', newState.base)
+            if ( action.locale === "/en") {
+                newState.labels = labels_en
+            }
+            if ( action.locale === "/cn") {
+                newState.labels = labels_cn
+            }
+            if ( action.locale === "/pt") {
+                newState.labels = labels_pt
+            }
             return newState
         default:
             return state;

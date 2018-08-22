@@ -76,7 +76,7 @@ class Gallery extends React.Component {
             autoPlay={false}
             startIndex = {teamIndex % items.length}
             fadeOutAnimation={false}
-            mouseDragEnabled={true}
+            mouseDragEnabled={uid == 0? true : false}
             playButtonEnabled={false}
             autoPlayInterval={2000}
             autoPlayDirection="rtl"

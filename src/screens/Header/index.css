@@ -96,6 +96,9 @@
     .bm-item-list .nav-bar-link a {
         width: 40% !important;
     }
+    .bm-item-list .nav-bar-link .cbutton-container a {
+        height: 24px !important;
+    }
 }
 
 

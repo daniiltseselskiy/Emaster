@@ -2,7 +2,8 @@ import React, {Component } from 'react'
 import NInput from '../../components/NInput'
 import './index.css'
 import {
-    Label
+    Label,
+    NavLink,
 } from 'reactstrap'
 import { Link } from 'react-router-dom'
 import InstagramIcon from '../../assets/images/footer/instagram-icon.png'
@@ -25,15 +26,15 @@ class Footer extends Component {
                         </div>
                         <div className="link-area">
                             <div className="link-area-label">
-                                <Link to={`${base}/features`}><p>Features</p></Link>
-                                <Link to={`${base}/about`}><p>About</p></Link>
-                                <Link to={`${base}/partners`}><p>Partners</p></Link>
-                                <Link to={`${base}/contact`}><p>Contact</p></Link>
+                                <NavLink href={`${base}/features`}><p>Features</p></NavLink>
+                                <NavLink href={`${base}/about`}><p>About</p></NavLink>
+                                <NavLink href={`${base}/partners`}><p>Partners</p></NavLink>
+                                <NavLink href={`${base}/contact`}><p>Contact</p></NavLink>
                             </div>
                             <div className="link-area-label">
-                                <Link to={`${base}/help`}><p>Help</p></Link>
-                                <Link to={`${base}/forums`}><p>Forums</p></Link>
-                                <a href="https://angel.co/emasters/jobs" target="blank"><p>Careers</p></a>
+                                <NavLink href={`${base}/help`}><p>Help</p></NavLink>
+                                <NavLink href={`${base}/forums`}><p>Forums</p></NavLink>
+                                <NavLink href="https://angel.co/emasters/jobs" target="blank"><p>Careers</p></NavLink>
                             </div>
                             <div className="link-area-company">
                                 <h1>eMasters</h1>

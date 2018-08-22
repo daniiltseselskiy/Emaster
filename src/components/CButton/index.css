@@ -26,11 +26,10 @@
 
 @media screen and (max-width: 414px) {
     .cbutton-container {
-        width: 120px;
-        height: 30px;
+        width: 160px;
+        height: 40px;
     }
     .cbutton-container a {
-        margin-top: 7px;
         font-size: 14px;
     }
 }

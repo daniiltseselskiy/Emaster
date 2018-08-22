@@ -33,7 +33,12 @@
 .footer-container .top-footer .top-left-footer .link-area .link-area-label {
     width: 25%;
 }
-
+.footer-container .top-footer .top-left-footer .link-area .link-area-label a {
+    padding: 0;
+}
+.footer-container .top-footer .top-left-footer .link-area .link-area-label a:hover {
+    text-decoration: underline;
+}
 .footer-container .top-footer .top-left-footer .link-area .link-area-company {
     color: white;
 }

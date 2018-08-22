@@ -26,7 +26,7 @@ class Gallery2 extends React.Component {
   
   galleryTeams() {
     return (
-      [1, 2 ,3].map((item, i) => (
+      [1, 2 ,3, 4, 5, 6, 7, 8, 9, 10].map((item, i) => (
         <div key={`key-${i}`} className="">
             <TeamCard />
         </div>
@@ -49,7 +49,7 @@ class Gallery2 extends React.Component {
             autoPlay={false}
             startIndex = {partnersIndex % items.length}
             fadeOutAnimation={false}
-            mouseDragEnabled={true}
+            mouseDragEnabled={false}
             playButtonEnabled={false}
             autoPlayInterval={2000}
             autoPlayDirection="rtl"

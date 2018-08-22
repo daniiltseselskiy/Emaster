@@ -40,13 +40,30 @@
 .help-container .text-content-e img {
     height: 100%;
 }
-
+@media screen and (max-width: 1500px) {
+    .help-container .text-content-h {
+        width: 80%;
+    }
+    .help-container .text-content-m {
+        width: 80%;
+    }
+    .help-container .text-content-e {
+        width: 80%;
+    }
+}
 @media screen and (max-width: 1024px) {
     .help-container .text-content-h {
         width: 90%;
     }
     .help-container .text-content-m {
         width: 90%;
+        flex-direction: column;
+    }
+    .help-container .text-content-m > div {
+        width: 100%;
+    }
+    .help-container .text-content-m > div p {
+        margin: 0;
     }
     .help-container .image-content-h {
         width: 100%;

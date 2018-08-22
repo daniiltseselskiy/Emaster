@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './index.css'
 import {
     Label,
+    NavLink,
 } from 'reactstrap'
 import { Link } from 'react-router-dom'
 class CButton extends Component {
@@ -11,7 +12,7 @@ class CButton extends Component {
         console.log("#########", target)
         return (
             <div className="cbutton-container">
-                <Link to={`${base}/${target}`}>{title}</Link>
+                <NavLink href={`${base}/${target}`}>{title}</NavLink>
             </div>
         )
     }

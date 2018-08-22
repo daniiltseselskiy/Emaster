@@ -3,7 +3,6 @@ import { Redirect, withRouter } from 'react-router-dom'
 import './index.css'
 //ReactStrap
 import {
-    Navbar,
     NavbarBrand,
     NavLink,
     UncontrolledDropdown,
@@ -60,7 +59,8 @@ class Header extends Component {
       
       render() {
         const { base, isHome } = this.props
-        console.log("**********************************", base)
+        const classname = this.props.location.pathname.split("/");
+        const url = classname[2]
         return (
           <div className="header-container" style={isHome? style : style1}>
               {this.onChangeLanguage(base)}
@@ -116,13 +116,13 @@ class Header extends Component {
               
               <div className="collapse-container">
                   <div className="nav-bar-link">
-                      <NavLink href={`${base}/`}>HOME</NavLink>
-                      <NavLink href={`${base}/features`}>FEATURES</NavLink>
-                      <NavLink href={`${base}/about`}>ABOUT</NavLink>
-                      <NavLink href={`${base}/partners`}>PARTNERS</NavLink> 
-                      <NavLink href={`${base}/help`}>HELP</NavLink>         
-                      <NavLink href={`${base}/contact`}>CONTACT</NavLink>
-                      <NavLink href={`${base}/forums`}>FORUMS</NavLink>
+                      <NavLink className={url == ""? "active" : ""} href={`${base}/`}>HOME</NavLink>
+                      <NavLink className={url == "features"? "active" : ""} href={`${base}/features`}>FEATURES</NavLink>
+                      <NavLink className={url == "about"? "active" : ""} href={`${base}/about`}>ABOUT</NavLink>
+                      <NavLink className={url == "partners"? "active" : ""} href={`${base}/partners`}>PARTNERS</NavLink> 
+                      <NavLink className={url == "help"? "active" : ""} href={`${base}/help`}>HELP</NavLink>         
+                      <NavLink className={url == "contact"? "active" : ""} href={`${base}/contact`}>CONTACT</NavLink>
+                      <NavLink className={url == "forums"? "active" : ""} href={`${base}/forums`}>FORUMS</NavLink>
                   </div>
                   <CButton title="DOWNLOAD" target="download" base={base}/>
                   <UncontrolledDropdown>

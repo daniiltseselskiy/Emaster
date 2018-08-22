@@ -2,6 +2,9 @@
     background-color: #1D1D1D;
     overflow-x: hidden;
 }
+.about-container .support-3-container {
+    margin-bottom: 0;
+}
 .about-container .meet-team-container {
     position: relative;
     padding: 7% 0;
@@ -92,6 +95,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .about-container .support-3-container {
+        margin-bottom: 10%;
+    }
     .about-container .image-title-container .image-content {
         margin: -30% 0;
     }

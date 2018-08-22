@@ -1,12 +1,9 @@
 import React from 'react';
 import TeamCard from '../TeamCard'
 import AliceCarousel from 'react-alice-carousel';
-import LOLImage from '../../assets/images/homepage/lol.png'
-import DotaImage from '../../assets/images/homepage/dota.png'
-import PlusGameImage from '../../assets/images/homepage/plus-game.png'
 import "react-alice-carousel/lib/alice-carousel.css";
 import './index.css'
-import { Button } from '../../../node_modules/antd';
+
 
 class Gallery2 extends React.Component {  
   constructor () {

@@ -6,7 +6,6 @@ import './index.css'
 import '../index.css'
 import {
     Label,
-    Button,
 } from 'reactstrap'
 import InstagramIcon from '../../assets/images/footer/instagram-icon.png'
 import FacebookIcon from '../../assets/images/footer/facebook-icon.png'

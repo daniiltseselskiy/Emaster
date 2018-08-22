@@ -11,7 +11,6 @@ import {
     Label,
 } from 'reactstrap'
 import HeadQuarterImage from '../../assets/images/about/headquarter.png'
-import HelpCompanyImage from '../../assets/images/about/help-company.png'
 import NextArrow from '../../assets/images/about/arrow-next.png'
 import PreviousArrow from '../../assets/images/about/arrow-previous.png'
 import UBISoftLogo from '../../assets/images/ubisoft-logo.png'

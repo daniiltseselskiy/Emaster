@@ -31,6 +31,6 @@
 
 @media screen and (max-width: 414px) {
     .item .alice-carousel .alice-carousel__wrapper li div img {
-        height: 43vw;
+        height: 49vw;
     }
 }

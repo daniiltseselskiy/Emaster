@@ -7,7 +7,6 @@ import './index.css'
 import '../index.css'
 import {
     Label,
-    Button,
 } from 'reactstrap'
 import TournamentImage from '../../assets/images/features/tournament.png'
 import RealMoneyImage from '../../assets/images/features/real-money.png'

@@ -9,10 +9,8 @@ import './index.css'
 import '../index.css'
 import {
     Label,
-    Button
 } from 'reactstrap'
 import ReactPlayer from 'react-player'
-import { Player } from 'video-react';
 import NextIcon from '../../assets/images/footer/next-icon.png'
 import InstagramIcon from '../../assets/images/footer/instagram-icon.png'
 import FacebookIcon from '../../assets/images/footer/facebook-icon.png'
@@ -21,8 +19,21 @@ import DiscordIcon from '../../assets/images/footer/discord-icon.png'
 import UBISoftLogo from '../../assets/images/ubisoft-logo.png'
 import NGameLogo from '../../assets/images/ngame-logo.png'
 import MaiseLogo from '../../assets/images/maise-logo.png'
+import PlayVideoIcon from '../../assets/images/homepage/play-video.png'
+import StopVideoIcon from '../../assets/images/homepage/stop-video.png'
 class Home extends Component {
-
+    constructor () {
+        super ()
+        this.state = {
+            isPlaying: true,
+        }
+    }
+    playVideo = () => {
+        const isPlaying = this.state.isPlaying
+        this.setState({
+            isPlaying: !isPlaying,
+        })
+    }
     render () {
         const {labels, content, base } = this.props
         const classname = this.props.location.pathname.split("/");
@@ -58,11 +69,16 @@ class Home extends Component {
                     </div>
                     <div className="howitworks-video">
                         <div className="video-container">
-                            <ReactPlayer url='https://www.youtube.com/watch?v=uilkmUoXoLU' playing />
+                            <ReactPlayer url='https://www.youtube.com/watch?v=uilkmUoXoLU' playing={this.state.isPlaying} loop={true}/>
                             <div className="video-textarea">
-                                <h3 className="text-mid-paragraph">See How It Works</h3>
-                                <p className="text-paragraph">Ut eniem ad minim veniam , quis nostrud exercitation</p>
-                                <p className="text-paragraph">ullamco laboris nisi ut aliquip exea</p>
+                                <div className="imagearea">
+                                    <img src={this.state.isPlaying? StopVideoIcon : PlayVideoIcon} onClick={this.playVideo}/>
+                                </div>
+                                <div className="textarea" >
+                                    <h3 className="text-mid-paragraph">See How It Works</h3>
+                                    <p className="text-paragraph">Ut eniem ad minim veniam , quis nostrud exercitation</p>
+                                    <p className="text-paragraph">ullamco laboris nisi ut aliquip exea</p>
+                                </div>
                             </div>
                         </div>
                     </div>

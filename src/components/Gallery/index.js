@@ -6,7 +6,6 @@ import DotaImage from '../../assets/images/homepage/dota.png'
 import PlusGameImage from '../../assets/images/homepage/plus-game.png'
 import "react-alice-carousel/lib/alice-carousel.css";
 import './index.css'
-import { Button } from '../../../node_modules/antd';
 class Gallery extends React.Component {  
   constructor () {
     super ()

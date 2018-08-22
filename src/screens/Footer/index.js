@@ -2,8 +2,6 @@ import React, {Component } from 'react'
 import NInput from '../../components/NInput'
 import './index.css'
 import {
-    Button,
-    Input,
     Label
 } from 'reactstrap'
 import { Link } from 'react-router-dom'

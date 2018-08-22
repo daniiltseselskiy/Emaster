@@ -4,9 +4,8 @@ import About from '../../screens/About'
 import { 
     increaseTeamIndex,
     reduceTeamIndex,
-    changeTeamIndex,
  } from '../../actions/about';
-import { isMoment } from 'moment';
+
 
 const style = { 
     marginTop: '138px',

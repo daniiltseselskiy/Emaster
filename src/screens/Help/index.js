@@ -32,7 +32,7 @@ class Help extends Component {
         )
     }
     render () {
-        const { labels, content } = this.props
+        const { labels, content, base } = this.props
         
         return (
             <div className="help-container">
@@ -61,7 +61,7 @@ class Help extends Component {
                 {this.renderItem(content.basicPage.ucontent)}
                 </div>
                 { this.renderBottomText(content.basicPage.lcontent) }
-                <JoinCompetition joinContents={content.joinContents}/>
+                <JoinCompetition joinContents={content.joinContents} base={base}/>
             </div>
         )
     }

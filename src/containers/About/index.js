@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import About from '../../screens/About'
 import { 
- 
+    increaseTeamIndex,
+    reduceTeamIndex,
+    changeTeamIndex,
  } from '../../actions/about';
 import { isMoment } from 'moment';
 
@@ -29,6 +31,8 @@ class AboutContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
+        teamIndex: state.about.teamIndex,
+        base: state.main.base,
         labels: state.main.labels,
         content: state.main.content,
     };
@@ -36,6 +40,12 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
+        increaseTeamIndex: () => {
+            dispatch(increaseTeamIndex())
+        },
+        reduceTeamIndex: () => {
+            dispatch(reduceTeamIndex())
+        },
         
     };
 }

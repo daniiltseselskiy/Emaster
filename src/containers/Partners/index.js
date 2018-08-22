@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Partners from '../../screens/Partners'
 import { 
- 
+        increasePartnersIndex,
+        reducePartnersIndex,
+        
  } from '../../actions/partners';
 const style = { 
     marginTop: '138px',
@@ -29,6 +31,8 @@ class PartnersContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
+        partnersIndex: state.partners.partnersIndex,
+        base: state.main.base,
         labels: state.main.labels,
         content: state.main.content,
     };
@@ -36,7 +40,12 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        
+        increasePartnersIndex: () => {
+            dispatch(increasePartnersIndex())
+        },
+        reducePartnersIndex: () => {
+            dispatch(reducePartnersIndex())
+        }
     };
 }
 

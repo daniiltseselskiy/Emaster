@@ -3,17 +3,15 @@ import './index.css'
 import {
     Label,
 } from 'reactstrap'
-
+import { Link } from 'react-router-dom'
 class CButton extends Component {
-    onClick = () => {
-        const { onClick } = this.props
-        onClick()
-    }
+   
     render () {
-        const { Title } = this.props
+        const { title, target, base } = this.props
+        console.log("#########", target)
         return (
-            <div className="cbutton-container" onClick={this.onClick}>
-                <Label>{Title}</Label>
+            <div className="cbutton-container">
+                <Link to={`${base}/${target}`}>{title}</Link>
             </div>
         )
     }

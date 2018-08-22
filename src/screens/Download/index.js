@@ -34,7 +34,7 @@ class Download extends Component {
         return arrVersion.map(
             (item, index) => {
                 if (item.index !== navigator.platform) {
-                    return <DownloadVersion key={index} title={item.index} image={item.image}/>
+                    return <DownloadVersion index={index} title={item.title} image={item.image}/>
                 }
             }
         )

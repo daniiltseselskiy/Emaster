@@ -10,14 +10,12 @@ import { Button } from '../../../node_modules/antd';
 class Gallery extends React.Component {  
   constructor () {
     super ()
-    this.state = {
-      position: 0,
-    }
+    
   }
   responsive = {
     0: { items: 1 },
-    600: { items: 2 },
-    1800: { items: 3 },
+    414: { items: 2 },
+    1024: { items: 3 },
   };
   responsive1 = {
     1800: { items: 1 },
@@ -28,11 +26,13 @@ class Gallery extends React.Component {
   onSlideChange(e) {
     console.log('Item`s position during a change: ', e.item);
     console.log('Slide`s position during a change: ', e.slide);
+    
   };
 
   onSlideChanged(e) {
     console.log('Item`s position after changes: ', e.item);
     console.log('Slide`s position after changes: ', e.slide);
+
   };
   
   galleryItems() {
@@ -46,29 +46,16 @@ class Gallery extends React.Component {
   };
   galleryTeams() {
     return (
-      [1, 2 ,3].map((item, i) => (
+      [1, 2 ,3, 4, 5, 6, 7, 8, 9, 10].map((item, i) => (
         <div key={`key-${i}`} className="">
             <TeamCard />
         </div>
       ))
     )
   }
-  onClick = () => {
-    const position =  ( this.state.position + 1 ) % 3 
-    console.log("***********************************" ,this.state.position)
-    this.setState({
-       position: position
-    })
-  }
-  onClick1 = () => {
-    const position =  ( this.state.position - 1 ) % 3 
-    console.log("***********************************" ,this.state.position)
-    this.setState({
-       position: position
-    })
-  }
+
   render() {
-    const { uid } = this.props
+    const { uid, teamIndex } = this.props
     var items = [], responsive = {}
     if (uid == 0) {
       items = this.galleryItems()
@@ -81,14 +68,14 @@ class Gallery extends React.Component {
       responsive = this.responsive2
     }
     return (
-      <div >
+      <div className={uid == 0? "item" : ""}>
           <AliceCarousel
             dotsDisabled={true}
             buttonsDisabled={true}
             items={items}
             duration={400}
             autoPlay={false}
-            startIndex = {this.state.position}
+            startIndex = {teamIndex % items.length}
             fadeOutAnimation={false}
             mouseDragEnabled={true}
             playButtonEnabled={false}

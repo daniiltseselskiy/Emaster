@@ -40,3 +40,55 @@
     margin-left: 5%;
     margin-right: 10%;
 }
+
+@media screen and (max-width: 1024px) {
+    .download-container {
+        padding: 5%;
+        background-size: contain;
+    }
+    .download-container .download-conent-h {
+        width: 100%;
+    }
+    .download-container .feature-help .feature-content {
+        width: 100%;
+        padding: 15% 3%;
+        margin-bottom: 10vh;
+    }
+    .download-container .download-conent-h .title-container {
+        margin-bottom: 50%;
+    }
+    .download-container .download-conent-h .dbutton-container {
+        margin: 0 auto;
+    }
+    .download-container .feature-help .feature-content .bottom-card-container {
+        bottom: -11vh;
+        right: 0;
+        width: 60%;
+    }
+    .download-container .machine-version .download-version-container .dbutton-container {
+        width: 80%;
+    } 
+}
+
+@media screen and (max-width: 414px) {
+    .download-container .download-conent-h .dbutton-container {
+        width: 80%;
+        height: 60px;
+        margin: 0 auto;
+    }
+    .download-container .feature-help .feature-content {
+        margin-bottom: 30vh;
+    }
+    .download-container .feature-help .feature-content .bottom-card-container {
+        bottom: -20vh;
+        right: 0;
+        width: 100%;
+    }
+    .download-container .machine-version {
+        flex-direction: column;
+    }
+    .download-container .machine-version .download-version-container {
+        width: 100%;
+        margin-top: 5%;
+    }
+}

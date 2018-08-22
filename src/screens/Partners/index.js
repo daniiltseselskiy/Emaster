@@ -46,8 +46,16 @@ class Partners extends Component {
             }
         )
     }
+    reducePartnersIndex = () => {
+        const { reducePartnersIndex} = this.props
+        reducePartnersIndex()
+    }
+    increasePartnersIndex = () => {
+        const { increasePartnersIndex } = this.props
+        increasePartnersIndex()
+    }
     render () {
-        const { labels, content } = this.props
+        const { labels, content, base, partnersIndex } = this.props
         return (
             <div className="partners-container">
                 <div className="text-content-t">
@@ -56,10 +64,10 @@ class Partners extends Component {
                 <Support3Text index={labels.coFriendsIndex} title={labels.coFriendsTitle} description={content.coFriends}/>
                 <div className="meet-partners-container">
                     <div className="partners-content">
-                        <Gallery2/>
+                        <Gallery2 partnersIndex={partnersIndex}/>
                         <div className="partners-arrow">
-                            <img src={PreviousArrow} /> 
-                            <img src={NextArrow} />
+                            <img src={PreviousArrow} onClick={this.reducePartnersIndex}/> 
+                            <img src={NextArrow} onClick={this.increasePartnersIndex}/>
                         </div>
                     </div>
                     <BottomCard index={labels.joinTeamIndex} link={labels.joinTeamLink} investor={true}/>
@@ -76,7 +84,7 @@ class Partners extends Component {
                     <h1>{labels.faqTitle}</h1>
                     <CAccordion items={faqs}/>
                 </div>
-                <JoinCompetition joinContents={content.joinContents}/>
+                <JoinCompetition joinContents={content.joinContents} base={base}/>
             </div>
         )
     }

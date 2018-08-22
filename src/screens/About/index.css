@@ -1,5 +1,6 @@
 .about-container {
     background-color: #1D1D1D;
+    overflow-x: hidden;
 }
 .about-container .meet-team-container {
     position: relative;
@@ -76,16 +77,21 @@
 }
 .about-container .help-company-container .help-company-content .image-card-container {
     position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0e0e0e;
+    height: 50vh;
 }
 .about-container .help-company-container .help-company-content .image-card-container img {
     
-    width: 100%;
+    width: 25%;
 }
 .about-container .join-competition-container {
     margin-top: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .about-container .image-title-container .image-content {
         margin: -30% 0;
     }
@@ -111,15 +117,20 @@
         margin-bottom: 10%;
     }
     .about-container .meet-team-container .meet-team-content .left-team-content .team-arrow {
-        width: 62.5%;
+        width: 100%;
+        padding-left: 41vw;
+        justify-content: flex-start;
     }
     .about-container .mission-container {
         align-items: flex-start;
         margin-top: 30%;
-        background-size: 150% 100%;
+        background-size: cover;
     }
     .about-container .mission-container .support-3-container .support-2-textarea .support-textarea-l:nth-child(1) {
-        width: 1000%;
+        width: 100%;
+    }
+    .about-container .help-company-container {
+        height: 35vh;
     }
     .about-container .help-company-container .help-company-content {
         width: 82%;
@@ -130,4 +141,49 @@
         width: 50vw;
         right: 0;
     }
+}
+
+@media screen and (max-width: 768px ) {
+    .about-container .meet-team-container .meet-team-content .left-team-content .team-arrow {
+        
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .about-container .meet-team-container {
+        
+        background-size: 100% 71%;
+        background-position: bottom;
+        padding-bottom: 30%;
+        margin-bottom: 40%;
+    }
+    .about-container .meet-team-container .meet-team-content .left-team-content .team-member-card {
+        margin-left: 0;
+    }
+    .about-container .meet-team-container .meet-team-content .right-team-content .bottom-card-container {
+        left: 5%;
+        width: 95vw;
+    }
+    .about-container .meet-team-container .meet-team-content .left-team-content .team-arrow {
+        justify-content: flex-start;
+        padding-left: 5%;
+        width: 95%;
+    }
+    .about-container .image-title-container .image-content {
+        margin: 0;
+        padding: 0;
+    }
+    .about-container .image-title-container .image-content img {
+        width: 100%; 
+    }
+    .about-container .help-company-container .help-company-content .image-card-container  {
+        flex-direction: column;
+        height: 30vh;
+    }
+    .about-container .help-company-container .help-company-content .image-card-container .bottom-card-container {
+        width: 90vw;
+        right: -10%;
+        bottom: -20vh;
+    }
+    
 }

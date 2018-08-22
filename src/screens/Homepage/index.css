@@ -86,9 +86,6 @@
     display: flex;
     height: 30vh;
     padding-left: 9%;
-    background-image: url('../../assets/images/customer.png');
-    background-repeat: no-repeat;
-    background-position: right;
     
 }
 
@@ -97,9 +94,33 @@
     width: 30%;
     flex-direction: column;
 }
-
+.home-container .working-us-container .support-textarea .see-all-container {
+    padding: 1% 0 5% 0;
+}
+.home-container .working-us-container .support-textarea .see-all-container .line {
+    height: 5px;
+    width: 118px;
+    background-color: #FFC400;
+}
+.home-container .working-us-container .partners-image {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFC400;
+}
+/* Responsive  */
+@media screen and (max-width: 1600px) {
+    .home-container .about-platform-container .about-platform {
+        padding: 10% 3% 0 9%;
+    }
+    .home-container .working-us-container .partners-image {
+        display: grid;
+        grid-template-columns: 40% 40%;
+    }
+}
 /* IPad Responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .home-container .join-challenge-container {
         flex-direction: column;
         height: 30vh;
@@ -140,15 +161,22 @@
         width: 100%;
         padding: 0 9%;
     }
-    .home-container .working-us-container .tablet-image {
+    .home-container .working-us-container .support-textarea .see-all-container {
+        padding: 1% 0 5% 0;
+    }
+    .home-container .working-us-container .support-textarea .see-all-container .line {
+        height: 5px;
+        width: 118px;
+        background-color: #FFC400;
+    }
+    .home-container .working-us-container .partners-image {
+        width: 100%;
         height: 30vh;
-        background-image: url('../../assets/images/customer.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-color: #FFC400;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
     .home-container .join-challenge-container .join-challenge .title-container {
         margin: 0;
     }
@@ -164,5 +192,13 @@
     .home-container .about-platform-container .howitworks-video .video-container {
         width: 375px;
         height: 211px;
+    }
+    .home-container .about-platform-container .howitworks-video .video-container div:nth-child(1) {
+        width: 375px !important;
+        height: 211px !important;
+    }
+    .home-container .working-us-container .partners-image {
+        display: flex;
+        flex-direction: column;
     }
 }

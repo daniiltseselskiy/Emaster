@@ -29,6 +29,7 @@ class DownloadContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
+        base: state.main.base,
         labels: state.main.labels,
         content: state.main.content,
     };

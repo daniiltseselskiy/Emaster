@@ -41,7 +41,7 @@
     height: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .help-container .text-content-h {
         width: 90%;
     }

@@ -11,13 +11,10 @@ import { Button } from '../../../node_modules/antd';
 class Gallery2 extends React.Component {  
   constructor () {
     super ()
-    this.state = {
-      position: 0,
-    }
   }
   
   responsive = {
-    1800: { items: 2 },
+    1024: { items: 2 },
   };
   onSlideChange(e) {
     console.log('Item`s position during a change: ', e.item);
@@ -39,25 +36,12 @@ class Gallery2 extends React.Component {
       ))
     )
   }
-  onClick = () => {
-    const position =  ( this.state.position + 1 ) % 3 
-    console.log("***********************************" ,this.state.position)
-    this.setState({
-       position: position
-    })
-  }
-  onClick1 = () => {
-    const position =  ( this.state.position - 1 ) % 3 
-    console.log("***********************************" ,this.state.position)
-    this.setState({
-       position: position
-    })
-  }
+
   render() {
       var items = [], responsive = {}
       items = this.galleryTeams()
       responsive = this.responsive
-    
+      const { partnersIndex } = this.props
     return (
       <div className="margin">
           <AliceCarousel
@@ -66,7 +50,7 @@ class Gallery2 extends React.Component {
             items={items}
             duration={400}
             autoPlay={false}
-            startIndex = {this.state.position}
+            startIndex = {partnersIndex % items.length}
             fadeOutAnimation={false}
             mouseDragEnabled={true}
             playButtonEnabled={false}

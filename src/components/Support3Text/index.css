@@ -32,7 +32,7 @@
     margin-bottom: 10%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .support-3-container {
         flex-direction: column;
     }
@@ -47,7 +47,8 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
+    
     .support-3-container .support-2-textarea {
         flex-direction: column;
     }
@@ -60,4 +61,5 @@
     .support-3-container .support-2-textarea .support-textarea-l:nth-child(1) .cbutton-container {
         display: none;
     }
+    
 }

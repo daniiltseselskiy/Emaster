@@ -17,7 +17,7 @@
     background-color: #0E0E0E;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .team-card-container .image-content {
         width: 35%;
     }
@@ -28,5 +28,19 @@
     .team-card-container .resume-content {
         width: 65%;
         padding-top: 5%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .team-card-container {
+        flex-direction: column;
+        margin: 0 5%;
+    }
+    .team-card-container .image-content {
+        width: 45%;
+    }
+    .team-card-container .resume-content {
+        width: 100%;
+        padding: 15% 7%;
     }
 }

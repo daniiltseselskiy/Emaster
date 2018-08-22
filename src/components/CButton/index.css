@@ -8,7 +8,12 @@
     border-radius: 25px;
     background-color: transparent;
 }
-
+.cbutton-container a {
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
 .cbutton-container:hover {
     border-color: #FFC400;
     cursor: pointer;
@@ -19,12 +24,13 @@
     color: white
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
     .cbutton-container {
         width: 120px;
         height: 30px;
     }
-    .cbutton-container label {
+    .cbutton-container a {
+        margin-top: 7px;
         font-size: 14px;
     }
 }

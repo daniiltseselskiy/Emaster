@@ -14,7 +14,7 @@ import DiscordIcon from '../../assets/images/footer/discord-icon.png'
 import CButton from '../../components/CButton';
 class Contact extends Component {
     render () {
-        const { labels, content } = this.props
+        const { labels, content, base } = this.props
         return (
             <div className="contact-container">
                 <div className="text-content-t">
@@ -39,10 +39,10 @@ class Contact extends Component {
                         <CInput placeholder="Company" />
                         <CInput placeholder="Subject" />
                         <CInput placeholder="Message" />
-                        <CButton Title={labels.contactTitle}/>
+                        <CButton title={labels.contactTitle} target="download" base={base}/>
                     </div>
                 </div>    
-                <JoinCompetition joinContents={content.joinContents}/>    
+                <JoinCompetition joinContents={content.joinContents} base={base}/>    
             </div>
         )
     }

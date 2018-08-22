@@ -3,24 +3,27 @@ import { Redirect, withRouter } from 'react-router-dom'
 import './index.css'
 //ReactStrap
 import {
-    Button,
-    Collapse,
     Navbar,
-    NavbarToggler,
     NavbarBrand,
-    Nav,
-    NavItem,
     NavLink,
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem } from 'reactstrap';
+    DropdownItem 
+} from 'reactstrap';
+import { slide as Menu } from 'react-burger-menu'
 //Import 
 import CButton from '../../components/CButton'
 import LogoImage from '../../assets/images/emasters_white.png'
 import USFlag from '../../assets/images/header/US.png'
 import BRFlag from '../../assets/images/header/BR.png'
 import CNFlag from '../../assets/images/header/CN.png'
+import MenuIcon from '../../assets/images/header/menu.png'
+import MenuCrossIcon from '../../assets/images/header/menu-cross.png'
+import InstagramIcon from '../../assets/images/footer/instagram-icon.png'
+import FacebookIcon from '../../assets/images/footer/facebook-icon.png'
+import DiscordIcon from '../../assets/images/footer/discord-icon.png'
+import TwitchIcon from '../../assets/images/footer/twitch-icon.png'
 const style = {
   backgroundColor: 'transparent'
 }
@@ -34,93 +37,114 @@ class Header extends Component {
         this.toggle = this.toggle.bind(this);
         this.state = {
           isOpen: false,
-          redirectDownload: false,
         };
       }
-      setRedirectDownload = () => {
-          this.setState ({
-              redirectDownload: true
-          })
-      }
+     
       toggle() {
         this.setState({
-          isOpen: !this.state.isOpen
+          isOpen: true
         });
       }
       changeLanguage = (locale) => {
         const {changeLanguage} = this.props
         changeLanguage(locale)
       }
-      onClickDownload = () => {
-          const { base } = this.props
-          if (this.state.redirectDownload) {
-          return <Redirect to={`${base}/download`} />
-        }
-      }
-      onChangeLanguage = () => {
+      
+      onChangeLanguage = ( oldBase ) => {
         const { base } = this.props
         const classname = this.props.location.pathname.split("/");
-        return <Redirect to={`${base}/${classname[2]}`} />
+        if (oldBase === base && classname[2] !== null) {
+            return <Redirect to={`${base}/${classname[2]}`} />
+        }
       }
+      
       render() {
         const { base, isHome } = this.props
         console.log("**********************************", base)
         return (
           <div className="header-container" style={isHome? style : style1}>
-            {this.onClickDownload()}
-            {this.onChangeLanguage()}
-            <Navbar light expand="md">
+              {this.onChangeLanguage(base)}
+              <Menu width={'100%'} customBurgerIcon={ <img src={MenuIcon} /> } customCrossIcon={ <img src={MenuCrossIcon} />}>
+                  <div className="btm-header-container">
+                      <NavbarBrand href="/">
+                          <img src={LogoImage} alt="Logo Image" />
+                      </NavbarBrand>
+                      <UncontrolledDropdown>
+                          <DropdownToggle nav caret>
+                            Lang-EN
+                          </DropdownToggle>
+                          <DropdownMenu right>
+                            <DropdownItem >
+                              <img src={USFlag}/>
+                              <p onClick={() => this.changeLanguage('/en')}>English, USA</p>
+                            </DropdownItem>
+                            <DropdownItem >
+                              <img src={BRFlag}/>
+                              <p onClick={() => this.changeLanguage('/pt')}>Português do Brasil</p>
+                            </DropdownItem>
+                            <DropdownItem >
+                              <img src={CNFlag}/>
+                              <p onClick={() => this.changeLanguage('/cn')}>中文</p>
+                            </DropdownItem>
+                          </DropdownMenu>
+                      </UncontrolledDropdown>
+                  </div>
+                  <div className="nav-bar-link">
+                      <NavLink href={`${base}/`}>HOME</NavLink>
+                      <NavLink href={`${base}/features`}>FEATURES</NavLink>
+                      <NavLink href={`${base}/about`}>ABOUT</NavLink>
+                      <NavLink href={`${base}/partners`}>PARTNERS</NavLink> 
+                      <NavLink href={`${base}/help`}>HELP</NavLink>         
+                      <NavLink href={`${base}/contact`}>CONTACT</NavLink>
+                      <NavLink href={`${base}/forums`}>FORUMS</NavLink>
+                      <CButton title="DOWNLOAD" target="download" base={base}/>
+                  </div>
+                  <div className="btm-footer-container">
+                      <div className="social-mark">
+                          <a href="https://www.discord.com" target="blank"><img src={DiscordIcon} alt="Discord" /></a>
+                          <a href="https://www.instagram.com" target="blank"><img src={InstagramIcon} alt="Instagram" /></a>
+                          <a href="https://www.facebook.com" target="blank"><img src={FacebookIcon} alt="Facebook" /></a>
+                          <a href="https://www.twitch.com" target="blank"><img src={TwitchIcon} alt="Twitch" /></a>
+                      </div>
+                      <h3>hello@emaster.co</h3>
+                  </div>
+              </Menu>
+            
               <NavbarBrand href="/">
                   <img src={LogoImage} alt="Logo Image" />
               </NavbarBrand>
-              <NavbarToggler onClick={this.toggle} />
-              <Collapse isOpen={this.state.isOpen} navbar>
-                <Nav className="" navbar>
-                  <NavItem>
-                    <NavLink href={`${base}/`}>HOME</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href={`${base}/features`}>FEATURES</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href={`${base}/about`}>ABOUT</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href={`${base}/partners`}>PARTNERS</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href={`${base}/help`}>HELP</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href={`${base}/contact`}>CONTACT</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href={`${base}/forums`}>FORUMS</NavLink>
-                  </NavItem>
-                  
-                </Nav>
-              </Collapse>
-              <CButton Title="DOWNLOAD" onClick={this.setRedirectDownload}/>
-              <UncontrolledDropdown>
-                    <DropdownToggle nav caret>
-                      Lang-EN
-                    </DropdownToggle>
-                    <DropdownMenu right>
-                      <DropdownItem >
-                        <img src={USFlag}/>
-                        <p onClick={() => this.changeLanguage('/en')}>English, USA</p>
-                      </DropdownItem>
-                      <DropdownItem >
-                        <img src={BRFlag}/>
-                        <p onClick={() => this.changeLanguage('/pt')}>Português do Brasil</p>
-                      </DropdownItem>
-                      <DropdownItem >
-                        <img src={CNFlag}/>
-                        <p onClick={() => this.changeLanguage('/cn')}>中文</p>
-                      </DropdownItem>
-                    </DropdownMenu>
+              
+              <div className="collapse-container">
+                  <div className="nav-bar-link">
+                      <NavLink href={`${base}/`}>HOME</NavLink>
+                      <NavLink href={`${base}/features`}>FEATURES</NavLink>
+                      <NavLink href={`${base}/about`}>ABOUT</NavLink>
+                      <NavLink href={`${base}/partners`}>PARTNERS</NavLink> 
+                      <NavLink href={`${base}/help`}>HELP</NavLink>         
+                      <NavLink href={`${base}/contact`}>CONTACT</NavLink>
+                      <NavLink href={`${base}/forums`}>FORUMS</NavLink>
+                  </div>
+                  <CButton title="DOWNLOAD" target="download" base={base}/>
+                  <UncontrolledDropdown>
+                      <DropdownToggle nav caret>
+                        Lang-EN
+                      </DropdownToggle>
+                      <DropdownMenu right>
+                        <DropdownItem >
+                          <img src={USFlag}/>
+                          <p onClick={() => this.changeLanguage('/en')}>English, USA</p>
+                        </DropdownItem>
+                        <DropdownItem >
+                          <img src={BRFlag}/>
+                          <p onClick={() => this.changeLanguage('/pt')}>Português do Brasil</p>
+                        </DropdownItem>
+                        <DropdownItem >
+                          <img src={CNFlag}/>
+                          <p onClick={() => this.changeLanguage('/cn')}>中文</p>
+                        </DropdownItem>
+                      </DropdownMenu>
                   </UncontrolledDropdown>
-            </Navbar>
+              </div>
           </div>
         );
       }

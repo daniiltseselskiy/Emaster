@@ -8,7 +8,7 @@ import {
 
 class JoinCompetition extends Component {
     render () {
-        const { joinContents } = this.props
+        const { joinContents, base } = this.props
         return (
             <div className="join-competition-container">
                 <div className="competition-textarea">
@@ -16,7 +16,7 @@ class JoinCompetition extends Component {
                     <p className="text-paragraph">{joinContents.content}</p>
                 </div>
                 <div className="competition-buttonarea">
-                    <CButton Title="DOWNLOAD" />
+                    <CButton title="DOWNLOAD" target="download" base={base}/>
                 </div>
             </div>
         )

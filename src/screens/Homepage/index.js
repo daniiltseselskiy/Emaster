@@ -13,14 +13,18 @@ import {
 } from 'reactstrap'
 import ReactPlayer from 'react-player'
 import { Player } from 'video-react';
+import NextIcon from '../../assets/images/footer/next-icon.png'
 import InstagramIcon from '../../assets/images/footer/instagram-icon.png'
 import FacebookIcon from '../../assets/images/footer/facebook-icon.png'
-import NextIcon from '../../assets/images/footer/next-icon.png'
+import TwitchIcon from '../../assets/images/footer/twitch-icon.png'
 import DiscordIcon from '../../assets/images/footer/discord-icon.png'
+import UBISoftLogo from '../../assets/images/ubisoft-logo.png'
+import NGameLogo from '../../assets/images/ngame-logo.png'
+import MaiseLogo from '../../assets/images/maise-logo.png'
 class Home extends Component {
 
     render () {
-        const {labels, content } = this.props
+        const {labels, content, base } = this.props
         const classname = this.props.location.pathname.split("/");
         var isHome = false
         if ( classname[2] == "") {
@@ -33,15 +37,15 @@ class Home extends Component {
                     <div className="join-challenge">
                         <TitleCompnent index={labels.joinIndex} title={labels.joinTitle} />
                         <div className="join-button-area">
-                            <CButton Title="FEATURE"/>
-                            <CButton Title="DOWNLOAD"/>
+                            <CButton title="FEATURE" target="features" base={base}/>
+                            <CButton title="DOWNLOAD" target='download' base={base}/>
                         </div>
                     </div>
                     <div className="join-social">
                         <a href="https://www.instagram.com" target="blank"><img src={DiscordIcon} alt="Instagram" /></a>
                         <a href="https://www.facebook.com" target="blank"><img src={InstagramIcon} alt="Facebook" /></a>
                         <a href="https://www.instagram.com" target="blank"><img src={FacebookIcon} alt="Instagram" /></a>
-                        <a href="https://www.facebook.com" target="blank"><img src={FacebookIcon} alt="Facebook" /></a>
+                        <a href="https://www.twitch.com" target="blank"><img src={TwitchIcon} alt="Twitch" /></a>
                     </div>
                 </div>
                 <div className="about-platform-container">
@@ -68,11 +72,18 @@ class Home extends Component {
                 <div className="working-us-container">
                     <div className="support-textarea">
                         <TitleCompnent index={labels.workingIndex} title={labels.workingTitle} />
-                        {/* <Label>See All</Label> */}
+                        <div className="see-all-container">
+                            <h3 className="text-mid-paragraph">See All</h3>
+                            <div className="line"/>
+                        </div>
                     </div>
-                    <div className="tablet-image" />
+                    <div className="partners-image">
+                        <img src={UBISoftLogo} />
+                        <img src={MaiseLogo} />
+                        <img src={NGameLogo} />
+                    </div>
                 </div>
-                <JoinCompetition joinContents={content.joinContents}/>
+                <JoinCompetition joinContents={content.joinContents} base={base}/>
             </div>
         )
     }

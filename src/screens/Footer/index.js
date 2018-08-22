@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom'
 import InstagramIcon from '../../assets/images/footer/instagram-icon.png'
 import FacebookIcon from '../../assets/images/footer/facebook-icon.png'
 import DiscordIcon from '../../assets/images/footer/discord-icon.png'
+import TwitchIcon from '../../assets/images/footer/twitch-icon.png'
 import LogoImage from '../../assets/images/footer/logo.png'
 import NextIcon from '../../assets/images/footer/next-icon.png'
 
@@ -50,17 +51,17 @@ class Footer extends Component {
                 </div>
                 <div className="bottom-footer">
                     <div className="social-mark">
-                        <a href="https://www.instagram.com" target="blank"><img src={DiscordIcon} alt="Instagram" /></a>
-                        <a href="https://www.facebook.com" target="blank"><img src={InstagramIcon} alt="Facebook" /></a>
-                        <a href="https://www.instagram.com" target="blank"><img src={FacebookIcon} alt="Instagram" /></a>
+                        <a href="https://www.discord.com" target="blank"><img src={DiscordIcon} alt="Discord" /></a>
+                        <a href="https://www.instagram.com" target="blank"><img src={InstagramIcon} alt="Instagram" /></a>
                         <a href="https://www.facebook.com" target="blank"><img src={FacebookIcon} alt="Facebook" /></a>
+                        <a href="https://www.twitch.com" target="blank"><img src={TwitchIcon} alt="Twitch" /></a>
                     </div>
                     <div className="bottom-right-footer">
                         <div className="bottom-link">
                             <Link to="#">Privacy Policy</Link>
                             <Link to="#">Terms & Conditions</Link>
                         </div>
-                        <Label>Copyright 2018 eMasters</Label>
+                        <Label>Copyright@ 2018 eMasters</Label>
                     </div>
                 </div>
             </div>

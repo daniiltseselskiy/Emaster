@@ -19,7 +19,7 @@
     justify-content: flex-end;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .image-title-container {
         flex-direction: column;
     }
@@ -40,7 +40,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
     .image-title-container .image-content img {
         width: 70%;
         margin: 0 auto;

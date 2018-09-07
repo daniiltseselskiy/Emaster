@@ -11,7 +11,7 @@ const labels = {
     "/cn": labels_cn,
 }
 const initialState = {
-   labels: labels[localStorage.getItem('base')],
+   labels: labels[localStorage.getItem('base') || "/en"],
    content: content,
    base: localStorage.getItem('base') || "/en",
 };
